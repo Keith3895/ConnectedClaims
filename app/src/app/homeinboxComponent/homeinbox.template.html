@@ -13,6 +13,12 @@
           <bh--unassignedtask [data]="casesArr" *ngIf="display==&apos;unassigned&apos;" fxFlex="100%"></bh--unassignedtask>
         </div>
       </div>
+      <div fxLayout="row" style="padding:2%;" fxShow="true" fxHide="false" id="80bcfaf2-fcde-83ba-28a6-cdb349b1d455" *ngIf="display==&apos;myTeam&apos;">
+        <div fxLayout="column" fxFlex="100" fxShow="true" fxHide="false" id="bad7f073-0e35-0211-f558-a8970f3427a1">
+          <h3 id="e12335cd-7182-6717-4381-f8b25c706737">My Team Task</h3>
+          <bh-myteamtask [data]="casesArr" *ngIf="display==&apos;myTeam&apos;" style="width:100%"></bh-myteamtask>
+        </div>
+      </div>
     </div>
     <div fxLayout="column" style="overflow-y:scroll;" fxFlex="40" fxShow="true" fxHide="false" id="66cab300-c483-9b3c-c680-00b49fe27e60" *ngIf="displayedContent">
       <bh-caseinfodisplay *ngIf="displayInfo" [displayInfo]="displayInfo" [mode]="mode"></bh-caseinfodisplay>

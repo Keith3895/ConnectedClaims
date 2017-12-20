@@ -1,1 +1,31 @@
-{}
+{
+    "429236e3-706a-b606-4df2-21582834efc9": {
+        "name": "HTML",
+        "guid": "429236e3-706a-b606-4df2-21582834efc9",
+        "template": "%html%",
+        "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
+        "paletteTemplate": "HTML",
+        "templateUrl": "",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "html",
+                "_value": "<div class=\"example-container mat-elevation-z8\">\t\n<mat-table #table=\"\" [dataSource]=\"dataSourceAsig\">\n\n          <!--- Note that these columns can be defined in any order.\n                  The actual rendered columns are set as a property on the row definition\" -->\n          <ng-container matColumnDef=\"select\">\n            <mat-header-cell *matHeaderCellDef=\"\"> Assign </mat-header-cell>\n            <mat-cell *matCellDef=\"let element\">\n              <mat-checkbox></mat-checkbox>\n            </mat-cell>\n          </ng-container>\n          <!-- Position Column -->\n          <ng-container matColumnDef=\"agentName\">\n            <mat-header-cell *matHeaderCellDef=\"\"> Agent Name </mat-header-cell>\n            <mat-cell *matCellDef=\"let element\">\n              <span class=\"anchorFake\" (click)=\"asigned(element)\">{{element.case.agentName}}</span>\n            </mat-cell>\n          </ng-container>\n\n          <!-- Name Column -->\n          <ng-container matColumnDef=\"assignedUser\">\n            <mat-header-cell *matHeaderCellDef=\"\"> Customer Name </mat-header-cell>\n            <mat-cell *matCellDef=\"let element\" (click)=\"asigned(element)\"> <span class=\"anchorFake\"> {{element.case.assignedUser}}</span> </mat-cell>\n          </ng-container>\n\n          <!-- Weight Column -->\n          <ng-container matColumnDef=\"policyNumber\">\n            <mat-header-cell *matHeaderCellDef=\"\"> Policy No </mat-header-cell>\n            <mat-cell *matCellDef=\"let element\" (click)=\"asigned(element)\"> <span class=\"anchorFake\">{{element.case.policyNumber}} </span></mat-cell>\n          </ng-container>\n\n          <!-- Symbol Column -->\n          <ng-container matColumnDef=\"caseId\">\n            <mat-header-cell *matHeaderCellDef=\"\"> Case Id </mat-header-cell>\n            <mat-cell *matCellDef=\"let element\" (click)=\"asigned(element)\"><span class=\"anchorFake\">{{element.case.caseId}} </span> </mat-cell>\n          </ng-container>\n          <ng-container matColumnDef=\"services\">\n            <mat-header-cell *matHeaderCellDef=\"\"> Services </mat-header-cell>\n            <mat-cell *matCellDef=\"let element\">\n                <span *ngFor=\"let service of element.services\" >\n                  <i class=\"material-icons\" *ngIf=\"service.serviceType=='ambulance'\" \n                  (click)=\"displayService(service)\" >local_hospital</i>\n                  <i class=\"material-icons\"*ngIf=\"service.serviceType=='towing'\" \n                  (click)=\"displayService(service)\" >rv_hookup</i>\n                  <i class=\"material-icons\" *ngIf=\"service.serviceType=='roadside assist'\" \n                  (click)=\"displayService(service)\">phone</i>\n                  <i class=\"material-icons\" *ngIf=\"service.serviceType=='taxi'\" \n                  (click)=\"displayService(service)\">local_taxi</i>\n                  <i class=\"material-icons\" *ngIf=\"service.serviceType=='car hire'\" \n                  (click)=\"displayService(service)\" >directions</i>\n                </span>\n                \n\n\n\n\n                \n            \n            </mat-cell>\n          </ng-container>\n          <mat-header-row *matHeaderRowDef=\"displayedColumnsAs\"></mat-header-row>\n          <mat-row *matRowDef=\"let row; columns: displayedColumnsAs;\"></mat-row>\n        </mat-table>\n  </div>",
+                "_type": "a",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 7
+    }
+}
