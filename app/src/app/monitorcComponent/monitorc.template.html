@@ -15,7 +15,7 @@
                   <div class="dropdownCust" [ngClass]="{&apos;activeDrop&apos;:toggleDrop==&apos;remove_circle&apos;}">
                     <ul>
                       <li style="border-right:4px solid rgb(238, 12, 12);">
-                        <span class="button-nav">Unassigned Task</span>
+                        <span class="button-nav" (click)="show(&apos;unassigned&apos;)">Unassigned Task</span>
                       </li>
                       <li style="border-right:4px solid green;">
                         <span class="button-nav">My team tasks</span>
