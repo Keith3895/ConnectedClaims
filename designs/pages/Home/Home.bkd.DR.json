@@ -194,7 +194,7 @@
             },
             {
                 "_key": "html",
-                "_value": "<div class=\"rightnav\" fxFlex  fxLayout=\"row\" fxLayoutAlign=\"start\">\n\n      <div class=\"searchContainer\"  fxLayout=\"row\"  fxLayoutAlign=\"start\">\n        <input type=\"text\" class=\"searchInput search\">\n\n        <button mat-icon-button=\"\" class=\"searchdrop\">\n          <mat-icon aria-label=\"Example icon-button with a heart icon\">\n            <i class=\"material-icons\">keyboard_arrow_down</i>\n          </mat-icon>\n        </button>\n        <button type=\"submit \" class=\"searchSubmit\">\n          <i class=\"material-icons\">search</i>\n        </button>\n      </div>\n      <div  class=\"logout-button\">\n      <button\n      mat-button>Logout</button>\n    </div>\n    </div>",
+                "_value": "<div class=\"rightnav\" fxFlex  fxLayout=\"row\" fxLayoutAlign=\"start\">\n\n      <div class=\"searchContainer\"  fxLayout=\"row\"  fxLayoutAlign=\"start\">\n        <input type=\"text\" class=\"searchInput search\">\n\n        <button mat-icon-button=\"\" class=\"searchdrop\">\n          <mat-icon aria-label=\"Example icon-button with a heart icon\">\n            <i class=\"material-icons\">keyboard_arrow_down</i>\n          </mat-icon>\n        </button>\n        <button type=\"submit \" class=\"searchSubmit\">\n          <i class=\"material-icons\">search</i>\n        </button>\n      </div>\n      <div  class=\"logout-button\">\n      <button [routerLink]=\"['/login']\"\n      mat-button>Logout</button>\n    </div>\n    </div>",
                 "_type": "a",
                 "_attrDef": "p"
             }

@@ -12,13 +12,14 @@ import { PubSubService } from './../service/pubSub.service';
  * import { HeroService } from '../services/hero/hero.service';
  */
 
+
 @Component({
-    selector: 'bh-myteamtask',
-    templateUrl: './myteamtask.template.html'
+    selector: 'bh-monitortable',
+    templateUrl: './monitortable.template.html'
 })
 
-export class myteamtaskComponent implements OnInit {
-  displayedColumnsAs = ['select','agentName', 'assignedUser', 'policyNumber', 'caseId','services'];
+export class monitortableComponent implements OnInit {
+     displayedColumnsAs = ['agentName', 'assignedUser', 'policyNumber', 'caseId','services'];
   	dataSourceAsig;
   @Input('data') data;
   constructor(private pubsub: PubSubService){}
@@ -37,9 +38,5 @@ export class myteamtaskComponent implements OnInit {
   displayService(val){
         this.pubsub.$pub('serviceCall',val);
     }
-		checkevent(event){
-      console.log(event);
-      this.pubsub.$pub('teamEvent',event.checked)
-      
-    }
+
 }

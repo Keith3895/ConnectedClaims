@@ -24,6 +24,10 @@ import { BLogoutService } from '../service/bLogout.service';
 import { searchcardComponent } from '../searchcardComponent/searchcard.component';
 //CORE_REFERENCE_IMPORT-searchfiltercardComponent
 import { searchfiltercardComponent } from '../searchfiltercardComponent/searchfiltercard.component';
+//CORE_REFERENCE_IMPORT-caseoptionsComponent
+import { caseoptionsComponent } from '../caseoptionsComponent/caseoptions.component';
+//CORE_REFERENCE_IMPORT-monitortableComponent
+import { monitortableComponent } from '../monitortableComponent/monitortable.component';
 //CORE_REFERENCE_IMPORT-myteamtaskComponent
 import { myteamtaskComponent } from '../myteamtaskComponent/myteamtask.component';
 //CORE_REFERENCE_IMPORT-unassignedtaskComponent
@@ -93,10 +97,15 @@ export const appDeclarations = [
   TestComponent,
   AlertComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-searchcardComponent
 searchcardComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-searchfiltercardComponent
 searchfiltercardComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-caseoptionsComponent
+caseoptionsComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-monitortableComponent
+monitortableComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-myteamtaskComponent
 myteamtaskComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-unassignedtaskComponent

@@ -27,6 +27,7 @@ export class monitorcComponent implements OnInit {
   systemS: SystemService;
   currentCasesList = [];
   toggleDrop='add_circle';
+  currentTab="";
   constructor(private rs: roleService, private cs: caseserviceService,private pubsub: PubSubService) {
     this.systemS = SystemService.getInstance();
   }
@@ -45,6 +46,8 @@ export class monitorcComponent implements OnInit {
   //	console.log('logging info monitorC', $event);
   //}
   show(tab){
-  	this.pubsub.$pub('showContent', tab);
+    this.pubsub.$pub('showContent', tab);
+    this.pubsub.$pub('showCard', false);
+    this.currentTab=tab;
   }
 }
