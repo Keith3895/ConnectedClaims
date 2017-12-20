@@ -1,0 +1,33 @@
+<div id="angularRoot">
+  <mat-card id="7954fcba-28db-7e78-4730-5bd0f1c28e77">
+    <i class="material-icons" style="float:right;margin:2%;cursor:pointer" (click)="closeCard()">close</i>
+    <div fxLayout="column" fxShow="true" fxHide="false" id="b4e37c03-3dbd-c51d-4dde-05520e46e8d2" fxFill="">
+      <div fxLayout="row" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="e4d9bcca-ec91-7052-484b-8fc35507a995">
+        <div fxLayout="column" fxFlex="48" fxShow="true" fxHide="false" id="8bb11d16-13cc-d8d8-c06f-40ca74b4ee51">
+          <h3 id="f5f65b57-10f5-0c9b-349b-61c8dd398438">Service information</h3>
+          <p id="d4af9354-47c4-31f6-1a40-1ced0eab514b">{{displayInfo.details.status}}</p>
+          <div fxLayout="row" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="1edae5e9-c3b4-0ec4-c7f6-3c8886738ec3">
+            <div fxLayout="column" fxFlex="48" fxShow="true" fxHide="false" id="90c713fe-1019-65c0-092b-e7f633310bf7">
+              <p id="fcbcbb8c-afe1-2b97-be89-adb30726684b"></p>
+            </div>
+            <div fxLayout="column" fxFlex="48" fxShow="true" fxHide="false" id="fc52953c-738f-53cc-858c-01305c15cc95">
+              <p id="b6d65c71-da58-9066-10ed-cd710888da30">Work log</p>
+            </div>
+          </div>
+        </div>
+        <div fxLayout="column" fxFlex="48" fxShow="true" fxHide="false" id="45bcb255-db20-d80a-9dd1-1f29bf840106">
+          <h3 id="09695cb6-349f-f153-e333-b66a0a3fab0b">Service provider details</h3>
+          <mat-form-field>
+            <input matInput="" [(ngModel)]="displayInfo.details.serviceProviderName" placeholder="Service provider name" required id="b98da4fa-006d-60a9-56ae-6dd393d8d99c" disabled>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput="" [(ngModel)]="displayInfo.details.companyName" placeholder="Company" required id="fcbd8f6b-f841-ed58-73f0-b9b8875f6d1c" disabled>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput="" [(ngModel)]="displayInfo.details.contact" placeholder="Contact" required id="7065ba9c-24ca-f773-b211-349a4997f9be" disabled>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

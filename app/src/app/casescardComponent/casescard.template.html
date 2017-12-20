@@ -1,0 +1,50 @@
+<div id="angularRoot">
+  <mat-card id="97f30552-8a3d-e050-46fe-0d6209c12788" (click)="sendInfo($event, &apos;case&apos;, caseInfo)" class="home-card">
+    <div fxLayout="column" class="info-card" fxShow="true" fxHide="false" id="2fda096d-10f4-d9ae-41e9-38bccd9a39e5">
+      <div fxLayout="row" fxFlex="50" fxLayoutWrap="fxLayoutWrap" fxShow="true" fxHide="false" id="9483d6b0-e24d-dd7d-2a64-b2ca64e7f14b">
+        <div fxLayout="column" fxFlex="5" fxLayoutAlign="center center" fxShow="true" fxHide="false" id="9099f33e-3e6a-59a6-a76b-f57ffe0960b6" *ngIf="roleS == adminRole">
+          <mat-checkbox [(ngModel)]="caseInfo.selected" id="db93bbdb-3560-cfdf-2cc3-227b5996cb3f"></mat-checkbox>
+        </div>
+        <div fxLayout="column" fxFlex="29.666" fxLayoutAlign=" center" fxShow="true" fxHide="false" id="3f4546ad-57e0-dc23-7119-c952ee1e0766">
+          <p id="6035a8d3-24d8-b978-4df9-e09b22d4b986">{{caseInfo.case.customerName}}</p>
+        </div>
+        <div fxLayout="column" fxFlex="29.666" fxLayoutAlign=" center" fxShow="true" fxHide="false" id="71dfdd8b-e44d-8941-f3fa-991eefd79d2e">
+          <p id="5d03f2d8-7838-07f6-4f6b-493519bb8c7f">{{caseInfo.case.caseId}}</p>
+        </div>
+        <div fxLayout="column" fxFlex="29.666" fxShow="true" fxHide="false" id="f5e79976-c807-e8cc-12d6-0fc8948c27ca">
+          <p id="c77db132-7677-a876-c2a0-a05de0a44b50">{{caseInfo.case.policyNumber}}</p>
+        </div>
+        <div fxLayout="column" fxFlex="5" fxLayoutAlign="center center" fxShow="true" fxHide="false" id="6f9d687a-efa6-9e9a-73f0-f6f2e7f30764" (click)="expandSelected(index)">
+          <mat-icon id="d3a4c032-fc6c-0bde-1996-dd106f3be9ab" *ngIf="selectedCard">keyboard_arrow_down</mat-icon>
+          <mat-icon id="27aafa8c-568d-2d6a-8304-430b673aafc5" *ngIf="!selectedCard">keyboard_arrow_up</mat-icon>
+        </div>
+      </div>
+      <div fxLayout="column" fxShow="true" fxHide="false" id="68e1a991-158f-eae5-0396-0ed69002ea66" *ngIf="selectedCard">
+        <div fxLayout="row" fxLayoutAlign="center center" fxShow="true" fxHide="false" id="c429cd02-a08c-e6a0-d7d1-d3617c519bfd">
+          <div fxLayout="column" fxFlex="85" fxShow="true" fxHide="false" id="36c46bc0-b164-6fa7-2865-69a0df9d2dc0">
+            <h3 id="68110745-65f2-3fa4-5863-802b374b7be6">{{caseInfo.case.agentName}}</h3>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center" fxShow="true" fxHide="false" id="323d4e17-8bcd-329e-a46b-a87086d6ed2c" *ngFor="let service of caseInfo.services" (click)="sendInfo($event, &apos;service&apos;, service)">
+          <div fxLayout="column" fxFlex="15" fxLayoutAlign="center center" fxShow="true" fxHide="false" id="78abdb24-ac79-b71f-9aa7-2eeafe3a55da">
+            <mat-icon id="d983f838-44c5-c230-27de-b16a43587573">subdirectory_arrow_right</mat-icon>
+          </div>
+          <div fxLayout="column" class="margin-0" fxFlex="30" fxLayoutAlign="center " fxShow="true" fxHide="false" id="e750a83b-fdbc-84ff-a8a5-e34af6e67134">
+            <div fxLayout="row" fxShow="true" fxHide="false" id="8b1644d9-5c02-08b0-bdeb-9e45d4e45c1d">
+              <div fxLayout="column" fxFlex="40" fxLayoutAlign="center center" fxShow="true" fxHide="false" id="34a19104-aea5-bac0-6dcc-341b5a10bcde">
+                <mat-icon id="b67460cf-2f61-54cd-d129-85d91ce1c87e" *ngIf="service.serviceType == &apos;towing&apos;">rv_hookup</mat-icon>
+                <mat-icon id="12f1f9bb-c431-c744-762a-1e39209f1c4b" *ngIf="service.serviceType == &apos;roadside_assist&apos;">person_pin_circle</mat-icon>
+                <img style="height: 24px" id="9a9e77e5-376e-335f-c3db-524b7ab2e731" src="https://goo.gl/mGAohU" *ngIf="service.serviceType == &apos;uber&apos;">
+                <mat-icon id="0eb50d43-cb6d-f92f-0e51-e336ae70b20a" *ngIf="service.serviceType == &apos;car_directions&apos;">directions_car</mat-icon>
+                <mat-icon id="b868c1b0-328b-5cfe-22b8-780aa135446a" *ngIf="service.serviceType == &apos;ambulance&apos;">local_hospital</mat-icon>
+              </div>
+              <div fxLayout="column" fxFlex="40" fxLayoutAlign="center center" fxShow="true" fxHide="false" id="cccff151-bf2e-80d4-c364-d974105cfd2b">
+                <p id="542429b3-7bd1-e94f-971d-464fb416a5c2">{{service.serviceStatus}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

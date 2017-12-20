@@ -1,0 +1,13 @@
+{
+    "appPageId": "56fae80f-f99c-cfa6-db64-2acbd6193c92",
+    "appPageName": "activeACORD",
+    "componentName": "activeacordComponent",
+    "selectorName": "bh-activeacord",
+    "htmlFileName": "activeacord.template.html",
+    "tsFileName": "activeacord.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

@@ -1,0 +1,116 @@
+<div id="angularRoot">
+  <mat-card id="55d2c9f3-ae2d-1c01-358a-0c0bfc95a1bb" fxFill="" style="overflow: auto;" class="home-card">
+    <i class="material-icons" style="float:right;margin:2%;cursor:pointer" (click)="closeCard()">close</i>
+    <form id="80274576-151d-c90e-5b64-9f2a4c6701f9" novalidate="" #f="ngForm">
+      <div fxLayout="column" fxShow="true" fxHide="false" id="909e58fa-2952-bfb2-9296-276318455891" (click)="clicked(infoDisplayForm)">
+        <div fxLayout="column" fxFlex="50" fxShow="true" fxHide="false" id="768394b2-4a0e-5337-0fbf-d9f3e1c6d8aa">
+          <div fxLayout="row" style="    padding: 3% 0px;" fxLayoutAlign="space-between" fxShow="true" fxHide="false" id="68f9ace5-f25c-b588-3749-744bfd4ab852"><span class="h3">Case Information</span>
+            <div fxLayout="row" fxShow="true" fxHide="false" id="4d12aa27-6693-f053-6c3c-751e2173e715">
+              <button mat-mini-fab="" id="1fc3d2d3-d4a1-fee0-944f-ac1b7ab29bd1" color="primary">
+                <i class="material-icons">save</i>
+              </button>
+              <button mat-mini-fab="" id="471862e3-7fb5-0567-62c1-0b6745e19be9" color="primary">
+                <i class="material-icons">assignment_ind</i>
+              </button>
+              <button mat-mini-fab="" id="4545787b-6574-c1d5-a34d-4389d489ec23" color="primary">
+                <i class="material-icons">history</i>
+              </button>
+              <button mat-mini-fab="" id="015fc7b2-ef39-4b19-27a7-91dd6f25133f" color="primary">
+                <i class="material-icons">highlight_off</i>
+              </button>
+            </div>
+          </div>
+          <h3 id="04fed709-221c-24fe-1a08-25fa5609b696" style="text-align:center;">Customer details</h3>
+          <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutGap="20px" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="a8defad5-de41-00ae-5756-c6eff81095bd">
+            <mat-form-field>
+              <input matInput="" [(ngModel)]="displayInfo.case.customer.policyNumber" name="policyNumber" placeholder="Policy Number" required id="e0435c0c-4bed-4a3b-13a8-99f7de823be9" [disabled]="mode != &apos;edit&apos;" fxFlex="100%">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput="" [(ngModel)]="displayInfo.case.customer.contactNumber" name="customerContact" placeholder="Contact" required id="2fc2e553-f97f-231d-7fa6-b2ad35eff43d" [disabled]="mode != &apos;edit&apos;" fxFlex="100">
+            </mat-form-field>
+          </div>
+          <div fxLayout="row" class="oddInput" fxLayoutGap="20px" fxLayoutAlign="start" fxShow="true" fxHide="false" id="a71e946a-8d7c-a215-3beb-a621fa54d7a4">
+            <mat-form-field>
+              <input matInput="" [(ngModel)]="displayInfo.case.customer.customerName" name="customerName" placeholder="Customer Name" required id="d67c9777-8b83-5e20-6ce0-870229f4fa70" [disabled]="mode != &apos;edit&apos;" fxFlex="100">
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxLayout="column" fxFlex="50" fxLayoutAlign=" center end" fxShow="true" fxHide="false" id="3a1af0d1-5d88-e2d0-39dd-009bd859e0a1">
+          <h3 id="137f5194-8bb4-1ad4-d1ee-a064b3280f5f">Case Information</h3>
+          <div fxLayout="row" fxLayoutGap="10%" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="1b8ad7d6-945f-bd19-150c-0bd0986c8c40">
+            <div fxLayout="column" fxFlex="48" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="6ed25c46-37c7-87c4-5cf5-09a0f04f03c5">
+              <mat-form-field>
+                <input matInput="" [(ngModel)]="displayInfo.case.caseId" name="caseId" placeholder="Case Id" required id="16f41afd-7353-7da9-6ab8-d29065e874dd" [disabled]="mode != &apos;edit&apos;">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput="" [(ngModel)]="displayInfo.case.incidentType" name="incidentType" placeholder="Incident Type" required id="2af36be7-6498-337b-c771-c5a3846e4362" [disabled]="mode != &apos;edit&apos;">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput="" [(ngModel)]="displayInfo.case.agentName" name="agentName" placeholder="Assigned User" required id="117a7fdb-8050-45fa-5711-5d132fd496f9" [disabled]="mode != &apos;edit&apos;">
+              </mat-form-field>
+            </div>
+            <div fxLayout="column" fxFlex="48" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="7a17968a-1a7a-2b29-0828-aa4f443330b0">
+              <mat-form-field>
+                <input matInput="" [(ngModel)]="displayInfo.case.priority" name="priority" placeholder="Priority" required id="10ea64f1-a672-933f-db89-5f99d2753e65" [disabled]="mode != &apos;edit&apos;">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput="" [(ngModel)]="displayInfo.case.createdTime" name="createdTime" placeholder="Created Time" required id="57b233f3-7ddf-b276-10a9-ded3c7add813" [disabled]="mode != &apos;edit&apos;">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput="" [(ngModel)]="displayInfo.case.lastModified" name="lastModified" placeholder="Last Modified" required id="6b3afc22-b3c0-a013-c25d-ade6182f009d" [disabled]="mode != &apos;edit&apos;">
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center" fxShow="true" fxHide="false" id="46007fe4-5c9b-d0db-70f4-be2498ccfe59">
+          <div fxLayout="column" fxFlex="80" fxShow="true" fxHide="false" id="d9b52372-5c4a-2f24-abcd-a10838b0c639">
+            <h3 id="5c43177c-bff8-3b15-2403-5a7278fa5b35">Service details</h3>
+            <div fxLayout="row" fxShow="true" fxHide="false" id="2c7745a7-b402-4a99-230e-e7f78178431f">
+              <div fxLayout="column" fxFlex="20" fxShow="true" fxHide="false" id="32276f36-9652-71fb-ff5f-8860ecba87e0">
+                <p id="acff5a38-7640-49ec-fbe7-ce411f851fdc">Ambulance</p>
+              </div>
+              <div fxLayout="column" fxFlex="40" fxShow="true" fxHide="false" id="93b469aa-d081-30bf-9594-f6ea3da7bd66">
+                <bh-serviceselection (selectedOption)="selectedServiceOption(&apos;ambulance&apos;, $event)"></bh-serviceselection>
+              </div>
+            </div>
+            <div fxLayout="row" fxShow="true" fxHide="false" id="12bd366b-b962-c786-e87d-ab55e9f6547a" *ngIf="enableServiceSelection">
+              <div fxLayout="column" fxFlex="20" fxShow="true" fxHide="false" id="91fbb05b-a198-9c48-a66c-8a372fdf5613">
+                <p id="1e2f4513-a6a6-1641-2c49-3c4ebcd94994">Towing</p>
+              </div>
+              <div fxLayout="column" fxFlex="40" fxShow="true" fxHide="false" id="1b74366e-4f46-b9df-60e4-dccf47c780d4">
+                <bh-serviceselection [disableAll]="enableServiceSelection" (selectedOption)="selectedServiceOption(&apos;towing&apos;, $event)"></bh-serviceselection>
+              </div>
+            </div>
+            <div fxLayout="row" fxShow="true" fxHide="false" id="4965e7d3-1627-e84e-df42-6faf7dea6f15" *ngIf="enableServiceSelection">
+              <div fxLayout="column" fxFlex="20" fxShow="true" fxHide="false" id="bae8b683-02b2-195f-cf8a-06b1144197fe">
+                <p id="2bf5be41-629a-28e2-5cbb-f7093d93b12b">Roadside Assist</p>
+              </div>
+              <div fxLayout="column" fxFlex="40" fxShow="true" fxHide="false" id="d1cbf513-80a7-221a-6224-a8177f333f6a">
+                <bh-serviceselection [disableAll]="enableServiceSelection" (selectedOption)="selectedServiceOption(&apos;roadsideAssist&apos;, $event)"></bh-serviceselection>
+              </div>
+            </div>
+            <div fxLayout="row" fxShow="true" fxHide="false" id="0e55b427-4a9a-3e6d-9350-2bee78c43496" *ngIf="enableServiceSelection">
+              <div fxLayout="column" fxFlex="20" fxShow="true" fxHide="false" id="121c9b5d-bba0-c539-aedf-01477e2bc01e">
+                <p id="c52577d0-a2fb-93e1-2ae2-c42a8e169ca8">Taxi</p>
+              </div>
+              <div fxLayout="column" fxFlex="40" fxShow="true" fxHide="false" id="326f5db5-7b35-1712-3f6b-485b7b1ad899">
+                <bh-serviceselection [disableAll]="enableServiceSelection" (selectedOption)="selectedServiceOption(&apos;taxi&apos;, $event)"></bh-serviceselection>
+              </div>
+            </div>
+            <div fxLayout="row" fxShow="true" fxHide="false" id="891c549f-195f-83a8-5119-8998503d84a5" *ngIf="enableServiceSelection">
+              <div fxLayout="column" fxFlex="20" fxShow="true" fxHide="false" id="f3b3d57e-09f9-c595-9570-4248020cda06">
+                <p id="49bfaf9b-8689-a8c5-9a07-cd5b6d9d6f43">Car Hire</p>
+              </div>
+              <div fxLayout="column" fxFlex="40" fxShow="true" fxHide="false" id="048c0744-b668-c57a-dc56-f7017be0e798">
+                <bh-serviceselection [disableAll]="enableServiceSelection" (selectedOption)="selectedServiceOption(&apos;carHire&apos;, $event)"></bh-serviceselection>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div *ngFor="let serv of displayInfo.services">
+      <bh-serviceinfodisplay [displayInfo]="serv"></bh-serviceinfodisplay>
+    </div>
+  </mat-card>
+</div>

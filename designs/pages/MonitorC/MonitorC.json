@@ -1,0 +1,13 @@
+{
+    "appPageId": "841255ad-4f7f-aa95-feb9-cc77e52b762d",
+    "appPageName": "MonitorC",
+    "componentName": "monitorcComponent",
+    "selectorName": "bh-monitorc",
+    "htmlFileName": "monitorc.template.html",
+    "tsFileName": "monitorc.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

@@ -1,0 +1,7 @@
+<div id="angularRoot">
+  <div fxLayout="column" fxShow="true" fxHide="false" id="8fb57b34-f7a9-5c17-8cc6-f09dac5d9209" (click)="clicked()">
+    <div fxLayout="row" fxShow="true" fxHide="false" id="aeb80b04-35d3-76ef-f418-b48696605d4b" *ngFor="let case of casesList; let i = index;" (click)="selected($event, i)">
+      <bh-casescard [caseInfo]="case" [index]="i" [selectedCard]="selectedIndex == i"></bh-casescard>
+    </div>
+  </div>
+</div>

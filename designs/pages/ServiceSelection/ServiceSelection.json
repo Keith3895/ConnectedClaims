@@ -1,0 +1,13 @@
+{
+    "appPageId": "debdbb26-90f0-5842-5e42-0d58021bf36a",
+    "appPageName": "ServiceSelection",
+    "componentName": "serviceselectionComponent",
+    "selectorName": "bh-serviceselection",
+    "htmlFileName": "serviceselection.template.html",
+    "tsFileName": "serviceselection.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

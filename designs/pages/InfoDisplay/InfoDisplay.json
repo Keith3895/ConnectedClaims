@@ -1,0 +1,13 @@
+{
+    "appPageId": "03d4f862-b129-e054-a046-073c0b5c9ce3",
+    "appPageName": "InfoDisplay",
+    "componentName": "infodisplayComponent",
+    "selectorName": "bh-infodisplay",
+    "htmlFileName": "infodisplay.template.html",
+    "tsFileName": "infodisplay.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

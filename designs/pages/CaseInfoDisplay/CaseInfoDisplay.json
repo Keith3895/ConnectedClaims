@@ -1,0 +1,13 @@
+{
+    "appPageId": "a84fcc70-9abe-30ab-0f43-2137108864b8",
+    "appPageName": "CaseInfoDisplay",
+    "componentName": "caseinfodisplayComponent",
+    "selectorName": "bh-caseinfodisplay",
+    "htmlFileName": "caseinfodisplay.template.html",
+    "tsFileName": "caseinfodisplay.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

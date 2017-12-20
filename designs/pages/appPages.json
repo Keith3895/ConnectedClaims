@@ -1,0 +1,67 @@
+{
+    "886b9d9a-715d-bae1-d420-6a5d6da6fad2": {
+        "appPageName": "Login",
+        "componentName": "loginComponent",
+        "isEntry": false
+    },
+    "b9e72d07-a8ba-dfe8-83ac-c637e11838fc": {
+        "appPageName": "Home",
+        "componentName": "homeComponent",
+        "isEntry": false
+    },
+    "841255ad-4f7f-aa95-feb9-cc77e52b762d": {
+        "appPageName": "MonitorC",
+        "componentName": "monitorcComponent",
+        "isEntry": false
+    },
+    "90cd7993-c94b-3b65-8803-35adda5c8e98": {
+        "appPageName": "UnattendedC",
+        "componentName": "unattendedcComponent",
+        "isEntry": false
+    },
+    "19f78dda-e96b-2642-058b-e5eb60e95090": {
+        "appPageName": "ActiveC",
+        "componentName": "activecComponent",
+        "isEntry": false
+    },
+    "d60d799b-5623-95c8-bd52-f92acfb97326": {
+        "appPageName": "HomeInbox",
+        "componentName": "homeinboxComponent",
+        "isEntry": false
+    },
+    "3b9c1e88-0160-e690-26b0-1d923818d19c": {
+        "appPageName": "CasesCard",
+        "componentName": "casescardComponent",
+        "isEntry": false
+    },
+    "fa72efdd-1d90-6b98-bdac-e1f630fda503": {
+        "appPageName": "CasesList",
+        "componentName": "caseslistComponent",
+        "isEntry": false
+    },
+    "a84fcc70-9abe-30ab-0f43-2137108864b8": {
+        "appPageName": "CaseInfoDisplay",
+        "componentName": "caseinfodisplayComponent",
+        "isEntry": false
+    },
+    "d35657b9-9ff3-ad9a-5b3e-8b38b7596dcd": {
+        "appPageName": "ServiceInfoDisplay",
+        "componentName": "serviceinfodisplayComponent",
+        "isEntry": false
+    },
+    "03d4f862-b129-e054-a046-073c0b5c9ce3": {
+        "appPageName": "InfoDisplay",
+        "componentName": "infodisplayComponent",
+        "isEntry": false
+    },
+    "debdbb26-90f0-5842-5e42-0d58021bf36a": {
+        "appPageName": "ServiceSelection",
+        "componentName": "serviceselectionComponent",
+        "isEntry": false
+    },
+    "56fae80f-f99c-cfa6-db64-2acbd6193c92": {
+        "appPageName": "activeACORD",
+        "componentName": "activeacordComponent",
+        "isEntry": false
+    }
+}

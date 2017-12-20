@@ -1,0 +1,204 @@
+{
+    "632f1117-4553-6032-47de-4c2ad027dfa9": {
+        "name": "NG-sidenav-container",
+        "guid": "632f1117-4553-6032-47de-4c2ad027dfa9",
+        "template": "<mat-sidenav-container %style% %bCustomProps% %class%></mat-sidenav-container>",
+        "designerTemplate": "<div class=\"ad-sidenav-container ad-charts-border drop bkeeper-container-label\"><i style=\"font-size: 20px;position:absolute !important;top:0%;left:100px;\" class=\"material-icons validate icons-events\">content_paste</i></div>",
+        "paletteTemplate": "Sidenav Container",
+        "templateUrl": "https://material.angular.io/components/sidenav/overview",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fullscreen",
+                "_value": "fullscreen",
+                "_type": "a",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 6
+    },
+    "f3ab969a-fe55-dfd9-2df8-fa065a04ccac": {
+        "name": "NG-TabGroup",
+        "guid": "f3ab969a-fe55-dfd9-2df8-fa065a04ccac",
+        "template": "<mat-tab-group  %style% %class% %bCustomProps%></mat-tab-group>",
+        "designerTemplate": "<div><div class=\"ad-bk-tabs-label\">TAB GROUP</div><div class=\"ad-bk-tabs-label\">*</div><div class=\"ad-toolbar-border drop  ad-drop-bk-label empty-label\"></div></div>",
+        "paletteTemplate": "Tab Group",
+        "templateUrl": "https://material.angular.io/components/tabs/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "home-tabgroup",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 6
+    },
+    "67ff98d8-6507-dc69-7399-ee9c92ce3b78": {
+        "name": "NG-tab",
+        "guid": "67ff98d8-6507-dc69-7399-ee9c92ce3b78",
+        "template": "<mat-tab %style% %class% %label% %bCustomProps%></mat-tab>",
+        "designerTemplate": "<div class=\"ad-toolbar-border drop ad-drop-bk-label ad-bk-tab-label\"></div>",
+        "paletteTemplate": "Tab",
+        "templateUrl": "https://material.angular.io/components/tabs/overview",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "label",
+                "_value": "Inbox",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 6
+    },
+    "2d4cbcf9-1db7-a302-2750-4052b3056a24": {
+        "name": "NG-tab",
+        "guid": "2d4cbcf9-1db7-a302-2750-4052b3056a24",
+        "template": "<mat-tab %style% %class% %label% %bCustomProps%></mat-tab>",
+        "designerTemplate": "<div class=\"ad-toolbar-border drop ad-drop-bk-label ad-bk-tab-label\"></div>",
+        "paletteTemplate": "Tab",
+        "templateUrl": "https://material.angular.io/components/tabs/overview",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "label",
+                "_value": "Dashboard",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 6
+    },
+    "7b56f78c-7a40-1d10-0522-dc6977960aad": {
+        "name": "NG-tab",
+        "guid": "7b56f78c-7a40-1d10-0522-dc6977960aad",
+        "template": "<mat-tab %style% %class% %label% %bCustomProps%></mat-tab>",
+        "designerTemplate": "<div class=\"ad-toolbar-border drop ad-drop-bk-label ad-bk-tab-label\"></div>",
+        "paletteTemplate": "Tab",
+        "templateUrl": "https://material.angular.io/components/tabs/overview",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "label",
+                "_value": "Reports",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 6
+    },
+    "e8ce878b-057d-8bd7-c8b8-a9cc75738ac3": {
+        "name": "HTML",
+        "guid": "e8ce878b-057d-8bd7-c8b8-a9cc75738ac3",
+        "template": "%html%",
+        "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
+        "paletteTemplate": "HTML",
+        "templateUrl": "",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "html",
+                "_value": "<bh-homeinbox [role]=\"role\"></bh-homeinbox>",
+                "_type": "a",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 7
+    },
+    "c974973d-b94c-0773-8ee4-4f8d413249fb": {
+        "name": "HTML",
+        "guid": "c974973d-b94c-0773-8ee4-4f8d413249fb",
+        "template": "%html%",
+        "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
+        "paletteTemplate": "HTML",
+        "templateUrl": "",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "html",
+                "_value": "<input type=\"text\" class=\"search\" placeholder=\"&#61447;\">\n",
+                "_type": "a",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 7
+    }
+}

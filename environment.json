@@ -1,0 +1,46 @@
+{
+    "dev": {
+        "envId": "628ac8d9-6e7e-312b-c7e5-dbe392fb61b3",
+        "name": "dev",
+        "properties": {
+            "production": false,
+            "baseUrl": "http://localhost:3000/bhive-art/",
+            "tenantName": "Telesure",
+            "appName": "Eboard",
+            "namespace": "com.neutrinos.Telesure.Eboard",
+            "isNotificationEnabled": false,
+            "googleMapKey": "",
+            "firebaseSenderId": "FIREBASE_SENDER_ID",
+            "firebaseAuthKey": "FIREBASE_AUTH_KEY",
+            "authDomain": "FIREBASE_AUTH_DOMAIN",
+            "databaseURL": "FIREBASE_DATABASE_URL",
+            "storageBucket": "FIREBASE_STORAGE_BUCKET",
+            "messagingSenderId": "FIREBASE_SENDER_ID",
+            "appDataSource": "APP_DATA_SOURCE",
+            "appAuthenticationStrategy": "basicAuth",
+            "user_role": "agent",
+            "admin_role": "admin"
+        }
+    },
+    "prod": {
+        "envId": "03d67765-378e-37d0-643a-e20ff6fa636c",
+        "name": "prod",
+        "properties": {
+            "production": true,
+            "baseUrl": "http://localhost:3000/bhive-art/",
+            "tenantName": "Telesure",
+            "appName": "Eboard",
+            "namespace": "com.neutrinos.Telesure.Eboard",
+            "isNotificationEnabled": false,
+            "googleMapKey": "",
+            "firebaseSenderId": "FIREBASE_SENDER_ID",
+            "firebaseAuthKey": "FIREBASE_AUTH_KEY",
+            "authDomain": "FIREBASE_AUTH_DOMAIN",
+            "databaseURL": "FIREBASE_DATABASE_URL",
+            "storageBucket": "FIREBASE_STORAGE_BUCKET",
+            "messagingSenderId": "FIREBASE_SENDER_ID",
+            "appDataSource": "APP_DATA_SOURCE",
+            "appAuthenticationStrategy": "basicAuth"
+        }
+    }
+}

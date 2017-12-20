@@ -1,0 +1,13 @@
+{
+    "appPageId": "3b9c1e88-0160-e690-26b0-1d923818d19c",
+    "appPageName": "CasesCard",
+    "componentName": "casescardComponent",
+    "selectorName": "bh-casescard",
+    "htmlFileName": "casescard.template.html",
+    "tsFileName": "casescard.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "appPageId": "19f78dda-e96b-2642-058b-e5eb60e95090",
+    "appPageName": "ActiveC",
+    "componentName": "activecComponent",
+    "selectorName": "bh-activec",
+    "htmlFileName": "activec.template.html",
+    "tsFileName": "activec.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

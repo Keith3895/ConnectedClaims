@@ -1,0 +1,13 @@
+{
+    "appPageId": "fa72efdd-1d90-6b98-bdac-e1f630fda503",
+    "appPageName": "CasesList",
+    "componentName": "caseslistComponent",
+    "selectorName": "bh-caseslist",
+    "htmlFileName": "caseslist.template.html",
+    "tsFileName": "caseslist.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

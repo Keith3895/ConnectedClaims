@@ -1,0 +1,13 @@
+{
+    "appPageId": "d35657b9-9ff3-ad9a-5b3e-8b38b7596dcd",
+    "appPageName": "ServiceInfoDisplay",
+    "componentName": "serviceinfodisplayComponent",
+    "selectorName": "bh-serviceinfodisplay",
+    "htmlFileName": "serviceinfodisplay.template.html",
+    "tsFileName": "serviceinfodisplay.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

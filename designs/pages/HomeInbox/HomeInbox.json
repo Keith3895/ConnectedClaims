@@ -1,0 +1,13 @@
+{
+    "appPageId": "d60d799b-5623-95c8-bd52-f92acfb97326",
+    "appPageName": "HomeInbox",
+    "componentName": "homeinboxComponent",
+    "selectorName": "bh-homeinbox",
+    "htmlFileName": "homeinbox.template.html",
+    "tsFileName": "homeinbox.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

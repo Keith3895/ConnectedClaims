@@ -1,0 +1,40 @@
+<div id="angularRoot">
+  <mat-card id="1ebfc1d6-9efa-831e-e07b-e34fe60353c1" fxFill="" class="home-card">
+    <div fxLayout="column" fxShow="true" fxHide="false" id="b74201e5-a58d-6367-9acc-7209674f34c4" fxFill="">
+      <div fxLayout="row" fxFlex="10" fxShow="true" fxHide="false" id="656c63d2-3329-7e67-91e4-95cf4f914052" *ngIf="roleS == adminRoleE">
+        <div fxLayout="column" fxShow="true" fxHide="false" id="4c44dd8d-a50b-a8e4-beb1-714ec467bf49">
+          <button mat-raised-button="" id="94dffd79-3c4d-36f3-5e13-aa5276751683" *ngIf="mode != &apos;edit&apos;" (click)="changeMode(&apos;edit&apos;)">Edit</button>
+          <button mat-raised-button="" id="c602873a-f6db-5f01-157b-627d8abbd835" *ngIf="mode != &apos;save&apos;" (click)="changeMode(&apos;save&apos;);">Save</button>
+        </div>
+        <div fxLayout="column" fxShow="true" fxHide="false" id="8769d435-8c80-041e-62b7-74ef32a3a90d">
+          <button mat-raised-button="" id="5297b6af-4b77-bfec-fd7d-4ac9a3d64bc5" *ngIf="mode !== &apos;edit&apos;">Reassign</button>
+        </div>
+        <div fxLayout="column" fxShow="true" fxHide="false" id="30d28b8a-950a-ba61-e6b3-8225d7910374">
+          <button mat-raised-button="" id="17c000cd-a4e5-40a0-ccdd-f171c431b2c9" *ngIf="mode !== &apos;edit&apos;">Reopen</button>
+        </div>
+        <div fxLayout="column" fxShow="true" fxHide="false" id="64857cbe-607b-ba5c-564c-90a6a61c4cf3">
+          <button mat-raised-button="" id="0fa3ab89-f6d6-c68c-807a-52a07f4f02ea" *ngIf="mode !== &apos;edit&apos;">Close</button>
+        </div>
+      </div>
+      <div fxLayout="row" fxFlex="10" fxShow="true" fxHide="false" id="4e3b0230-38dc-8a60-ab3d-9e81802005a3" *ngIf="roleS == userRoleE">
+        <div fxLayout="column" fxShow="true" fxHide="false" id="4458a305-54c1-e564-542b-55001da28d6f">
+          <button mat-raised-button="" id="b0f075b1-73d7-d943-cb5c-d0a9b2cb3073" *ngIf="mode != &apos;edit&apos;" (click)="changeMode(&apos;edit&apos;)">Edit</button>
+          <button mat-raised-button="" id="ecfe36dc-8e68-4069-c857-66094323a3a7" *ngIf="mode != &apos;save&apos;" (click)="changeMode(&apos;save&apos;);">Save</button>
+        </div>
+        <div fxLayout="column" fxShow="true" fxHide="false" id="e8c8704d-ed18-b128-feda-cfd31a02af8b">
+          <button mat-raised-button="" id="a34d263e-7bc6-0bbb-bd8a-9fe8ab38617e" *ngIf="mode !== &apos;edit&apos;">Escalate</button>
+        </div>
+        <div fxLayout="column" fxShow="true" fxHide="false" id="a4edab54-9df2-0dff-0480-b2110e8f6324">
+          <button mat-raised-button="" id="dcb0340b-5066-029b-ef20-c0c14e131c60" *ngIf="mode !== &apos;edit&apos;">Monitor</button>
+        </div>
+        <div fxLayout="column" fxShow="true" fxHide="false" id="95675be6-bb5a-efd4-5670-1b0670808c9f">
+          <button mat-raised-button="" id="c6ac1815-b6ae-b3f9-e657-4257a88abf25" *ngIf="mode !== &apos;edit&apos;">Close</button>
+        </div>
+      </div>
+      <div fxLayout="row" fxFlex="90" fxShow="true" fxHide="false" id="4bd5eac9-156b-f7d9-3c07-000841a0e9e0">
+        <bh-serviceinfodisplay *ngIf="display === &apos;service&apos;" [displayInfo]="displayInfo" [mode]="mode"></bh-serviceinfodisplay>
+        <bh-caseinfodisplay *ngIf="display === &apos;case&apos;" [displayInfo]="displayInfo" [mode]="mode"></bh-caseinfodisplay>
+      </div>
+    </div>
+  </mat-card>
+</div>

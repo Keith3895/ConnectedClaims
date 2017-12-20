@@ -1,0 +1,10 @@
+<div id="angularRoot">
+  <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center" fxShow="true" fxHide="false" id="f21e848a-d483-606f-5bb6-b688c2ef1eb0">
+    <div fxLayout="column" fxFlex="30" fxShow="true" fxHide="false" id="739cfb13-079f-a5b5-90b5-ad0fc2c3b480">
+      <button mat-fab="" color="primary" id="0652f4f0-f750-b29e-469d-c6e9c9c35ae0" [disabled]="disableYes" [ngClass]="{&apos;selected-button&apos;: option == &apos;yes&apos;, &apos;not-selected-button&apos;: option != &apos;yes&apos;}" (click)="selected(&apos;yes&apos;)">Yes</button>
+    </div>
+    <div fxLayout="column" fxFlex="30" fxShow="true" fxHide="false" id="b9c459e7-1f26-4c55-fa99-657ddd7cbfba">
+      <button mat-fab="" color="primary" id="4ed32ea3-939d-0fd6-aadc-5b9477469324" [disabled]="disableNo" [ngClass]="{&apos;selected-button&apos;: option == &apos;no&apos;, &apos;not-selected-button&apos;: option != &apos;no&apos;}" (click)="selected(&apos;no&apos;)">No</button>
+    </div>
+  </div>
+</div>

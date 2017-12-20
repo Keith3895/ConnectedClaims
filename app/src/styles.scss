@@ -1,0 +1,120 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#angularRoot {
+    height: 100%;
+}
+
+.home-tabgroup {
+    height: calc(100vh - 64px);
+    max-height: calc(100vh - 64px);
+}
+
+.home-tabgroup>.mat-tab-body-wrapper {
+    height: calc(100vh - 113px) !important;
+}
+
+.monitor-tabgroup>.mat-tab-body-wrapper {
+    height: 100%;
+}
+
+.home-card {
+    padding: 0px !important;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+bh-infodisplay,
+bh-caseinfodisplay,
+bh-serviceinfodisplay,
+bh-casescard {
+    width: 100%;
+}
+
+.margin-0>p {
+    margin: 0;
+}
+
+.info-card {
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+
+.info-card> :first-child {
+    background-color: grey;
+    color: white;
+}
+
+.selected-button {
+    background-color: green !important;
+}
+
+.not-selected-button {
+    background-color: red !important;
+}
+.search{
+	position: absolute;
+    top: 10px;
+    right: 25px;
+    border-radius: 25px;
+    border: 1px solid;
+    padding: 5px;
+  	z-index:9999;
+}
+.search::before
+{
+  font-family: 'FontAwesome';
+  color:red;
+  position: relative;
+  left: -5px;
+  content: "&#xE8B6;";    
+}
+.button-nav{
+	padding:5%;
+  margin:0px;
+  cursor: pointer;
+}
+
+.contentShown{
+	max-width:100% !important;
+}
+.mat-cell, .mat-header-cell{
+  text-align:center;
+}
+.mat-fab{
+	height:40px;
+  width:40px;
+}
+.anchorFake{
+  color:#673ab7;
+  cursor:pointer;
+}
+.oddInput{
+	padding-left: 20px !important;
+}
+.h3{
+  font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px 0px;
+    float: left;
+}
+.caseInfoButton{
+	border-radius:30px;
+  	border:1px solid;
+}
+
+.mat-checkbox-layout{
+  vertical-align:baseline !important;
+}
