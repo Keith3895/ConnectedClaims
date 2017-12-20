@@ -151,3 +151,11 @@ height:0px;
 .activeDrop{
 	height:130px !important;
 }
+span.mat-content{
+  text-align: center;
+    overflow: unset;
+}
+
+mat-panel-title.mat-expansion-panel-header-title{
+    padding-top : 12px;
+}

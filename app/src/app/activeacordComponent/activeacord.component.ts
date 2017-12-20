@@ -23,6 +23,7 @@ export class activeacordComponent implements OnInit {
     displayedColumnsAs = ['select','agentName', 'assignedUser', 'policyNumber', 'caseId','services'];
     dataSourceUnas;
   	dataSourceAsig;
+  	iconFlag = false;
     constructor(private pubsub: PubSubService){}
     ngOnInit() {
         let unassign = this.caseArr.filter(el=>{
@@ -48,4 +49,13 @@ export class activeacordComponent implements OnInit {
     displayService(val){
         this.pubsub.$pub('serviceCall',val);
     }
+  	checkevent(event) {
+      if(event.checked){
+        this.iconFlag = true;
+      }
+      else{
+        this.iconFlag = false;
+      }
+    }
+  	
 }
