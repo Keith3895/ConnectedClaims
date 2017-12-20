@@ -19,15 +19,21 @@ import { PubSubService } from './../service/pubSub.service';
 export class activeacordComponent implements OnInit {
     @Input('caseArr') caseArr;
     
-    
-  	iconFlag = false;
+    iconFlag = false;
+		teamFlag = false;
     constructor(private pubsub: PubSubService){}
     ngOnInit() {
-     this.pubsub.$sub('checkevent').subscribe(data =>{ if(data)
-       this.iconFlag = data;
-                                                      else
-                                                        this.iconFlag = data;
+      	 this.pubsub.$sub('checkevent').subscribe(data =>{ 
+           console.log(data);
+           this.iconFlag = data
+           
                                                      });
+       this.pubsub.$sub('teamEvent').subscribe(data =>{ if(data)
+       													this.teamFlag = data;
+                                                      else
+                                                        this.teamFlag = data;
+                                                     });
+   
     }
     
 	
