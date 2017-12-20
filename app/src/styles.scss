@@ -165,15 +165,16 @@ height:0px;
 .activeDrop{
 	height:130px !important;
 }
-span.mat-content{
-  text-align: center;
-    overflow: unset;
-}
 
-mat-panel-title.mat-expansion-panel-header-title{
-    padding-top : 12px;
-}
 .mat-column-services .material-icons{
 	font-size:16px !important;
  	cursor:pointer;
+}
+
+mat-panel-title{
+  padding-top: 14px;
+}
+.contentShown .panel-title.mat-expansion-panel-header-title{
+  max-width : 75% !important;
+  margin-top:14px;
 }
