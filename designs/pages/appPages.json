@@ -73,5 +73,10 @@
         "appPageName": "MyTeamTask",
         "componentName": "myteamtaskComponent",
         "isEntry": false
+    },
+    "23eef048-2fed-2a0d-1873-163f1eaba5c6": {
+        "appPageName": "SearchFilterCard",
+        "componentName": "searchfiltercardComponent",
+        "isEntry": false
     }
 }
