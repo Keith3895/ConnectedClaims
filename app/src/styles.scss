@@ -64,23 +64,7 @@ bh-casescard {
 .not-selected-button {
     background-color: red !important;
 }
-.search{
-	position: absolute;
-    top: 10px;
-    right: 25px;
-    border-radius: 25px;
-    border: 1px solid;
-    padding: 5px;
-  	z-index:9999;
-}
-.search::before
-{
-  font-family: 'FontAwesome';
-  color:red;
-  position: relative;
-  left: -5px;
-  content: "&#xE8B6;";    
-}
+
 .button-nav{
 	padding:5%;
   margin:0px;
@@ -92,6 +76,7 @@ bh-casescard {
 }
 .mat-cell, .mat-header-cell{
   text-align:center;
+  overflow:unset !important;
 }
 .mat-fab{
 	height:40px;
@@ -115,6 +100,31 @@ bh-casescard {
   	border:1px solid;
 }
 
-.mat-checkbox-layout{
-  vertical-align:baseline !important;
+
+.search{   
+  padding: 5px;
+    padding-right: 30px;
+  	
+}
+.rightnav{
+	position: absolute;
+    top: 10px;
+    right: 25px;
+  	z-index:9999;
+}
+
+.searchContainer {
+    display: flex;
+  	float:left;
+}
+
+.searchInput {
+    flex: 1;
+}
+.searchdrop{
+	margin-left:-41px !important;
+}
+.searchSubmit{
+	background:#4387fd;
+  	border:1px #4387fd;
 }

@@ -1,6 +1,22 @@
 <div id="angularRoot">
   <mat-sidenav-container id="632f1117-4553-6032-47de-4c2ad027dfa9" fullscreen="">
-    <input type="text" class="search" placeholder="&#xF007;">
+    <div class="rightnav">
+
+      <div class="searchContainer">
+        <input type="text" class="searchInput search">
+
+        <button mat-icon-button="" class="searchdrop">
+          <mat-icon aria-label="Example icon-button with a heart icon">
+            <i class="material-icons">keyboard_arrow_down</i>
+          </mat-icon>
+        </button>
+        <button type="submit " class="searchSubmit">
+          <i class="material-icons">search</i>
+        </button>
+      </div>
+      <button mat-button="">Click me!</button>
+    </div>
+
     <mat-tab-group class="home-tabgroup" id="f3ab969a-fe55-dfd9-2df8-fa065a04ccac">
       <mat-tab label="Inbox" id="67ff98d8-6507-dc69-7399-ee9c92ce3b78">
         <bh-homeinbox [role]="role"></bh-homeinbox>
