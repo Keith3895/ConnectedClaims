@@ -5,6 +5,18 @@
         <mat-panel-title fxFlex="60%">
           Unassigned Task
         </mat-panel-title>
+        <button mat-mini-fab="" *ngIf="iconFlag">
+          <span matTooltip="Save"><i class="material-icons">save</i></span>
+        </button>
+        <button mat-mini-fab="" *ngIf="iconFlag">
+          <span matTooltip="Reassign"><i class="material-icons">assignment_ind</i></span>
+        </button>
+        <button mat-mini-fab="" *ngIf="iconFlag">
+          <span matTooltip="Reopen"><i class="material-icons">history</i></span>
+        </button>
+        <button mat-mini-fab="" *ngIf="iconFlag">
+          <span matTooltip="Close"><i class="material-icons">highlight_off</i></span>
+        </button>
       </mat-expansion-panel-header>
 
 
@@ -18,7 +30,7 @@
           <ng-container matColumnDef="agentName">
             <mat-header-cell *matHeaderCellDef=""> Assign </mat-header-cell>
             <mat-cell *matCellDef="let element">
-              <mat-checkbox></mat-checkbox>
+              <mat-checkbox (change)="checkevent($event)"></mat-checkbox>
             </mat-cell>
           </ng-container>
 
