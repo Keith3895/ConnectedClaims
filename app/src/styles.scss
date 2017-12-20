@@ -66,10 +66,11 @@ bh-casescard {
 }
 
 .button-nav{
-	padding:5%;
-  padding-bottom:0px;
-  margin:0px;
-  cursor: pointer;
+	    padding: 5%;
+    padding-bottom: 5px;
+    margin: 0px;
+    cursor: pointer;
+    border-bottom: 1px solid;
 }
 
 .contentShown{
@@ -178,3 +179,13 @@ mat-panel-title{
   max-width : 75% !important;
   margin-top:14px;
 }
+.dropdownCust .button-nav{
+	border:none;
+}
+.button-nav.active span{
+	color: #673ab7;
+    font-weight: 700;
+}
+.button-nav.active{
+	border-bottom:3px solid #673ab7;
+}   

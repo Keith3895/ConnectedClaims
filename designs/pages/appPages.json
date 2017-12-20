@@ -74,9 +74,15 @@
         "componentName": "myteamtaskComponent",
         "isEntry": false
     },
+
     "7b419d18-b591-a40a-7e6a-c35bed2986e1": {
         "appPageName": "caseOptions",
         "componentName": "caseoptionsComponent",
+
+    "00b9d791-4e45-24ef-e050-cae2d4ad2686": {
+        "appPageName": "MonitorTable",
+        "componentName": "monitortableComponent",
+
         "isEntry": false
     }
 }
