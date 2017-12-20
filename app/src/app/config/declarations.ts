@@ -20,6 +20,10 @@ import { APP_INITIALIZER } from '@angular/core';
 import { BLogoutService } from '../service/bLogout.service';
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-myteamtaskComponent
+import { myteamtaskComponent } from '../myteamtaskComponent/myteamtask.component';
+//CORE_REFERENCE_IMPORT-unassignedtaskComponent
+import { unassignedtaskComponent } from '../unassignedtaskComponent/-unassignedtask.component';
 //CORE_REFERENCE_IMPORT-activeacordComponent
 import { activeacordComponent } from '../activeacordComponent/activeacord.component';
 //CORE_REFERENCE_IMPORT-serviceselectionComponent
@@ -85,6 +89,10 @@ export const appDeclarations = [
   TestComponent,
   AlertComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-myteamtaskComponent
+myteamtaskComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-unassignedtaskComponent
+unassignedtaskComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-activeacordComponent
 activeacordComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-serviceselectionComponent

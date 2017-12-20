@@ -2,48 +2,27 @@
   <mat-accordion>
     <mat-expansion-panel>
       <mat-expansion-panel-header>
-        <mat-panel-title fxFlex="60%">
+        <mat-panel-title fxFlex="75%">
           Unassigned Task
         </mat-panel-title>
+        <span fxFlexAlign="center end">
+            <button color="primary" mat-mini-fab="" *ngIf="iconFlag">
+                <span matTooltip="Save"><i class="material-icons">save</i></span>
+        </button>
+        <button color="primary" mat-mini-fab="" *ngIf="iconFlag">
+          <span matTooltip="Reassign"><i class="material-icons">assignment_ind</i></span>
+        </button>
+        <button color="primary" mat-mini-fab="" *ngIf="iconFlag">
+          <span matTooltip="Reopen"><i class="material-icons">history</i></span>
+        </button>
+        <button color="primary" mat-mini-fab="" *ngIf="iconFlag">
+          <span matTooltip="Close"><i class="material-icons">highlight_off</i></span>
+        </button>
+        </span>
+
       </mat-expansion-panel-header>
 
-
-      <div class="example-container mat-elevation-z8">
-        <mat-table #table="" [dataSource]="dataSourceUnas">
-
-          <!--- Note that these columns can be defined in any order.
-                  The actual rendered columns are set as a property on the row definition" -->
-
-          <!-- Position Column -->
-          <ng-container matColumnDef="agentName">
-            <mat-header-cell *matHeaderCellDef=""> Assign </mat-header-cell>
-            <mat-cell *matCellDef="let element">
-              <mat-checkbox></mat-checkbox>
-            </mat-cell>
-          </ng-container>
-
-          <!-- Name Column -->
-          <ng-container matColumnDef="assignedUser">
-            <mat-header-cell *matHeaderCellDef=""> Customer Name </mat-header-cell>
-            <mat-cell *matCellDef="let element" (click)="unasigned(element.case)"> {{element.case.assignedUser}} </mat-cell>
-          </ng-container>
-
-          <!-- Weight Column -->
-          <ng-container matColumnDef="policyNumber">
-            <mat-header-cell *matHeaderCellDef=""> Policy No </mat-header-cell>
-            <mat-cell *matCellDef="let element" (click)="unasigned(element.case)"> {{element.case.policyNumber}} </mat-cell>
-          </ng-container>
-
-          <!-- Symbol Column -->
-          <ng-container matColumnDef="caseId">
-            <mat-header-cell *matHeaderCellDef=""> Case Id </mat-header-cell>
-            <mat-cell *matCellDef="let element" (click)="unasigned(element.case)"> {{element.case.caseId}} </mat-cell>
-          </ng-container>
-
-          <mat-header-row *matHeaderRowDef="displayedColumnsUn"></mat-header-row>
-          <mat-row *matRowDef="let row; columns: displayedColumnsUn;"></mat-row>
-        </mat-table>
-      </div>
+      <bh--unassignedtask [dataSourceUnas]="dataSourceUnas"></bh--unassignedtask>
 
     </mat-expansion-panel>
     <mat-expansion-panel>
@@ -94,14 +73,20 @@
           <ng-container matColumnDef="services">
             <mat-header-cell *matHeaderCellDef=""> Services </mat-header-cell>
             <mat-cell *matCellDef="let element">
-              <button mat-icon-button="" [matMenuTriggerFor]="menu">
-                <mat-icon>more_vert</mat-icon>
-              </button>
-              <mat-menu #menu="matMenu">
-                <button mat-menu-item="" *ngFor="let service of element.services" (click)="displayService(service)">
-                  <span>{{service.serviceType}}</span>
-                </button>
-              </mat-menu>
+              <span *ngFor="let service of element.services">
+                  <i class="material-icons" *ngIf="service.serviceType==&apos;ambulance&apos;" (click)="displayService(service)">local_hospital</i>
+                  <i class="material-icons" *ngIf="service.serviceType==&apos;towing&apos;" (click)="displayService(service)">rv_hookup</i>
+                  <i class="material-icons" *ngIf="service.serviceType==&apos;roadside assist&apos;" (click)="displayService(service)">phone</i>
+                  <i class="material-icons" *ngIf="service.serviceType==&apos;taxi&apos;" (click)="displayService(service)">local_taxi</i>
+                  <i class="material-icons" *ngIf="service.serviceType==&apos;car hire&apos;" (click)="displayService(service)">directions</i>
+                </span>
+
+
+
+
+
+
+
             </mat-cell>
           </ng-container>
           <mat-header-row *matHeaderRowDef="displayedColumnsAs"></mat-header-row>

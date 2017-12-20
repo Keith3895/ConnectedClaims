@@ -26,7 +26,7 @@ export class monitorcComponent implements OnInit {
   adminRole = '';
   systemS: SystemService;
   currentCasesList = [];
-
+  toggleDrop='add_circle';
   constructor(private rs: roleService, private cs: caseserviceService,private pubsub: PubSubService) {
     this.systemS = SystemService.getInstance();
   }

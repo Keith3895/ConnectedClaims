@@ -67,6 +67,7 @@ bh-casescard {
 
 .button-nav{
 	padding:5%;
+  padding-bottom:0px;
   margin:0px;
   cursor: pointer;
 }
@@ -77,6 +78,12 @@ bh-casescard {
 .mat-cell, .mat-header-cell{
   text-align:center;
   overflow:unset !important;
+}
+.mat-header-cell{
+    font-size: 1em;
+    font-weight: 400;
+    color: black;
+
 }
 .mat-fab{
 	height:40px;
@@ -141,4 +148,32 @@ bh-casescard {
 .searchSubmit{
 	background:#4387fd;
   	border:1px #4387fd;
+}
+ul{
+list-style-type:none;
+}
+
+li{
+	padding: 10px 0px;
+}
+.dropdownCust{
+height:0px;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.activeDrop{
+	height:130px !important;
+}
+span.mat-content{
+  text-align: center;
+    overflow: unset;
+}
+
+mat-panel-title.mat-expansion-panel-header-title{
+    padding-top : 12px;
+}
+.mat-column-services .material-icons{
+	font-size:16px !important;
+ 	cursor:pointer;
 }

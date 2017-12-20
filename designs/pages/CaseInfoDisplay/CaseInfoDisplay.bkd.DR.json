@@ -3138,34 +3138,5 @@
             }
         ],
         "type": 5
-    },
-    "e994c88a-2039-fd84-9a49-ab7fe0b50798": {
-        "name": "HTML",
-        "guid": "e994c88a-2039-fd84-9a49-ab7fe0b50798",
-        "template": "%html%",
-        "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
-        "paletteTemplate": "HTML",
-        "templateUrl": "",
-        "htmlAttributes": [
-            {
-                "_key": "style",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "class",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "html",
-                "_value": "<div *ngFor=\"let serv of displayInfo.services\" >\n\t<bh-serviceinfodisplay [displayInfo]= \"serv\" ></bh-serviceinfodisplay>\n</div>",
-                "_type": "a",
-                "_attrDef": "p"
-            }
-        ],
-        "type": 7
     }
 }

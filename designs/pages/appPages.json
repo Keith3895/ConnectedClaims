@@ -63,5 +63,15 @@
         "appPageName": "activeACORD",
         "componentName": "activeacordComponent",
         "isEntry": false
+    },
+    "bcf18404-14e6-4143-9fb8-4a58125ac043": {
+        "appPageName": " UnassignedTask",
+        "componentName": "unassignedtaskComponent",
+        "isEntry": false
+    },
+    "aee3731f-0645-7a08-5997-efdc525df391": {
+        "appPageName": "MyTeamTask",
+        "componentName": "myteamtaskComponent",
+        "isEntry": false
     }
 }
