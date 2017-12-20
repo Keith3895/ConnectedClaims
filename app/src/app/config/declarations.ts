@@ -20,8 +20,13 @@ import { APP_INITIALIZER } from '@angular/core';
 import { BLogoutService } from '../service/bLogout.service';
 
 //CORE_REFERENCE_IMPORTS
+
+//CORE_REFERENCE_IMPORT-caseoptionsComponent
+import { caseoptionsComponent } from '../caseoptionsComponent/caseoptions.component';
+
 //CORE_REFERENCE_IMPORT-monitortableComponent
 import { monitortableComponent } from '../monitortableComponent/monitortable.component';
+
 //CORE_REFERENCE_IMPORT-myteamtaskComponent
 import { myteamtaskComponent } from '../myteamtaskComponent/myteamtask.component';
 //CORE_REFERENCE_IMPORT-unassignedtaskComponent
@@ -91,8 +96,13 @@ export const appDeclarations = [
   TestComponent,
   AlertComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-caseoptionsComponent
+caseoptionsComponent,
+
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-monitortableComponent
 monitortableComponent,
+
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-myteamtaskComponent
 myteamtaskComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-unassignedtaskComponent

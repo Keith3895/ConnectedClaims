@@ -1,25 +1,11 @@
 <div id="angularRoot">
   <mat-accordion>
-    <mat-expansion-panel>
+    <mat-expansion-panel (opened)="iconFlag =!iconFlag " (closed)="iconFlag = !iconFlag">
       <mat-expansion-panel-header>
         <mat-panel-title fxFlex="75%">
           Unassigned Task
         </mat-panel-title>
-        <span fxFlexAlign="center end">
-            <button color="primary" mat-mini-fab="" *ngIf="iconFlag">
-                <span matTooltip="Save"><i class="material-icons">save</i></span>
-        </button>
-        <button color="primary" mat-mini-fab="" *ngIf="iconFlag">
-          <span matTooltip="Reassign"><i class="material-icons">assignment_ind</i></span>
-        </button>
-        <button color="primary" mat-mini-fab="" *ngIf="iconFlag">
-          <span matTooltip="Reopen"><i class="material-icons">history</i></span>
-        </button>
-        <button color="primary" mat-mini-fab="" *ngIf="iconFlag">
-          <span matTooltip="Close"><i class="material-icons">highlight_off</i></span>
-        </button>
-        </span>
-
+        <bh-caseoptions *ngIf="iconFlag"></bh-caseoptions>
       </mat-expansion-panel-header>
 
       <bh--unassignedtask [data]="caseArr"></bh--unassignedtask>
@@ -30,6 +16,8 @@
         <mat-panel-title fxFlex="60%">
           My team tasks
         </mat-panel-title>
+        <bh-caseoptions *ngIf="teamFlag"></bh-caseoptions>
+
         <mat-panel-description>
 
         </mat-panel-description>
