@@ -14,6 +14,7 @@
                 "_attrDef": "p"
             },
             {
+                "1": false,
                 "_key": "class",
                 "_value": "",
                 "_type": "kv",
@@ -38,12 +39,14 @@
                 "_attrDef": "p"
             },
             {
+                "5": false,
                 "_key": "fxLayoutAlign",
                 "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
+                "6": false,
                 "_key": "fxShow",
                 "_value": "true",
                 "_type": "kv",
@@ -88,8 +91,9 @@
                 "_attrDef": "p"
             },
             {
+                "3": false,
                 "_key": "fxLayoutWrap",
-                "_value": "",
+                "_value": "fxLayoutWrap",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -103,7 +107,7 @@
             {
                 "5": false,
                 "_key": "fxLayoutAlign",
-                "_value": "",
+                "_value": "space-around",
                 "_type": "kv",
                 "_attrDef": "p"
             },

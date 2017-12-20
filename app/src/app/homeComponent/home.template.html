@@ -2,20 +2,27 @@
   <mat-sidenav-container id="632f1117-4553-6032-47de-4c2ad027dfa9" fullscreen="">
     <div class="rightnav" fxFlex="" fxLayout="row" fxLayoutAlign="start">
 
-      <div class="searchContainer" fxLayout="row" fxLayoutAlign="start">
-        <input type="text" class="searchInput search">
-
-        <button mat-icon-button="" class="searchdrop">
-          <mat-icon aria-label="Example icon-button with a heart icon">
-            <i class="material-icons">keyboard_arrow_down</i>
-          </mat-icon>
-        </button>
-        <button type="submit " class="searchSubmit">
-          <i class="material-icons">search</i>
-        </button>
+      <div class="searchContainer" fxLayout="row" fxLayoutAlign="start" fxLayoutWrap="">
+        <div fxLayout="row" fxFlex="100">
+          <input type="text" class="searchInput search">
+          <button mat-icon-button="" class="searchdrop" (click)="searchTrigger=!searchTrigger">
+            <mat-icon aria-label="Example icon-button with a heart icon">
+              <i class="material-icons">keyboard_arrow_down</i>
+            </mat-icon>
+          </button>
+          <button type="submit " class="searchSubmit">
+            <i class="material-icons ">search</i>
+          </button>
+        </div>
+        <div fxLayout="row" fxFlex="100" *ngIf="searchTrigger">
+          <mat-card>
+            <bh-searchcard></bh-searchcard>
+          </mat-card>
+        </div>
       </div>
+
+
       <div class="logout-button">
-        <button mat-button="">Logout</button>
         <button [routerLink]="[&apos;/login&apos;]" mat-button="">Logout</button>
       </div>
     </div>

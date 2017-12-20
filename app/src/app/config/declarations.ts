@@ -17,9 +17,10 @@ import { AlertComponent } from '../alertComponent/alert.component';
 import { BDataSourceService } from '../service/bDataSource.service';
 import { bhiveMapComponent } from '../mapComponent/map.component';
 import { APP_INITIALIZER } from '@angular/core';
-import { BLogoutService } from '../service/bLogout.service';
-
+import { BLogoutService } from '../service/bLogout.service';//
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-mytaskComponent
+import { mytaskComponent } from '../mytaskComponent/mytask.component';
 //CORE_REFERENCE_IMPORT-searchcardComponent
 import { searchcardComponent } from '../searchcardComponent/searchcard.component';
 //CORE_REFERENCE_IMPORT-searchfiltercardComponent
@@ -97,6 +98,8 @@ export const appDeclarations = [
   TestComponent,
   AlertComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-mytaskComponent
+mytaskComponent,
 
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-searchcardComponent
 searchcardComponent,

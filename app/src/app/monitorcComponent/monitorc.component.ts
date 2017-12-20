@@ -46,8 +46,14 @@ export class monitorcComponent implements OnInit {
   //	console.log('logging info monitorC', $event);
   //}
   show(tab){
+    if(/1/.test(tab)){
+    	tab='monitor';
+      this.currentTab='mytask';
+    }else{
+    	this.currentTab=tab;
+    }
     this.pubsub.$pub('showContent', tab);
     this.pubsub.$pub('showCard', false);
-    this.currentTab=tab;
+    
   }
 }
