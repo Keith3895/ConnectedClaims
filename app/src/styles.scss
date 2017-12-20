@@ -110,15 +110,22 @@ bh-casescard {
     
 
     position: absolute;
-    top: 6px;
-    right: 22px;
+    top: 8px;
+    right: 18px;
     z-index: 9999;
-    width: 715px;
+    width: 805px;
+
+
+    height: 35px;
+
+
 
     //left: 566px;
     
 }
-
+.logout-button{
+    margin-left: 219px;
+}
 .searchContainer {
     display: flex;
       float:left;
