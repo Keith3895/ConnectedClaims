@@ -20,6 +20,10 @@ import { APP_INITIALIZER } from '@angular/core';
 import { BLogoutService } from '../service/bLogout.service';
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-searchcardComponent
+import { searchcardComponent } from '../searchcardComponent/searchcard.component';
+//CORE_REFERENCE_IMPORT-searchfiltercardComponent
+import { searchfiltercardComponent } from '../searchfiltercardComponent/searchfiltercard.component';
 //CORE_REFERENCE_IMPORT-myteamtaskComponent
 import { myteamtaskComponent } from '../myteamtaskComponent/myteamtask.component';
 //CORE_REFERENCE_IMPORT-unassignedtaskComponent
@@ -89,6 +93,10 @@ export const appDeclarations = [
   TestComponent,
   AlertComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-searchcardComponent
+searchcardComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-searchfiltercardComponent
+searchfiltercardComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-myteamtaskComponent
 myteamtaskComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-unassignedtaskComponent
@@ -167,5 +175,5 @@ roleService,
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: homeComponent},{path: 'login', component: loginComponent},{path: '', redirectTo: 'login', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'home', component: homeComponent},{path: 'login', component: loginComponent},{path: 'card', component: searchfiltercardComponent},{path: 'search', component: searchcardComponent},{path: '', redirectTo: 'login', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

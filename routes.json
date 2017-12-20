@@ -11,7 +11,20 @@
         },
         {
             "path": "login",
-            "component": "loginComponent"
+            "component": "loginComponent",
+            "pathMatch": "",
+            "redirectTo": "",
+            "resolve": "",
+            "data": "",
+            "canActivate": ""
+        },
+        {
+            "path": "card",
+            "component": "searchfiltercardComponent"
+        },
+        {
+            "path": "search",
+            "component": "searchcardComponent"
         },
         {
             "path": "''",
