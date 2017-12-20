@@ -20,7 +20,7 @@ import { PubSubService } from './../service/pubSub.service';
 
 export class activeacordComponent implements OnInit {
     @Input('caseArr') caseArr;
-    displayedColumnsUn = ['agentName', 'assignedUser', 'policyNumber', 'caseId'];
+    
     displayedColumnsAs = ['select','agentName', 'assignedUser', 'policyNumber', 'caseId','services'];
     dataSourceUnas;
   	dataSourceAsig;
@@ -44,10 +44,7 @@ export class activeacordComponent implements OnInit {
                                                             this.iconFlag = data;
                                                         });
     }
-    unasigned(val){
-        
-        this.pubsub.$pub('unasignedClick',val);
-    }
+    
 	asigned(val){
       this.pubsub.$pub('asignedClick',val);
     }

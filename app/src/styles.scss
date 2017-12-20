@@ -114,15 +114,29 @@ bh-casescard {
   	
 }
 .rightnav{
-	position: absolute;
-    top: 10px;
-    right: 25px;
-  	z-index:9999;
-}
+    
 
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    z-index: 9999;
+    width: 805px;
+
+
+    height: 35px;
+
+
+
+    //left: 566px;
+    
+}
+.logout-button{
+    margin-left: 219px;
+}
 .searchContainer {
     display: flex;
-  	float:left;
+      float:left;
+      width: 498px;
 }
 
 .searchInput {

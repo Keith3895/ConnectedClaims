@@ -7,6 +7,12 @@
       <div fxLayout="row" style="padding:2%" fxFlex="70" fxShow="true" fxHide="false" id="a99c7503-6492-b18e-cb74-52ac7800982a" *ngIf="display==&apos;active&apos;">
         <bh-activeacord [caseArr]="casesArr" style="width:100%"></bh-activeacord>
       </div>
+      <div fxLayout="row" style="padding:2%;" fxShow="true" fxHide="false" id="dc381fe4-5733-4366-2cb8-25ff3ae59380" *ngIf="display==&apos;unassigned&apos;">
+        <div fxLayout="column" fxFlex="100" fxShow="true" fxHide="false" id="a15dd816-6ca4-63f7-9236-aa5d8aad0cf7">
+          <h3 id="9bd01a72-899c-c971-0677-fb3dd0197f46" *ngIf="display==&apos;unassigned&apos;">Unassigned Task </h3>
+          <bh--unassignedtask [data]="casesArr" *ngIf="display==&apos;unassigned&apos;" fxFlex="100%"></bh--unassignedtask>
+        </div>
+      </div>
     </div>
     <div fxLayout="column" style="overflow-y:scroll;" fxFlex="40" fxShow="true" fxHide="false" id="66cab300-c483-9b3c-c680-00b49fe27e60" *ngIf="displayedContent">
       <bh-caseinfodisplay *ngIf="displayInfo" [displayInfo]="displayInfo" [mode]="mode"></bh-caseinfodisplay>

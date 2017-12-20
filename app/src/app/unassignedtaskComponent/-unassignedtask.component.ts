@@ -1,6 +1,8 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
 import { Component, OnInit, Input } from '@angular/core'
+import {MatTableDataSource} from '@angular/material';
 import { PubSubService } from './../service/pubSub.service';
+
 /**
 * Model import Example :
 * import { HERO } from '../models/hero.model';
@@ -17,13 +19,21 @@ import { PubSubService } from './../service/pubSub.service';
 })
 
 export class unassignedtaskComponent implements OnInit {
-  	@Input('dataSourceUnas') dataSourceUnas;
+  	@Input('data') data;
+  dataSourceUnas;
   displayedColumnsUn = ['agentName', 'assignedUser', 'policyNumber', 'caseId'];
-  constructor(private pubsub: PubSubService){}
+      constructor(private pubsub: PubSubService){}
+
     ngOnInit() {
+      //console.log(data);
+      let unassign = this.data.filter(el=>{
+            // if()
+            return !el.case.agentName;
+        });
+      this.dataSourceUnas = new MatTableDataSource(unassign);
 
     }
-    unasigned(val){
+  unasigned(val){
         
         this.pubsub.$pub('unasignedClick',val);
     }
