@@ -194,7 +194,7 @@
             },
             {
                 "_key": "html",
-                "_value": "<div class=\"rightnav\">\n  \n<div class=\"searchContainer\">\n    <input type=\"text\" class=\"searchInput search\">\n  \t\n  \t<button mat-icon-button class=\"searchdrop\">\n    <mat-icon aria-label=\"Example icon-button with a heart icon\">\n      <i class=\"material-icons\">keyboard_arrow_down</i>\n    </mat-icon>\n  </button>\n    <button type=\"submit \" class=\"searchSubmit\"><i class=\"material-icons\">search</i></button>\n</div>\n<button mat-button>Click me!</button>\n</div>\n\n\t",
+                "_value": "<div class=\"rightnav\">\n  \n<div class=\"searchContainer\">\n    <input type=\"text\" class=\"searchInput search\">\n  \t\n  \t<button mat-icon-button class=\"searchdrop\">\n    <mat-icon aria-label=\"Example icon-button with a heart icon\">\n      <i class=\"material-icons\">keyboard_arrow_down</i>\n    </mat-icon>\n  </button>\n    <button type=\"submit \" class=\"searchSubmit\"><i class=\"material-icons\">search</i></button>\n</div>\n<button mat-raised-button>Logout</button>\n</div>\n\n\t",
                 "_type": "a",
                 "_attrDef": "p"
             }
