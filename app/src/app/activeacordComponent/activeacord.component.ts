@@ -23,18 +23,15 @@ export class activeacordComponent implements OnInit {
   	iconFlag = false;
     constructor(private pubsub: PubSubService){}
     ngOnInit() {
-     
+     this.pubsub.$sub('checkevent').subscribe(data =>{ if(data)
+       this.iconFlag = data;
+                                                      else
+                                                        this.iconFlag = data;
+                                                     });
     }
     
 	
     
-  	checkevent(event) {
-      if(event.checked){
-        this.iconFlag = true;
-      }
-      else{
-        this.iconFlag = false;
-      }
-    }
+  	
   	
 }
