@@ -19,6 +19,10 @@
           <bh-myteamtask [data]="casesArr" *ngIf="display==&apos;myTeam&apos;" style="width:100%"></bh-myteamtask>
         </div>
       </div>
+      <div fxLayout="column" style="padding:2%;" fxShow="true" fxHide="false" id="94b621cd-b989-c91e-2ef6-23a2f73e6540" *ngIf="display==&apos;monitor&apos;">
+        <h3 id="38a1da28-6800-0df4-0dab-72047d481ab5">Monitor</h3>
+        <bh-monitortable [data]="casesArr"></bh-monitortable>
+      </div>
     </div>
     <div fxLayout="column" style="overflow-y:scroll;" fxFlex="40" fxShow="true" fxHide="false" id="66cab300-c483-9b3c-c680-00b49fe27e60" *ngIf="displayedContent">
       <bh-caseinfodisplay *ngIf="displayInfo" [displayInfo]="displayInfo" [mode]="mode"></bh-caseinfodisplay>

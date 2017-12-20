@@ -1,0 +1,13 @@
+{
+    "appPageId": "00b9d791-4e45-24ef-e050-cae2d4ad2686",
+    "appPageName": "MonitorTable",
+    "componentName": "monitortableComponent",
+    "selectorName": "bh-monitortable",
+    "htmlFileName": "monitortable.template.html",
+    "tsFileName": "monitortable.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

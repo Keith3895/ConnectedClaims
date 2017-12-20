@@ -7,33 +7,54 @@
             <div fxLayout="column" fxShow="true" fxHide="false" id="22938797-6c6b-e498-3459-a581ff9aed09" fxFill="">
               <div fxLayout="row" fxShow="true" fxHide="false" id="4866906c-71be-19a9-c2ec-a623918c5e48">
                 <div fxLayout="column" fxFlex="100%" fxShow="true" fxHide="false" id="bc0c0599-82f4-9270-5048-eafeb979ed3c">
-                  <p class="button-nav">
-                    <span (click)="show(&apos;active&apos;)">Active</span>
-                    <i fxFlexAlign="center end" class=" material-icons" style="    float: right;" (click)="toggleDrop= (toggleDrop==&apos;add_circle&apos;)?&apos;remove_circle&apos;:&apos;add_circle&apos;">{{toggleDrop}}</i>
-                  </p>
+                  <div id="angularRoot">
+                    <mat-card id="60f3980a-274a-1a60-2857-362e01414b82" fxFill="" (info)="log($event)" class="home-card">
+                      <div fxLayout="column" fxShow="true" fxHide="false" id="22938797-6c6b-e498-3459-a581ff9aed09" fxFill="">
+                        <div fxLayout="row" fxShow="true" fxHide="false" id="4866906c-71be-19a9-c2ec-a623918c5e48">
+                          <div fxLayout="column" fxFlex="100%" fxShow="true" fxHide="false" id="bc0c0599-82f4-9270-5048-eafeb979ed3c">
+                            <mat-card id="60f3980a-274a-1a60-2857-362e01414b82" fxFill="" (info)="log($event)" class="home-card">
+                              <div fxLayout="column" fxShow="true" fxHide="false" id="22938797-6c6b-e498-3459-a581ff9aed09" fxFill="">
+                                <div fxLayout="row" fxShow="true" fxHide="false" id="4866906c-71be-19a9-c2ec-a623918c5e48">
+                                  <div fxLayout="column" fxFlex="100%" fxShow="true" fxHide="false" id="bc0c0599-82f4-9270-5048-eafeb979ed3c">
+                                    <p class="button-nav" [ngClass]="{&apos;active&apos;:currentTab==&apos;active&apos;||currentTab==&apos;unassigned&apos;||currentTab==&apos;myTeam&apos;||currentTab==&apos;active&apos;}">
+                                      <span (click)="show(&apos;active&apos;)">Active</span>
+                                      <i fxFlexAlign="center end" class=" material-icons" style="    float: right;" (click)="toggleDrop= (toggleDrop==&apos;add_circle&apos;)?&apos;remove_circle&apos;:&apos;add_circle&apos;">{{toggleDrop}}</i>
+                                    </p>
+                                    <div class="dropdownCust" [ngClass]="{&apos;activeDrop&apos;:toggleDrop==&apos;remove_circle&apos;}">
+                                      <ul>
+                                        <li style="border-right:4px solid rgb(238, 12, 12);">
+                                          <span class="button-nav" (click)="show(&apos;unassigned&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;unassigned&apos;}">Unassigned Task</span>
+                                        </li>
+                                        <li style="border-right:4px solid green;">
+                                          <span class="button-nav" (click)="show(&apos;myTeam&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;myTeam&apos;}">My team tasks</span>
+                                        </li>
+                                        <li style="border-right:4px solid blue;">
+                                          <span class="button-nav" [ngClass]="{&apos;active&apos;:currentTab==&apos;mytask&apos;}">My tasks</span>
+                                        </li>
+                                      </ul>
+                                    </div>
 
-                  <div class="dropdownCust" [ngClass]="{&apos;activeDrop&apos;:toggleDrop==&apos;remove_circle&apos;}">
-                    <ul>
-                      <li style="border-right:4px solid rgb(238, 12, 12);">
-                        <span class="button-nav" (click)="show(&apos;unassigned&apos;)">Unassigned Task</span>
-                      </li>
-                      <li style="border-right:4px solid green;">
-                        <span class="button-nav" (click)="show(&apos;myTeam&apos;)">My team tasks</span>
-                      </li>
-                      <li style="border-right:4px solid blue;">
-                        <span class="button-nav">My tasks</span>
-                      </li>
-                    </ul>
+
+                                    <p class="button-nav" (click)="show(&apos;monitor&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;monitor&apos;}">
+
+                                      <span>Monitor</span>
+
+                                    </p>
+
+
+                                    <p class="button-nav" (click)="show(&apos;closed&apos;)">
+                                      <span>Closed</span>
+                                      <i fxFlexAlign="center end" class="material-icons" style="    float: right;">add_circle</i>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </mat-card>
+                          </div>
+                        </div>
+                      </div>
+                    </mat-card>
                   </div>
-
-                  <p class="button-nav" (click)="show(&apos;monitor&apos;)">Monitor
-                    <i fxFlexAlign="center end" class=" material-icons" style="    float: right;">add_circle</i>
-                  </p>
-
-
-                  <p class="button-nav" (click)="show(&apos;closed&apos;)">Closed
-                    <i fxFlexAlign="center end" class="material-icons" style="    float: right;">add_circle</i>
-                  </p>
                 </div>
               </div>
             </div>
