@@ -1,0 +1,13 @@
+{
+    "appPageId": "aee3731f-0645-7a08-5997-efdc525df391",
+    "appPageName": "MyTeamTask",
+    "componentName": "myteamtaskComponent",
+    "selectorName": "bh-myteamtask",
+    "htmlFileName": "myteamtask.template.html",
+    "tsFileName": "myteamtask.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

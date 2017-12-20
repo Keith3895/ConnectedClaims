@@ -1,0 +1,13 @@
+{
+    "appPageId": "bcf18404-14e6-4143-9fb8-4a58125ac043",
+    "appPageName": " UnassignedTask",
+    "componentName": "unassignedtaskComponent",
+    "selectorName": "bh--unassignedtask",
+    "htmlFileName": "-unassignedtask.template.html",
+    "tsFileName": "-unassignedtask.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}
