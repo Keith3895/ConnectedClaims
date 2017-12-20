@@ -40,6 +40,7 @@ export class homeinboxComponent implements OnInit {
     this.userRoleE = SystemService.getInstance().getVal('user_role');
     this.adminRoleE = SystemService.getInstance().getVal('admin_role');
     this.pubsub.$sub('showContent').subscribe(showContent => {
+      	 console.log(showContent);
     	 this.display= showContent;
     });
     this.pubsub.$sub('showCard').subscribe(showContent => {
