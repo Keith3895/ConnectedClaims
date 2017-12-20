@@ -10,7 +10,8 @@ import { PubSubService } from './../service/pubSub.service';
 /**
  * Service import Example :
  * import { HeroService } from '../services/hero/hero.service';
- */
+ *
+ * */
 
 @Component({
     selector: 'bh-activeacord',
@@ -37,7 +38,11 @@ export class activeacordComponent implements OnInit {
        
         this.dataSourceUnas = new MatTableDataSource(unassign);
         this.dataSourceAsig = new MatTableDataSource(assign);
-        
+        this.pubsub.$sub('checkevent').subscribe(data =>{ if(data)
+          													this.iconFlag = data;
+                                                          else
+                                                            this.iconFlag = data;
+                                                        });
     }
     unasigned(val){
         
@@ -49,13 +54,6 @@ export class activeacordComponent implements OnInit {
     displayService(val){
         this.pubsub.$pub('serviceCall',val);
     }
-  	checkevent(event) {
-      if(event.checked){
-        this.iconFlag = true;
-      }
-      else{
-        this.iconFlag = false;
-      }
-    }
+  	
   	
 }
