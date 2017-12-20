@@ -1,6 +1,6 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
 import { Component, OnInit, Input } from '@angular/core'
-
+import { PubSubService } from './../service/pubSub.service';
 /**
 * Model import Example :
 * import { HERO } from '../models/hero.model';
@@ -19,8 +19,13 @@ import { Component, OnInit, Input } from '@angular/core'
 export class unassignedtaskComponent implements OnInit {
   	@Input('dataSourceUnas') dataSourceUnas;
   displayedColumnsUn = ['agentName', 'assignedUser', 'policyNumber', 'caseId'];
+  constructor(private pubsub: PubSubService){}
     ngOnInit() {
 
+    }
+    unasigned(val){
+        
+        this.pubsub.$pub('unasignedClick',val);
     }
 
 }
