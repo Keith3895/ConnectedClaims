@@ -1,0 +1,13 @@
+{
+    "appPageId": "cef7bd05-c908-5934-6d0b-e944e3a60436",
+    "appPageName": "searchcard",
+    "componentName": "searchcardComponent",
+    "selectorName": "bh-searchcard",
+    "htmlFileName": "searchcard.template.html",
+    "tsFileName": "searchcard.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}
