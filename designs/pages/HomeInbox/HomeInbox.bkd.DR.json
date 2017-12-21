@@ -1467,6 +1467,99 @@
                 "_attrDef": "p"
             },
             {
+                "4": false,
+                "_key": "(click)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 5
+    },
+    "84ba945d-c9f8-00f0-f142-b5538d0a323e": {
+        "name": "NG-MiniFabButton",
+        "guid": "84ba945d-c9f8-00f0-f142-b5538d0a323e",
+        "template": "<button mat-mini-fab %style% %class% %bCustomProps% %color% %(click)%>%fabicon%</button>",
+        "designerTemplate": "<div class=\"ad-mini-fab-button ad-fab\"></div>",
+        "paletteTemplate": "Mini Fab Button",
+        "templateUrl": "https://material.angular.io/components/button/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "position: absolute;     right: 59px;",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fabicon",
+                "_value": "<span matTooltip=\"cancel\"><i class=\"material-icons\">highlight_off</i></span>",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "color",
+                "_value": "warn",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "(click)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 5
+    },
+    "bbf68943-4e45-0cca-a480-2a254d49d2ab": {
+        "name": "NG-MiniFabButton",
+        "guid": "bbf68943-4e45-0cca-a480-2a254d49d2ab",
+        "template": "<button mat-mini-fab %style% %class% %bCustomProps% %color% %(click)%>%fabicon%</button>",
+        "designerTemplate": "<div class=\"ad-mini-fab-button ad-fab\"></div>",
+        "paletteTemplate": "Mini Fab Button",
+        "templateUrl": "https://material.angular.io/components/button/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "position: absolute;     right: 110px;",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fabicon",
+                "_value": "<span matTooltip=\"Escalate\"><i class=\"material-icons\">open_in_browser</i></span>",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "color",
+                "_value": "primary",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
                 "_key": "(click)",
                 "_value": "",
                 "_type": "kv",

@@ -29,6 +29,8 @@
       </div>
       <div fxLayout="column" style="padding:2%;" fxShow="true" fxHide="false" id="94b621cd-b989-c91e-2ef6-23a2f73e6540" *ngIf="display==&apos;monitor&apos;">
         <h3 id="38a1da28-6800-0df4-0dab-72047d481ab5">Monitor</h3>
+        <button mat-mini-fab="" style="position: absolute;     right: 59px;" id="84ba945d-c9f8-00f0-f142-b5538d0a323e" color="warn"><span matTooltip="cancel"><i class="material-icons">highlight_off</i></span></button>
+        <button mat-mini-fab="" style="position: absolute;     right: 110px;" id="bbf68943-4e45-0cca-a480-2a254d49d2ab" color="primary"><span matTooltip="Escalate"><i class="material-icons">open_in_browser</i></span></button>
         <bh-monitortable [data]="casesArr"></bh-monitortable>
       </div>
       <div fxLayout="column" style="padding:2%;" fxShow="true" fxHide="false" id="0e973c5d-84e4-7331-598a-f15db6405124" *ngIf="display==&apos;closed&apos;">

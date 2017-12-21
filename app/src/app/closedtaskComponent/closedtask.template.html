@@ -8,7 +8,7 @@
       <!-- Position Column -->
       <ng-container matColumnDef="agentName">
         <mat-header-cell *matHeaderCellDef="">
-          <mat-checkbox [(ngModel)]="AllChecked"></mat-checkbox>
+          <mat-checkbox [(ngModel)]="AllChecked" [align]="end">Select All</mat-checkbox>
         </mat-header-cell>
         <mat-cell *matCellDef="let element">
           <mat-checkbox (change)="checkevent($event)" [checked]="AllChecked"></mat-checkbox>
