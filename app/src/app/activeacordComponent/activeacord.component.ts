@@ -20,10 +20,14 @@ export class activeacordComponent implements OnInit {
     @Input('caseArr') caseArr;
     
     iconFlag = false;
-		teamFlag = false;
+        teamFlag = false;
+        
     constructor(private pubsub: PubSubService){}
     ngOnInit() {
-      	
+        
+        
+       
+        
    
     }
     

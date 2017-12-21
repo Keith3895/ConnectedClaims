@@ -19,6 +19,10 @@ import { bhiveMapComponent } from '../mapComponent/map.component';
 import { APP_INITIALIZER } from '@angular/core';
 import { BLogoutService } from '../service/bLogout.service';//
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-myteamtasktabComponent
+import { myteamtasktabComponent } from '../myteamtasktabComponent/myteamtasktab.component';
+//CORE_REFERENCE_IMPORT-groupnameComponent
+import { groupnameComponent } from '../groupnameComponent/groupname.component';
 //CORE_REFERENCE_IMPORT-closedtaskComponent
 import { closedtaskComponent } from '../closedtaskComponent/closedtask.component';
 //CORE_REFERENCE_IMPORT-mytaskComponent
@@ -94,6 +98,10 @@ export const appDeclarations = [
   TestComponent,
   AlertComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-myteamtasktabComponent
+myteamtasktabComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-groupnameComponent
+groupnameComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-closedtaskComponent
 closedtaskComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-mytaskComponent

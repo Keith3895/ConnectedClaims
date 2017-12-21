@@ -1,7 +1,7 @@
 {
-    "429236e3-706a-b606-4df2-21582834efc9": {
+    "b203269f-abdf-7b0a-e46e-3d010afe3d39": {
         "name": "HTML",
-        "guid": "429236e3-706a-b606-4df2-21582834efc9",
+        "guid": "b203269f-abdf-7b0a-e46e-3d010afe3d39",
         "template": "%html%",
         "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
         "paletteTemplate": "HTML",
@@ -21,7 +21,7 @@
             },
             {
                 "_key": "html",
-                "_value": "\n    <div style=\"position:absolute;top:10px;left:50%;\">\n      <p>Sort by:</p>\n      <mat-radio-group [(ngModel)]=\"groupbySwitch\">\n        <mat-radio-button value=\"SLA\" [checked]=\"true\" (click)=\"swCha('SLA')\">SLA</mat-radio-button>\n        <mat-radio-button value=\"name\" (click)=\"swCha('name')\">Agent Name</mat-radio-button>\n      </mat-radio-group>\n    </div>\n    <bh-groupname [caseArr]=\"dataSourceAsig\" [groupbySwitch]=\"groupbySwitch\" *ngIf=\"groupbySwitch\"></bh-groupname>\n  ",
+                "_value": "<mat-accordion>\n    \n    <mat-expansion-panel *ngFor=\"let key of keys\">\n      <mat-expansion-panel-header>\n        <mat-panel-title fxFlex=\"60%\">\n          {{key}}\n        </mat-panel-title>\n        <mat-panel-description>\n\n        </mat-panel-description>\n        \n      </mat-expansion-panel-header>\n      <bh-myteamtasktab [data]=\"agent[key]\" ></bh-myteamtasktab>\n    </mat-expansion-panel>\n    \n  </mat-accordion>",
                 "_type": "a",
                 "_attrDef": "p"
             }

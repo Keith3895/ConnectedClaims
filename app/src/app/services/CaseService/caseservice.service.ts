@@ -16,7 +16,7 @@ export class caseserviceService {
 export let caseList = [
     {
         "case": {
-            "agentName": "Agent John",
+            "agentName": "Agent Keith",
             "caseId": 123123,
             "customerName": "John",
             "policyNumber": 234234,
@@ -98,7 +98,7 @@ export let caseList = [
     },
     {
         "case": {
-            "agentName": "Agent John",
+            "agentName": "Agent Sonu",
             "caseId": 123123,
             "customerName": "John",
             "policyNumber": 234234,

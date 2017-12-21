@@ -88,5 +88,15 @@
         "appPageName": "ClosedTask",
         "componentName": "closedtaskComponent",
         "isEntry": false
+    },
+    "61afac82-7ac0-394a-5501-07b9cbab4c45": {
+        "appPageName": "groupName",
+        "componentName": "groupnameComponent",
+        "isEntry": false
+    },
+    "20ae3f41-cbe5-d00d-15d4-e087c92c973c": {
+        "appPageName": "myTeamTaskTab",
+        "componentName": "myteamtasktabComponent",
+        "isEntry": false
     }
 }
