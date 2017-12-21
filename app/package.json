@@ -10,7 +10,7 @@
         "lint": "ng lint",
         "e2e": "ng e2e",
         "bhive-buildw": "gulp && ng build --env=prod --aot --build-optimizer",
-        "bhive-buildm": "gulp && ng build -bh . --env=prod --aot --output-path \"www\"",
+        "bhive-buildm": "gulp && ng build -bh . --env=prod --output-path \"www\"",
         "bhive-prepare": "cordova prepare",
         "bhive-builda": "npm run bhive-buildm && cordova emulate android",
         "bhive-buildi": "npm run bhive-buildm && cordova emulate ios",
