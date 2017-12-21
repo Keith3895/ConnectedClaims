@@ -4,23 +4,71 @@
     <div fxLayout="column" fxShow="true" fxHide="false" id="b4e37c03-3dbd-c51d-4dde-05520e46e8d2" fxFill="">
       <div fxLayout="row" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="e4d9bcca-ec91-7052-484b-8fc35507a995">
         <div fxLayout="column" fxFlex="48" fxShow="true" fxHide="false" id="8bb11d16-13cc-d8d8-c06f-40ca74b4ee51">
-          <h3 id="f5f65b57-10f5-0c9b-349b-61c8dd398438">Service information</h3>
           <p id="d4af9354-47c4-31f6-1a40-1ced0eab514b">{{displayInfo.details.status}}</p>
           <div fxLayout="row" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="1edae5e9-c3b4-0ec4-c7f6-3c8886738ec3">
-            <mat-vertical-stepper #stepper="">
-              <mat-step label="Requested" [editable]="!displayInfo.details.status">
+            <mat-vertical-stepper #stepper="" *ngIf="displayInfo.details.status == &apos;transit&apos;">
+              <mat-step icon="done" label="Requested" [completed]="displayInfo.details.status == &apos;transit&apos;" editable="false">
                 {{date}}
               </mat-step>
-              <mat-step label="In Transit" [editable]="!displayInfo.details.status">
+              <mat-step icon="done" label="In Transit">
                 {{date}}
               </mat-step>
-              <mat-step label="Pickup" [editable]="!displayInfo.details.status">
+              <mat-step [icon]="icon" label="Pickup" [completed]="displayInfo.details.status == &apos;deactive&apos;" selected editable="false">
                 {{date}}
               </mat-step>
-              <mat-step label="Complete" [editable]="displayInfo.details.status">
+              <mat-step [icon]="icon" label="Complete" [completed]="false">
                 {{date}}
               </mat-step>
             </mat-vertical-stepper>
+
+
+            <mat-vertical-stepper #stepper="" *ngIf="displayInfo.details.status == &apos;requested&apos;">
+              <mat-step icon="done" label="Requested" [completed]="displayInfo.details.status == &apos;requested&apos;" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step icon="done" label="In Transit" [completed]="displayInfo.details.status == &apos;transit&apos;" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step [icon]="icon" label="Pickup" [completed]="displayInfo.details.status == &apos;deactive&apos;" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step [icon]="icon" label="Complete" [completed]="false">
+                {{date}}
+              </mat-step>
+            </mat-vertical-stepper>
+
+
+            <mat-vertical-stepper #stepper="" *ngIf="displayInfo.details.status == &apos;complete&apos;">
+              <mat-step icon="done" label="Requested" [completed]="displayInfo.details.status == &apos;complete&apos;" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step icon="done" label="In Transit" [completed]="displayInfo.details.status == &apos;complete&apos;" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step [icon]="icon" label="Pickup" [completed]="displayInfo.details.status == &apos;complete&apos;" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step [icon]="icon" label="Complete" [completed]="displayInfo.details.status == &apos;complete&apos;" editable="false">
+                {{date}}
+              </mat-step>
+            </mat-vertical-stepper>
+
+
+            <mat-vertical-stepper #stepper="" *ngIf="displayInfo.details.status == &apos;pickup&apos;">
+              <mat-step icon="done" label="Requested" [completed]="displayInfo.details.status == &apos;pickup&apos;" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step icon="done" label="In Transit" [completed]="displayInfo.details.status == &apos;pickup&apos;" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step [icon]="icon" label="Pickup" [completed]="displayInfo.details.status == &apos;pickup&apos;" editable="true">
+                {{date}}
+              </mat-step>
+              <mat-step [icon]="icon" label="Complete" [completed]="false">
+                {{date}}
+              </mat-step>
+            </mat-vertical-stepper>
+
           </div>
         </div>
         <div fxLayout="column" fxFlex="48" fxShow="true" fxHide="false" id="45bcb255-db20-d80a-9dd1-1f29bf840106">

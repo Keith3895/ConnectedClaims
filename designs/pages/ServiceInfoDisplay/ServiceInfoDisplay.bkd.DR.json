@@ -511,37 +511,6 @@
         ],
         "type": 5
     },
-    "f5f65b57-10f5-0c9b-349b-61c8dd398438": {
-        "name": "NG-H3",
-        "guid": "f5f65b57-10f5-0c9b-349b-61c8dd398438",
-        "template": "<h3 %bCustomProps% %style% %class%>%H3 Text%</h3>",
-        "designerTemplate": "<div class=\"ad-header-elements ad-h3\">h3</div>",
-        "paletteTemplate": "h3",
-        "templateUrl": "https://www.w3schools.com/tags/tag_hn.asp",
-        "htmlAttributes": [
-            {
-                "_key": "style",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "1": false,
-                "_key": "class",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "2": false,
-                "_key": "H3 Text",
-                "_value": "Service information",
-                "_type": "a",
-                "_attrDef": "p"
-            }
-        ],
-        "type": 5
-    },
     "1edae5e9-c3b4-0ec4-c7f6-3c8886738ec3": {
         "name": "FlexLayoutRow",
         "guid": "1edae5e9-c3b4-0ec4-c7f6-3c8886738ec3",
@@ -708,7 +677,7 @@
             },
             {
                 "_key": "html",
-                "_value": "<mat-vertical-stepper #stepper>\n  <mat-step label=\"Requested\"  editable=\"false\">\n    {{date}}\n  </mat-step>\n  <mat-step label=\"In Transit\"  editable=\"false\">\n     {{date}}\n  </mat-step>\n  <mat-step label=\"Pickup\"  editable=\"false\" >\n     {{date}}\n  </mat-step>\n  <mat-step label=\"Complete\" editable=\"false\">\n     {{date}}\n  </mat-step>\n</mat-vertical-stepper>",
+                "_value": "<mat-vertical-stepper #stepper *ngIf=\"displayInfo.details.status == 'transit'\">\n  <mat-step icon =done label=\"Requested\" [completed]=\"displayInfo.details.status == 'transit'\"  editable='false'>\n    {{date}}\n  </mat-step>\n  <mat-step icon =\"done\" label=\"In Transit\" >\n     {{date}}\n  </mat-step>\n  <mat-step [icon]=\"icon\" label=\"Pickup\" [completed]=\"displayInfo.details.status == 'deactive'\" selected=\"\" editable='false'>\n     {{date}}\n  </mat-step>\n  <mat-step [icon]=\"icon\" label=\"Complete\" [completed]=\"false\" >\n     {{date}}\n  </mat-step>\n</mat-vertical-stepper>\n\n\n<mat-vertical-stepper #stepper *ngIf=\"displayInfo.details.status == 'requested'\">\n  <mat-step icon =done label=\"Requested\" [completed]=\"displayInfo.details.status == 'requested'\"  editable='false'>\n    {{date}}\n  </mat-step>\n  <mat-step icon =\"done\" label=\"In Transit\" [completed]=\"displayInfo.details.status == 'transit'\" editable='false'>\n     {{date}}\n  </mat-step>\n  <mat-step [icon]=\"icon\" label=\"Pickup\" [completed]=\"displayInfo.details.status == 'deactive'\" editable='false'>\n     {{date}}\n  </mat-step>\n  <mat-step [icon]=\"icon\" label=\"Complete\" [completed]=\"false\">\n     {{date}}\n  </mat-step>\n</mat-vertical-stepper>\n\n\n<mat-vertical-stepper #stepper *ngIf=\"displayInfo.details.status == 'complete'\">\n  <mat-step icon =done label=\"Requested\" [completed]=\"displayInfo.details.status == 'complete'\"  editable='false'>\n    {{date}}\n  </mat-step>\n  <mat-step icon =\"done\" label=\"In Transit\" [completed]=\"displayInfo.details.status == 'complete'\" editable='false'>\n     {{date}}\n  </mat-step>\n  <mat-step [icon]=\"icon\" label=\"Pickup\" [completed]=\"displayInfo.details.status == 'complete'\" editable='false'>\n     {{date}}\n  </mat-step>\n  <mat-step [icon]=\"icon\" label=\"Complete\" [completed]=\"displayInfo.details.status == 'complete'\" editable='false'>\n     {{date}}\n  </mat-step>\n</mat-vertical-stepper>\n\n\n<mat-vertical-stepper #stepper *ngIf=\"displayInfo.details.status == 'pickup'\">\n  <mat-step icon =done label=\"Requested\" [completed]=\"displayInfo.details.status == 'pickup'\"  editable='false'>\n    {{date}}\n  </mat-step>\n  <mat-step icon =\"done\" label=\"In Transit\" [completed]=\"displayInfo.details.status == 'pickup'\" editable='false'>\n     {{date}}\n  </mat-step>\n  <mat-step [icon]=\"icon\" label=\"Pickup\" [completed]=\"displayInfo.details.status == 'pickup'\" editable='true'>\n     {{date}}\n  </mat-step>\n  <mat-step [icon]=\"icon\" label=\"Complete\" [completed]=\"false\">\n     {{date}}\n  </mat-step>\n</mat-vertical-stepper>\n\n",
                 "_type": "a",
                 "_attrDef": "p"
             }
