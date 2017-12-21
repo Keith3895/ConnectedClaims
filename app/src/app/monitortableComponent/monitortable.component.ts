@@ -19,7 +19,7 @@ import { PubSubService } from './../service/pubSub.service';
 })
 
 export class monitortableComponent implements OnInit {
-    displayedColumnsAs = ['select', 'agentName', 'assignedUser', 'policyNumber', 'caseId', 'services'];
+    displayedColumnsAs = ['select', 'agentName', 'assignedUser', 'policyNumber', 'caseId', 'services','status'];
     dataSourceAsig;
     @Input('data') data;
     AllChecked = false;

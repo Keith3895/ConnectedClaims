@@ -62,6 +62,36 @@ export let caseList = [
                     "companyName": "Ana",
                     "contact": "1234567890"
                 }
+            },
+            {
+                "serviceType": "roadside assist",
+                "details": {
+                    "status": "deactive",
+                    "name": "RoadSide Assist",
+                    "serviceProviderName": "Ana Wala",
+                    "companyName": "Ana",
+                    "contact": "1234567890"
+                }
+            },
+            {
+                "serviceType": "taxi",
+                "details": {
+                    "status": "transit",
+                    "name": "Taxi",
+                    "serviceProviderName": "Ana Wala",
+                    "companyName": "Ana",
+                    "contact": "1234567890"
+                }
+            },
+            {
+                "serviceType": "car hire",
+                "details": {
+                    "status": "deactive",
+                    "name": "Car Hire",
+                    "serviceProviderName": "Ana Wala",
+                    "companyName": "Ana",
+                    "contact": "1234567890"
+                }
             }
         ],
         "selected": false

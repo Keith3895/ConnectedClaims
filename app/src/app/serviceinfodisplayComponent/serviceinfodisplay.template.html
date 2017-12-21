@@ -8,16 +8,16 @@
           <p id="d4af9354-47c4-31f6-1a40-1ced0eab514b">{{displayInfo.details.status}}</p>
           <div fxLayout="row" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="1edae5e9-c3b4-0ec4-c7f6-3c8886738ec3">
             <mat-vertical-stepper #stepper="">
-              <mat-step label="Requested" editable="false">
+              <mat-step label="Requested" [editable]="!displayInfo.details.status">
                 {{date}}
               </mat-step>
-              <mat-step label="In Transit" editable="false">
+              <mat-step label="In Transit" [editable]="!displayInfo.details.status">
                 {{date}}
               </mat-step>
-              <mat-step label="Pickup" editable="false">
+              <mat-step label="Pickup" [editable]="!displayInfo.details.status">
                 {{date}}
               </mat-step>
-              <mat-step label="Complete" editable="false">
+              <mat-step label="Complete" [editable]="displayInfo.details.status">
                 {{date}}
               </mat-step>
             </mat-vertical-stepper>

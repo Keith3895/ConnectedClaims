@@ -19,7 +19,7 @@ import { PubSubService } from './../service/pubSub.service';
 })
 
 export class mytaskComponent implements OnInit {
-      displayedColumnsAs = [ 'assignedUser', 'policyNumber', 'caseId','services'];
+      displayedColumnsAs = [ 'assignedUser', 'policyNumber', 'caseId','services','status'];
   	dataSourceAsig;
   @Input('data') data;
   constructor(private pubsub: PubSubService){}
