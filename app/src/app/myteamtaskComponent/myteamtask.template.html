@@ -39,12 +39,12 @@
         <mat-header-cell *matHeaderCellDef=""> Services </mat-header-cell>
         <mat-cell *matCellDef="let element">
           <span *ngFor="let service of element.services">
-                  <i class="material-icons" *ngIf="service.serviceType==&apos;ambulance&apos;" (click)="displayService(service)">local_hospital</i>
-                  <i class="material-icons" *ngIf="service.serviceType==&apos;towing&apos;" (click)="displayService(service)">rv_hookup</i>
-                  <i class="material-icons" *ngIf="service.serviceType==&apos;roadside assist&apos;" (click)="displayService(service)">phone</i>
-                  <i class="material-icons" *ngIf="service.serviceType==&apos;taxi&apos;" (click)="displayService(service)">local_taxi</i>
-                  <i class="material-icons" *ngIf="service.serviceType==&apos;car hire&apos;" (click)="displayService(service)">directions</i>
-                </span>
+                   <span matTooltip="Ambulance"> <i class="material-icons" *ngIf="service.serviceType==&apos;ambulance&apos;" (click)="displayService(service)">local_hospital</i></span>
+          <span matTooltip="Towing"> <i class="material-icons" *ngIf="service.serviceType==&apos;towing&apos;" (click)="displayService(service)">rv_hookup</i></span>
+          <span matTooltip="RoadSide Assist"> <i class="material-icons" *ngIf="service.serviceType==&apos;roadside assist&apos;" (click)="displayService(service)">phone</i></span>
+          <span matTooltip="Taxi"> <i class="material-icons" *ngIf="service.serviceType==&apos;taxi&apos;" (click)="displayService(service)">local_taxi</i></span>
+          <span matTooltip="Car Hire"> <i class="material-icons" *ngIf="service.serviceType==&apos;car hire&apos;" (click)="displayService(service)">directions</i></span>
+          </span>
 
 
 

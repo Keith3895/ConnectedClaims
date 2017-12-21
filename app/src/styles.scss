@@ -5,7 +5,7 @@
 
 /* You can add global styles to this file, and also import other style files */
 .fill{
-    width: 100%;
+    
 }
 html,
 body {
@@ -191,3 +191,10 @@ mat-panel-title{
 .button-nav.active{
 	border-bottom:3px solid #673ab7;
 }   
+.filterCard{
+width: 35%;
+    position: absolute !important;
+    top: 43px;
+    z-index: 9999;
+    left: calc(100%-100px);
+}

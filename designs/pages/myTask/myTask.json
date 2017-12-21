@@ -1,0 +1,13 @@
+{
+    "appPageId": "33fd0be3-ad39-7e4d-acff-d8a13b0e901c",
+    "appPageName": "myTask",
+    "componentName": "mytaskComponent",
+    "selectorName": "bh-mytask",
+    "htmlFileName": "mytask.template.html",
+    "tsFileName": "mytask.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

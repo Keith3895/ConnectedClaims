@@ -9,14 +9,22 @@
       </div>
       <div fxLayout="row" style="padding:2%;" fxShow="true" fxHide="false" id="dc381fe4-5733-4366-2cb8-25ff3ae59380" *ngIf="display==&apos;unassigned&apos;">
         <div fxLayout="column" fxFlex="100" fxShow="true" fxHide="false" id="a15dd816-6ca4-63f7-9236-aa5d8aad0cf7">
-          <h3 id="9bd01a72-899c-c971-0677-fb3dd0197f46" *ngIf="display==&apos;unassigned&apos;">Unassigned Task </h3>
+          <h3 id="9bd01a72-899c-c971-0677-fb3dd0197f46" *ngIf="display==&apos;unassigned&apos;">Unassigned Task</h3>
+          <button mat-mini-fab="" style="position: absolute;     right: 59px;" id="623653eb-5c42-3eef-50ef-aa1d364ffa98" color="primary"><span matTooltip="Assign"><i class="material-icons">assignment_ind</i></span></button>
           <bh--unassignedtask [data]="casesArr" *ngIf="display==&apos;unassigned&apos;" fxFlex="100%"></bh--unassignedtask>
         </div>
       </div>
       <div fxLayout="row" style="padding:2%;" fxShow="true" fxHide="false" id="80bcfaf2-fcde-83ba-28a6-cdb349b1d455" *ngIf="display==&apos;myTeam&apos;">
         <div fxLayout="column" fxFlex="100" fxShow="true" fxHide="false" id="bad7f073-0e35-0211-f558-a8970f3427a1">
           <h3 id="e12335cd-7182-6717-4381-f8b25c706737">My Team Task</h3>
+          <button mat-mini-fab="" style="position: absolute;     right: 59px;" id="9ae0993a-9517-f5f9-43cc-a5cd6ede8858" color="primary"><span matTooltip="Reassign"><i class="material-icons">assignment_ind</i></span></button>
           <bh-myteamtask [data]="casesArr" *ngIf="display==&apos;myTeam&apos;" style="width:100%"></bh-myteamtask>
+        </div>
+      </div>
+      <div fxLayout="row" style="padding:2%;" fxShow="true" fxHide="false" id="926eb948-fcd5-699e-8b33-a32ba4659209" *ngIf="display==&apos;mytask&apos;">
+        <div fxLayout="column" fxFlex="100" fxShow="true" fxHide="false" id="5f52085a-1087-4933-b39c-8571646bfa8a">
+          <h3 id="281bf588-8d99-cd42-0b95-0ea461f89762">My Task</h3>
+          <bh-mytask [data]="casesArr" style="width:100%"></bh-mytask>
         </div>
       </div>
       <div fxLayout="column" style="padding:2%;" fxShow="true" fxHide="false" id="94b621cd-b989-c91e-2ef6-23a2f73e6540" *ngIf="display==&apos;monitor&apos;">

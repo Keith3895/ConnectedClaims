@@ -1,7 +1,7 @@
 {
-    "2e49a1ff-4943-570d-9560-c62dd5b7daea": {
+    "eb2a3392-e6f4-7bd2-fda4-1dcd43c41d97": {
         "name": "HTML",
-        "guid": "2e49a1ff-4943-570d-9560-c62dd5b7daea",
+        "guid": "eb2a3392-e6f4-7bd2-fda4-1dcd43c41d97",
         "template": "%html%",
         "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
         "paletteTemplate": "HTML",

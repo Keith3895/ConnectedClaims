@@ -1,26 +1,34 @@
 <div id="angularRoot">
   <mat-accordion>
-    <mat-expansion-panel (opened)="iconFlag =!iconFlag " (closed)="iconFlag = !iconFlag">
+    <mat-expansion-panel (opened)="iconFlag =true " (closed)="iconFlag = false">
       <mat-expansion-panel-header>
         <mat-panel-title fxFlex="75%">
           Unassigned Task
         </mat-panel-title>
-        <bh-caseoptions *ngIf="iconFlag"></bh-caseoptions>
+        <mat-panel-description>
+
+        </mat-panel-description>
+        <button mat-mini-fab="" *ngIf="iconFlag" color="primary">
+          <mat-icon><span matTooltip="Assign"><i class="material-icons">assignment_ind</i></span></mat-icon>
+        </button>
+
       </mat-expansion-panel-header>
 
       <bh--unassignedtask [data]="caseArr"></bh--unassignedtask>
 
     </mat-expansion-panel>
-    <mat-expansion-panel>
+    <mat-expansion-panel (opened)="teamFlag =true " (closed)="teamFlag= false">
       <mat-expansion-panel-header>
         <mat-panel-title fxFlex="60%">
           My team tasks
         </mat-panel-title>
-        <bh-caseoptions *ngIf="teamFlag"></bh-caseoptions>
-
         <mat-panel-description>
 
         </mat-panel-description>
+        <button mat-mini-fab="" *ngIf="teamFlag" color="primary">
+          <mat-icon><span matTooltip="Reassign"><i class="material-icons">assignment_ind</i></span></mat-icon>
+        </button>
+
       </mat-expansion-panel-header>
       <bh-myteamtask [data]="caseArr"></bh-myteamtask>
 
@@ -36,10 +44,7 @@
 
         </mat-panel-description>
       </mat-expansion-panel-header>
-      <ul>
-        <li>test1</li>
-        <li>test2</li>
-      </ul>
+      <bh-mytask [data]="caseArr"></bh-mytask>
     </mat-expansion-panel>
   </mat-accordion>
 </div>
