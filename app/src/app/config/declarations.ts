@@ -175,5 +175,5 @@ roleService,
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: homeComponent},{path: 'login', component: loginComponent},{path: 'card', component: searchfiltercardComponent},{path: 'search', component: searchcardComponent},{path: '', redirectTo: 'login', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'home', component: homeComponent},{path: 'login', component: loginComponent},{path: '', redirectTo: 'login', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

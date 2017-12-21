@@ -19,14 +19,6 @@
             "canActivate": ""
         },
         {
-            "path": "card",
-            "component": "searchfiltercardComponent"
-        },
-        {
-            "path": "search",
-            "component": "searchcardComponent"
-        },
-        {
             "path": "''",
             "component": "",
             "pathMatch": "full",
