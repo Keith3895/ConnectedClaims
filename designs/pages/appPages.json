@@ -83,5 +83,10 @@
         "appPageName": "myTask",
         "componentName": "mytaskComponent",
         "isEntry": false
+    },
+    "ef9184b7-a262-e4f8-2dd7-8fef913d4061": {
+        "appPageName": "ClosedTask",
+        "componentName": "closedtaskComponent",
+        "isEntry": false
     }
 }

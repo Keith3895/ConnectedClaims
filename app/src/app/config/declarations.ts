@@ -19,6 +19,8 @@ import { bhiveMapComponent } from '../mapComponent/map.component';
 import { APP_INITIALIZER } from '@angular/core';
 import { BLogoutService } from '../service/bLogout.service';//
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-closedtaskComponent
+import { closedtaskComponent } from '../closedtaskComponent/closedtask.component';
 //CORE_REFERENCE_IMPORT-mytaskComponent
 import { mytaskComponent } from '../mytaskComponent/mytask.component';
 //CORE_REFERENCE_IMPORT-searchcardComponent
@@ -92,6 +94,8 @@ export const appDeclarations = [
   TestComponent,
   AlertComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-closedtaskComponent
+closedtaskComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-mytaskComponent
 mytaskComponent,
 

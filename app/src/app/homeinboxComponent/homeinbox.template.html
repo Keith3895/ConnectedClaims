@@ -31,6 +31,11 @@
         <h3 id="38a1da28-6800-0df4-0dab-72047d481ab5">Monitor</h3>
         <bh-monitortable [data]="casesArr"></bh-monitortable>
       </div>
+      <div fxLayout="column" style="padding:2%;" fxShow="true" fxHide="false" id="0e973c5d-84e4-7331-598a-f15db6405124" *ngIf="display==&apos;closed&apos;">
+        <h3 id="5de44956-d433-b495-767b-e6728fcefb5c">Closed Tasks</h3>
+        <button mat-mini-fab="" style="position: absolute;     right: 59px;" id="57ad5860-c30f-b59d-7371-0f60037df61e" color="primary"><span matTooltip="Reopen"><i class="material-icons">history</i></span></button>
+        <bh-closedtask [data]="casesArr"></bh-closedtask>
+      </div>
     </div>
     <div fxLayout="column" style="overflow-y:scroll;" fxFlex="40" fxShow="true" fxHide="false" id="66cab300-c483-9b3c-c680-00b49fe27e60" *ngIf="displayedContent">
       <bh-caseinfodisplay *ngIf="displayInfo" [displayInfo]="displayInfo" [mode]="mode"></bh-caseinfodisplay>
