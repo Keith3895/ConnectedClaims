@@ -19,7 +19,8 @@ import { PubSubService } from './../service/pubSub.service';
 
 export class groupnameComponent implements OnInit {
     @Input('caseArr') caseArr;
-    @Input('switchValue') switchValue;
+    @Input('groupbySwitch') switchValue;
+    fl;
     agent;
     keys;
     constructor(private pubsub:PubSubService) {
@@ -27,7 +28,11 @@ export class groupnameComponent implements OnInit {
     }
 
     ngOnInit() {
+      console.log(this.switchValue);
         this.pubsub.$sub('filterBy').subscribe(fl=>{
+            this.fl = fl;
+          	console.log("subscribe in group");
+          //this.pubsub.$pub('filterBy',fl);
             let filterBy;
             if (fl != 'SLA') {
                 filterBy = "agentName";
@@ -35,7 +40,7 @@ export class groupnameComponent implements OnInit {
             else {
                 filterBy = "priority";
             }
-            // console.log(this.switchValue);
+            
             this.agent = this.caseArr.reduce((acc, val, c) => {
                 if (c == 1) {
                     let temp = acc;
@@ -47,9 +52,9 @@ export class groupnameComponent implements OnInit {
                 acc[val.case[filterBy]].push(val);
                 return acc;
             });
-            console.log(this.agent);
+            //console.log(this.agent);
             this.keys = Object.keys(this.agent);
-            console.log(this.agent);
+            //console.log(this.agent);
         });
        
     }

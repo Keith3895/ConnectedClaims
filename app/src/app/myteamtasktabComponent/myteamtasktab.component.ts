@@ -1,5 +1,5 @@
-import { Component, OnInit,Input } from '@angular/core'
-import {MatTableDataSource} from '@angular/material';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core'
+import { MatTableDataSource } from '@angular/material';
 import { PubSubService } from './../service/pubSub.service';
 /**
 * Model import Example :
@@ -12,37 +12,47 @@ import { PubSubService } from './../service/pubSub.service';
  */
 
 @Component({
-    selector: 'bh-myteamtasktab',
-    templateUrl: './myteamtasktab.template.html'
+  selector: 'bh-myteamtasktab',
+  templateUrl: './myteamtasktab.template.html'
 })
 
-export class myteamtasktabComponent implements OnInit {
-    displayedColumnsAs;
-  	dataSourceAsig;
+export class myteamtasktabComponent implements OnInit, OnChanges {
+  displayedColumnsAs;
+  dataSourceAsig;
   @Input('data') data;
-  constructor(private pubsub: PubSubService){}
-    ngOnInit() {
-      this.pubsub.$sub('filterBy').subscribe(fl=>{
+  @Input('fl') fl;
+  constructor(private pubsub: PubSubService) { }
+  ngOnInit() {
 
-        if(fl!='SLA'){
-          this.displayedColumnsAs = ['select','agentName', 'assignedUser', 'policyNumber', 'caseId','services','status'];
-        }else{
-          this.displayedColumnsAs = ['select', 'assignedUser', 'policyNumber', 'caseId','services','status'];
-        }
-        console.log(fl);
-        this.dataSourceAsig = new MatTableDataSource(this.data);
-      });
-      
+
+    // });
+
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['fl']) {
+      let fl = changes['fl'].currentValue;
+      // this.pubsub.$sub('filterBy').subscribe(fl => {
+      console.log("subscribe in task table");
+      if (fl == 'SLA') {
+        this.displayedColumnsAs = ['select', 'agentName', 'assignedUser', 'policyNumber', 'caseId', 'services', 'status'];
+      } else {
+        this.displayedColumnsAs = ['select', 'assignedUser', 'policyNumber', 'caseId', 'services', 'status'];
+      }
+      console.log(fl);
+      this.dataSourceAsig = new MatTableDataSource(this.data);
     }
-  asigned(val){
-      this.pubsub.$pub('asignedClick',val);
-    }
-  displayService(val){
-        this.pubsub.$pub('serviceCall',val);
-    }
-		checkevent(event){
-      this.pubsub.$pub('teamEvent',event.checked)
-      
-    }
+  }
+
+  asigned(val) {
+    this.pubsub.$pub('asignedClick', val);
+  }
+  displayService(val) {
+    this.pubsub.$pub('serviceCall', val);
+  }
+  checkevent(event) {
+    this.pubsub.$pub('teamEvent', event.checked)
+
+  }
 
 }

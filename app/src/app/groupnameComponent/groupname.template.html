@@ -1,1 +1,18 @@
-<div id="angularRoot"></div>
+<div id="angularRoot">
+  <mat-accordion>
+
+    <mat-expansion-panel *ngFor="let key of keys">
+      <mat-expansion-panel-header>
+        <mat-panel-title fxFlex="60%">
+          {{key}}
+        </mat-panel-title>
+        <mat-panel-description>
+
+        </mat-panel-description>
+
+      </mat-expansion-panel-header>
+      <bh-myteamtasktab [data]="agent[key]" [fl]="fl"></bh-myteamtasktab>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</div>
