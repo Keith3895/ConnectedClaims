@@ -97,7 +97,7 @@
             {
                 "2": false,
                 "_key": "fxFlex",
-                "_value": "40",
+                "_value": "50",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -171,7 +171,7 @@
             {
                 "2": false,
                 "_key": "fxFlex",
-                "_value": "20",
+                "_value": "15",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -367,7 +367,7 @@
             {
                 "2": false,
                 "_key": "fxFlex",
-                "_value": "40",
+                "_value": "35",
                 "_type": "kv",
                 "_attrDef": "p"
             },
