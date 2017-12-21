@@ -7,12 +7,20 @@
           <h3 id="f5f65b57-10f5-0c9b-349b-61c8dd398438">Service information</h3>
           <p id="d4af9354-47c4-31f6-1a40-1ced0eab514b">{{displayInfo.details.status}}</p>
           <div fxLayout="row" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="1edae5e9-c3b4-0ec4-c7f6-3c8886738ec3">
-            <div fxLayout="column" fxFlex="48" fxShow="true" fxHide="false" id="90c713fe-1019-65c0-092b-e7f633310bf7">
-              <p id="fcbcbb8c-afe1-2b97-be89-adb30726684b"></p>
-            </div>
-            <div fxLayout="column" fxFlex="48" fxShow="true" fxHide="false" id="fc52953c-738f-53cc-858c-01305c15cc95">
-              <p id="b6d65c71-da58-9066-10ed-cd710888da30">Work log</p>
-            </div>
+            <mat-vertical-stepper #stepper="">
+              <mat-step label="Requested" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step label="In Transit" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step label="Pickup" editable="false">
+                {{date}}
+              </mat-step>
+              <mat-step label="Complete" editable="false">
+                {{date}}
+              </mat-step>
+            </mat-vertical-stepper>
           </div>
         </div>
         <div fxLayout="column" fxFlex="48" fxShow="true" fxHide="false" id="45bcb255-db20-d80a-9dd1-1f29bf840106">
