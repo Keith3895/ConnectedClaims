@@ -23,8 +23,6 @@ import { BLogoutService } from '../service/bLogout.service';//
 import { mytaskComponent } from '../mytaskComponent/mytask.component';
 //CORE_REFERENCE_IMPORT-searchcardComponent
 import { searchcardComponent } from '../searchcardComponent/searchcard.component';
-//CORE_REFERENCE_IMPORT-searchfiltercardComponent
-import { searchfiltercardComponent } from '../searchfiltercardComponent/searchfiltercard.component';
 //CORE_REFERENCE_IMPORT-caseoptionsComponent
 import { caseoptionsComponent } from '../caseoptionsComponent/caseoptions.component';
 //CORE_REFERENCE_IMPORT-monitortableComponent
@@ -51,10 +49,6 @@ import { caseslistComponent } from '../caseslistComponent/caseslist.component';
 import { casescardComponent } from '../casescardComponent/casescard.component';
 //CORE_REFERENCE_IMPORT-homeinboxComponent
 import { homeinboxComponent } from '../homeinboxComponent/homeinbox.component';
-//CORE_REFERENCE_IMPORT-activecComponent
-import { activecComponent } from '../activecComponent/activec.component';
-//CORE_REFERENCE_IMPORT-unattendedcComponent
-import { unattendedcComponent } from '../unattendedcComponent/unattendedc.component';
 //CORE_REFERENCE_IMPORT-monitorcComponent
 import { monitorcComponent } from '../monitorcComponent/monitorc.component';
 //CORE_REFERENCE_IMPORT-caseserviceService
@@ -103,8 +97,6 @@ mytaskComponent,
 
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-searchcardComponent
 searchcardComponent,
-//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-searchfiltercardComponent
-searchfiltercardComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-caseoptionsComponent
 caseoptionsComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-monitortableComponent
@@ -129,10 +121,6 @@ caseslistComponent,
 casescardComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-homeinboxComponent
 homeinboxComponent,
-//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-activecComponent
-activecComponent,
-//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-unattendedcComponent
-unattendedcComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-monitorcComponent
 monitorcComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-homeComponent
