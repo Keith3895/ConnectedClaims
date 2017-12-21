@@ -1,0 +1,13 @@
+{
+    "appPageId": "61afac82-7ac0-394a-5501-07b9cbab4c45",
+    "appPageName": "groupName",
+    "componentName": "groupnameComponent",
+    "selectorName": "bh-groupname",
+    "htmlFileName": "groupname.template.html",
+    "tsFileName": "groupname.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

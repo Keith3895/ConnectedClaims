@@ -1,4 +1,3 @@
-/*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
 import { Component, OnInit,Input } from '@angular/core'
 import {MatTableDataSource} from '@angular/material';
 import { PubSubService } from './../service/pubSub.service';
@@ -13,27 +12,27 @@ import { PubSubService } from './../service/pubSub.service';
  */
 
 @Component({
-    selector: 'bh-myteamtask',
-    templateUrl: './myteamtask.template.html'
+    selector: 'bh-myteamtasktab',
+    templateUrl: './myteamtasktab.template.html'
 })
 
-export class myteamtaskComponent implements OnInit {
-  displayedColumnsAs = ['select','agentName', 'assignedUser', 'policyNumber', 'caseId','services','status'];
-    dataSourceAsig;
-    groupbySwitch;
+export class myteamtasktabComponent implements OnInit {
+    displayedColumnsAs;
+  	dataSourceAsig;
   @Input('data') data;
   constructor(private pubsub: PubSubService){}
     ngOnInit() {
-      
-      let assign = this.data.filter(el=>{
+      this.pubsub.$sub('filterBy').subscribe(fl=>{
 
-            return el.case.agentName;
-        });
-        this.dataSourceAsig = assign;
-		
-    }
-    swCha(val){
-      this.pubsub.$pub('filterBy',val);
+        if(fl!='SLA'){
+          this.displayedColumnsAs = ['select','agentName', 'assignedUser', 'policyNumber', 'caseId','services','status'];
+        }else{
+          this.displayedColumnsAs = ['select', 'assignedUser', 'policyNumber', 'caseId','services','status'];
+        }
+        console.log(fl);
+        this.dataSourceAsig = new MatTableDataSource(this.data);
+      });
+      
     }
   asigned(val){
       this.pubsub.$pub('asignedClick',val);
@@ -42,8 +41,8 @@ export class myteamtaskComponent implements OnInit {
         this.pubsub.$pub('serviceCall',val);
     }
 		checkevent(event){
-      
       this.pubsub.$pub('teamEvent',event.checked)
       
     }
+
 }

@@ -24,7 +24,7 @@ export class mytaskComponent implements OnInit {
   @Input('data') data;
   constructor(private pubsub: PubSubService){}
     ngOnInit() {
-      console.log(this.data);
+      
       let assign = this.data.filter(el=>{
             // if()
             return el.case.agentName;
