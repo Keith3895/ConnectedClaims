@@ -1,22 +1,6 @@
 <div id="angularRoot">
   <mat-accordion>
-    <mat-expansion-panel (opened)="iconFlag =true " (closed)="iconFlag = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title fxFlex="75%">
-          Unassigned Task
-        </mat-panel-title>
-        <mat-panel-description>
 
-        </mat-panel-description>
-        <button mat-mini-fab="" *ngIf="iconFlag" color="primary">
-          <mat-icon><span matTooltip="Assign"><i class="material-icons">assignment_ind</i></span></mat-icon>
-        </button>
-
-      </mat-expansion-panel-header>
-
-      <bh--unassignedtask [data]="caseArr"></bh--unassignedtask>
-
-    </mat-expansion-panel>
     <mat-expansion-panel (opened)="teamFlag =true " (closed)="teamFlag= false">
       <mat-expansion-panel-header>
         <mat-panel-title fxFlex="60%">
