@@ -7,15 +7,18 @@
           <h3 id="f5f65b57-10f5-0c9b-349b-61c8dd398438">Service information</h3>
           <p id="d4af9354-47c4-31f6-1a40-1ced0eab514b">{{displayInfo.details.status}}</p>
           <div fxLayout="row" fxLayoutAlign="space-around" fxShow="true" fxHide="false" id="1edae5e9-c3b4-0ec4-c7f6-3c8886738ec3">
-            <mat-vertical-stepper>
-              <mat-step label="Requested">
+            <mat-vertical-stepper #stepper="">
+              <mat-step label="Requested" editable="false">
                 {{date}}
               </mat-step>
-              <mat-step label="In Transit">
+              <mat-step label="In Transit" editable="false">
+                {{date}}
               </mat-step>
-              <mat-step label="Pickup">
+              <mat-step label="Pickup" editable="false">
+                {{date}}
               </mat-step>
-              <mat-step label="Complete">
+              <mat-step label="Complete" editable="false">
+                {{date}}
               </mat-step>
             </mat-vertical-stepper>
           </div>

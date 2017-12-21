@@ -708,7 +708,7 @@
             },
             {
                 "_key": "html",
-                "_value": "<mat-vertical-stepper>\n  <mat-step label=\"Requested\">\n    {{date}}\n  </mat-step>\n  <mat-step label=\"In Transit\">\n  </mat-step>\n  <mat-step label=\"Pickup\">\n  </mat-step>\n  <mat-step label=\"Complete\">\n  </mat-step>\n</mat-vertical-stepper>",
+                "_value": "<mat-vertical-stepper #stepper>\n  <mat-step label=\"Requested\"  editable=\"false\">\n    {{date}}\n  </mat-step>\n  <mat-step label=\"In Transit\"  editable=\"false\">\n     {{date}}\n  </mat-step>\n  <mat-step label=\"Pickup\"  editable=\"false\" >\n     {{date}}\n  </mat-step>\n  <mat-step label=\"Complete\" editable=\"false\">\n     {{date}}\n  </mat-step>\n</mat-vertical-stepper>",
                 "_type": "a",
                 "_attrDef": "p"
             }
