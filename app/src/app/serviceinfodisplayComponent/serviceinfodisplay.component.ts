@@ -20,11 +20,14 @@ import { PubSubService } from './../service/pubSub.service';
 export class serviceinfodisplayComponent implements OnInit, OnChanges {
     @Input('displayInfo') displayInfo;
     @ViewChild('infoForm') infoForm: NgForm;
+  
+  date: any;
   constructor(private pubsub:PubSubService){
     	
     }
     ngOnInit() {
         // this.infoForm.control.disable()
+      this.date = new Date().toLocaleString();
     }
 
     ngOnChanges(changes: SimpleChanges) {
