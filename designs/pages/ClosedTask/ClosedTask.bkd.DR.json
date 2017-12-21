@@ -1,0 +1,31 @@
+{
+    "2f791374-e76e-22d9-aeb9-0472a7ef63ae": {
+        "name": "HTML",
+        "guid": "2f791374-e76e-22d9-aeb9-0472a7ef63ae",
+        "template": "%html%",
+        "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
+        "paletteTemplate": "HTML",
+        "templateUrl": "",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "html",
+                "_value": "<div class=\"example-container mat-elevation-z8\">\n    <mat-table #table=\"\" [dataSource]=\"dataSourceUnas\">\n\n      <!--- Note that these columns can be defined in any order.\n                  The actual rendered columns are set as a property on the row definition\" -->\n\n      <!-- Position Column -->\n      <ng-container matColumnDef=\"agentName\">\n        <mat-header-cell *matHeaderCellDef=\"\"> <mat-checkbox [(ngModel)]=\"AllChecked\"  ></mat-checkbox></mat-header-cell>\n        <mat-cell *matCellDef=\"let element\">\n          <mat-checkbox (change)=\"checkevent($event)\" [checked]=AllChecked></mat-checkbox>\n        </mat-cell>\n      </ng-container>\n\n      <!-- Name Column -->\n      <ng-container matColumnDef=\"assignedUser\">\n        <mat-header-cell *matHeaderCellDef=\"\"> Customer Name </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\" (click)=\"unasigned(element.case)\">\n          <span class=\"anchorFake\">{{element.case.assignedUser}}</span>\n        </mat-cell>\n      </ng-container>\n\n      <!-- Weight Column -->\n      <ng-container matColumnDef=\"policyNumber\">\n        <mat-header-cell *matHeaderCellDef=\"\"> Policy No </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\" (click)=\"unasigned(element.case)\">\n          <span class=\"anchorFake\">{{element.case.policyNumber}} </span>\n        </mat-cell>\n      </ng-container>\n\n      <!-- Symbol Column -->\n      <ng-container matColumnDef=\"caseId\">\n        <mat-header-cell *matHeaderCellDef=\"\"> Case Id </mat-header-cell>\n        <mat-cell *matCellDef=\"let element\" (click)=\"unasigned(element.case)\">\n          <span class=\"anchorFake\">{{element.case.caseId}} </span>\n        </mat-cell>\n      </ng-container>\n\n      <mat-header-row *matHeaderRowDef=\"displayedColumnsUn\"></mat-header-row>\n      <mat-row *matRowDef=\"let row; columns: displayedColumnsUn;\"></mat-row>\n    </mat-table>\n  </div>",
+                "_type": "a",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 7
+    }
+}

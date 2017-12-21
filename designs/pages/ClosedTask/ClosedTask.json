@@ -1,0 +1,13 @@
+{
+    "appPageId": "ef9184b7-a262-e4f8-2dd7-8fef913d4061",
+    "appPageName": "ClosedTask",
+    "componentName": "closedtaskComponent",
+    "selectorName": "bh-closedtask",
+    "htmlFileName": "closedtask.template.html",
+    "tsFileName": "closedtask.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

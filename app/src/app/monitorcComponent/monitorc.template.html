@@ -29,9 +29,8 @@
           </p>
 
 
-          <p class="button-nav" (click)="show(&apos;closed&apos;)">
+          <p class="button-nav" (click)="show(&apos;closed&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;closed&apos;}">
             <span>Closed</span>
-            <i fxFlexAlign="center end" class="material-icons" style="    float: right;">add_circle</i>
           </p>
         </div>
       </div>
