@@ -32,16 +32,28 @@ export class serviceinfodisplayComponent implements OnInit, OnChanges  {
       
         // this.infoForm.control.disable()
       this.date = this.formattedDate() ;
+      
     }
 
     ngOnChanges(changes: SimpleChanges) {
         if (changes['displayInfo']) {
             console.log('service', changes['displayInfo'].currentValue);
           
-      
     setTimeout(()=>{
-      this.stepper.selectedIndex = this.getRandomInt(0, 3); 
+      if(this.displayInfo.details.status == 'complete'){
+         if(this.stepper)
+       this.stepper.selectedIndex = 3;
+      }
+      if(this.displayInfo.details.status == 'transit'){
+      if(this.stepper)
+      this.stepper.selectedIndex = 1; 
+    }
+    if(this.displayInfo.details.status == 'pickup'){
+        if(this.stepper)
+        this.stepper.selectedIndex = 2; 
+      }
     },0);
+     
   
         }
     }

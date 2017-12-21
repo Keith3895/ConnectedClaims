@@ -45,7 +45,7 @@ export let caseList = [
             {
                 "serviceType": "ambulance",
                 "details": {
-                    "status": "active",
+                    "status": "requested",
                     "name": "Ambulance",
                     "serviceProviderName": "De Ye Wala",
                     "companyName": "De Ye",
@@ -56,7 +56,7 @@ export let caseList = [
             {
                 "serviceType": "towing",
                 "details": {
-                    "status": "active",
+                    "status": "transit",
                     "name": "Towing",
                     "serviceProviderName": "Ana Wala",
                     "companyName": "Ana",
@@ -66,7 +66,7 @@ export let caseList = [
             {
                 "serviceType": "roadside assist",
                 "details": {
-                    "status": "deactive",
+                    "status": "complete",
                     "name": "RoadSide Assist",
                     "serviceProviderName": "Ana Wala",
                     "companyName": "Ana",
@@ -86,7 +86,7 @@ export let caseList = [
             {
                 "serviceType": "car hire",
                 "details": {
-                    "status": "deactive",
+                    "status": "pickup",
                     "name": "Car Hire",
                     "serviceProviderName": "Ana Wala",
                     "companyName": "Ana",
@@ -127,7 +127,7 @@ export let caseList = [
             {
                 "serviceType": "ambulance",
                 "details": {
-                    "status": "active",
+                    "status": "requested",
                     "name": "Ambulance",
                     "serviceProviderName": "De Ye Wala",
                     "companyName": "De Ye",
@@ -138,7 +138,7 @@ export let caseList = [
             {
                 "serviceType": "towing",
                 "details": {
-                    "status": "active",
+                    "status": "pickup",
                     "name": "Towing",
                     "serviceProviderName": "Ana Wala",
                     "companyName": "Ana",
@@ -179,7 +179,7 @@ export let caseList = [
             {
                 "serviceType": "ambulance",
                 "details": {
-                    "status": "active",
+                    "status": "requested",
                     "name": "Ambulance",
                     "serviceProviderName": "De Ye Wala",
                     "companyName": "De Ye",
@@ -190,7 +190,7 @@ export let caseList = [
             {
                 "serviceType": "towing",
                 "details": {
-                    "status": "active",
+                    "status": "transit",
                     "name": "Towing",
                     "serviceProviderName": "Ana Wala",
                     "companyName": "Ana",
@@ -230,7 +230,7 @@ export let caseList = [
             {
                 "serviceType": "ambulance",
                 "details": {
-                    "status": "active",
+                    "status": "requested",
                     "name": "Ambulance",
                     "serviceProviderName": "De Ye Wala",
                     "companyName": "De Ye",
@@ -241,7 +241,7 @@ export let caseList = [
             {
                 "serviceType": "towing",
                 "details": {
-                    "status": "active",
+                    "status": "pickup",
                     "name": "Towing",
                     "serviceProviderName": "Ana Wala",
                     "companyName": "Ana",
@@ -281,7 +281,7 @@ export let caseList = [
             {
                 "serviceType": "ambulance",
                 "details": {
-                    "status": "active",
+                    "status": "requested",
                     "name": "Ambulance",
                     "serviceProviderName": "De Ye Wala",
                     "companyName": "De Ye",
@@ -292,7 +292,7 @@ export let caseList = [
             {
                 "serviceType": "towing",
                 "details": {
-                    "status": "active",
+                    "status": "pickup",
                     "name": "Towing",
                     "serviceProviderName": "Ana Wala",
                     "companyName": "Ana",
