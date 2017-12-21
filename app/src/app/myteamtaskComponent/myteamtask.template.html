@@ -1,6 +1,6 @@
 <div id="angularRoot">
-  <div style="position:absolute;top:10px;left:50%;">
-    <p>Sort by:</p>
+  <div style="position:absolute;top:40px;left:50%;">
+    <span>Sort by:</span>
     <mat-radio-group [(ngModel)]="groupbySwitch">
       <mat-radio-button value="SLA" [checked]="true" (click)="swCha(&apos;SLA&apos;)">SLA</mat-radio-button>
       <mat-radio-button value="name" (click)="swCha(&apos;name&apos;)">Agent Name</mat-radio-button>
