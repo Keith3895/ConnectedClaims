@@ -20,7 +20,9 @@
           </mat-card>
         </div>
       </div>
-
+      <div class="refresh-button">
+        <button mat-icon-button="" (click)="refresh()"><span matTooltip="Refresh"><i class="material-icons">refresh</i></span></button>
+      </div>
 
       <div class="logout-button">
         <button [routerLink]="[&apos;/login&apos;]" mat-icon-button=""><span matTooltip="Logout"><i class="material-icons">input</i></span></button>
