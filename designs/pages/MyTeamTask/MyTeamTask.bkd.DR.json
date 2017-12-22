@@ -21,7 +21,7 @@
             },
             {
                 "_key": "html",
-                "_value": "\n    <div style=\"position:absolute;top:10px;left:50%;\">\n      <p>Sort by:</p>\n      <mat-radio-group [(ngModel)]=\"groupbySwitch\">\n        <mat-radio-button value=\"SLA\" [checked]=\"true\" (click)=\"swCha('SLA')\">SLA</mat-radio-button>\n        <mat-radio-button value=\"name\" (click)=\"swCha('name')\">Agent Name</mat-radio-button>\n      </mat-radio-group>\n    </div>\n    <bh-groupname [caseArr]=\"dataSourceAsig\" [groupbySwitch]=\"groupbySwitch\" *ngIf=\"groupbySwitch\"></bh-groupname>\n  ",
+                "_value": "\n    <div style=\"    position: absolute;\n    top: -45px;\n    left: 36%; \">\n      <span>Sort by:</span>\n      <mat-radio-group [(ngModel)]=\"groupbySwitch\">\n        <mat-radio-button value=\"SLA\" [checked]=\"true\" (click)=\"swCha('SLA')\">SLA</mat-radio-button>\n        <mat-radio-button value=\"name\" (click)=\"swCha('name')\">Agent Name</mat-radio-button>\n      </mat-radio-group>\n    </div>\n    <bh-groupname [caseArr]=\"dataSourceAsig\" [groupbySwitch]=\"groupbySwitch\" [fxShow]=\"groupbySwitch\"></bh-groupname>\n  ",
                 "_type": "a",
                 "_attrDef": "p"
             }
