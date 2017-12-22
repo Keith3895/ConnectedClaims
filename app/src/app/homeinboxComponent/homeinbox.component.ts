@@ -59,7 +59,7 @@ export class homeinboxComponent implements OnInit {
       	 this.displayInfo={case:showContent.case,services:showContent.services};
       		console.log(this.displayInfo);
       this.displayedContent =true;
-      this.mode="edit";
+      this.mode=showContent.mode;
       delete this.service;
     });
     this.pubsub.$sub("serviceCall").subscribe(showContent => {
