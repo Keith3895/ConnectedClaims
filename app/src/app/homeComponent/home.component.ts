@@ -19,6 +19,7 @@ import { roleService } from 'app/services/Role/role.service';
 export class homeComponent implements OnInit {
     role = '';
   	searchTrigger=false;
+  	
     constructor(private rs: roleService) {}
     ngOnInit() {
         this.role = this.rs.getUserRole();

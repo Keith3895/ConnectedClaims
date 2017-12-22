@@ -24,7 +24,7 @@ export let caseList = [
             "incidentLocation": "Paulshof",
             "incidentTime": "Mon Dec 18 2017 01:13:01 GMT+0530 (IST)",
             "assignedUser": "Paul",
-            "priority": "low",
+            "priority": "High",
             "createdTime": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "lastModified": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "incidentType": "accident",
@@ -106,7 +106,7 @@ export let caseList = [
             "incidentLocation": "Paulshof",
             "incidentTime": "Mon Dec 18 2017 01:13:01 GMT+0530 (IST)",
             "assignedUser": "Paul",
-            "priority": "low",
+            "priority": "medium",
             "createdTime": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "lastModified": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "incidentType": "accident",
@@ -210,7 +210,7 @@ export let caseList = [
             "incidentLocation": "Paulshof",
             "incidentTime": "Mon Dec 18 2017 01:13:01 GMT+0530 (IST)",
             "assignedUser": "Paul",
-            "priority": "",
+            "priority": "low",
             "createdTime": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "lastModified": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "customer": {
@@ -261,7 +261,58 @@ export let caseList = [
             "incidentLocation": "Paulshof",
             "incidentTime": "Mon Dec 18 2017 01:13:01 GMT+0530 (IST)",
             "assignedUser": "Paul",
-            "priority": "",
+            "priority": "medium",
+            "createdTime": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
+            "lastModified": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
+            "customer": {
+                "customerName": "Paul",
+                "policyNumber": "1513539827172",
+                "policyExpiryDate": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
+                "dob": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
+                "customerContactNumber": "1234567890",
+                "customerAddress": "1 Estelle Rd, Pauslhof, Johannesburg, 2056",
+                "insuredVehicleDetails": {
+                    "brand": "Ford",
+                    "make": "Punto"
+                }
+            }
+        },
+        "services": [
+            {
+                "serviceType": "ambulance",
+                "details": {
+                    "status": "requested",
+                    "name": "Ambulance",
+                    "serviceProviderName": "De Ye Wala",
+                    "companyName": "De Ye",
+                    "contact": "1234567890"
+                },
+                "comments": []
+            },
+            {
+                "serviceType": "towing",
+                "details": {
+                    "status": "pickup",
+                    "name": "Towing",
+                    "serviceProviderName": "Ana Wala",
+                    "companyName": "Ana",
+                    "contact": "1234567890"
+                }
+            }
+        ],
+        "selected": false
+    },
+    {
+        "case": {
+            "agentName": "Agent Keith",
+            "caseId": 123123,
+            "customerName": "John",
+            "policyNumber": 234234,
+            "detectedBy": "",
+            "incidentLocation": "Paulshof",
+            "incidentTime": "Mon Dec 18 2017 01:13:01 GMT+0530 (IST)",
+            "assignedUser": "Paul",
+            "priority": "High",
             "createdTime": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "lastModified": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "customer": {
@@ -312,7 +363,7 @@ export let caseList = [
             "incidentLocation": "Paulshof",
             "incidentTime": "Mon Dec 18 2017 01:13:01 GMT+0530 (IST)",
             "assignedUser": "Paul",
-            "priority": "",
+            "priority": "low",
             "createdTime": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "lastModified": "Mon Dec 18 2017 01:13:22 GMT+0530 (IST)",
             "customer": {
