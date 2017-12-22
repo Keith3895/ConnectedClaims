@@ -22,17 +22,22 @@ export class myteamtaskComponent implements OnInit {
   dataSourceAsig;
   
   @Input('data') data;
-  constructor(private pubsub: PubSubService) { }
+  constructor(private pubsub: PubSubService) { 
+  	this.swCha('SLA');
+  }
   ngOnInit() {
-
+	this.groupbySwitch="SLA";
     let assign = this.data.filter(el => {
 
       return el.case.agentName;
     });
     this.dataSourceAsig = assign;
-
+	
+    
+    
   }
   swCha(val) {
+    console.log(val);
     this.pubsub.$pub('filterBy', val);
   }
   asigned(val) {

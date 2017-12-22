@@ -21,7 +21,337 @@
             },
             {
                 "_key": "html",
-                "_value": "\n    <div style=\"    position: relative;\n    top: -40px;\n    left: 35%; width:50%;\">\n      <span>Group by:</span>\n      <mat-radio-group [(ngModel)]=\"groupbySwitch\">\n        <mat-radio-button value=\"SLA\"  (click)=\"swCha('SLA')\">SLA</mat-radio-button>\n        <mat-radio-button value=\"name\" (click)=\"swCha('name')\">Agent Name</mat-radio-button>\n      </mat-radio-group>\n    </div>\n    <bh-groupname [caseArr]=\"dataSourceAsig\" [groupbySwitch]=\"groupbySwitch\" [fxShow]=\"groupbySwitch\"></bh-groupname>\n  ",
+                "_value": "\n    <div style=\"    \">\n      \n     \n    </div>\n    <bh-groupname [caseArr]=\"dataSourceAsig\"  ></bh-groupname>\n  ",
+                "_type": "a",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 7
+    },
+    "22713fc8-4da7-2ede-cc5d-649f33357583": {
+        "name": "NG-RadioGroup",
+        "guid": "22713fc8-4da7-2ede-cc5d-649f33357583",
+        "template": "<mat-radio-group %[value]%  %style% %class%  %[(ngModel)]% %bCustomProps% %name% %(change)%  %labelPosition% %selected%></mat-radio-group>",
+        "designerTemplate": "<div class=\"ad-RadioGroup ad-charts-border drop ad-RadioGroup-row bkeeper-container-label\"></div>",
+        "paletteTemplate": "Radio Group",
+        "templateUrl": "https://material.angular.io/components/radio/overview",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "[value]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[(ngModel)]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "name",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "selected",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "(change)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "7": false,
+                "_key": "labelPosition",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 5
+    },
+    "d74a4b26-8643-1703-b081-78e6d1bdc7b4": {
+        "name": "NG-Radio",
+        "guid": "d74a4b26-8643-1703-b081-78e6d1bdc7b4",
+        "template": "<mat-radio-button  %value%  %style% %class% %required%  %bCustomProps% %id% %name% %(change)% %labelPosition% %checked%>%label%</mat-radio-button>",
+        "designerTemplate": "<div class=\"md-radio ad-position-relative ad-height\"><input type=\"Radio\" value=\"Radio Field\" readonly class=\"validate\" checked><label></label></div>",
+        "paletteTemplate": "Radio Button",
+        "templateUrl": "https://material.angular.io/components/radio/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "value",
+                "_value": "Name",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "required",
+                "_value": "required",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "label",
+                "_value": "Agent Name",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "id",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "name",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "7": false,
+                "_key": "checked",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "8": false,
+                "_key": "(change)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "9": false,
+                "_key": "labelPosition",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "10": false,
+                "_key": "(click)",
+                "_value": "swCha('name')",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 5
+    },
+    "72fce66e-376b-1b57-e86a-a8078022f31b": {
+        "name": "NG-Radio",
+        "guid": "72fce66e-376b-1b57-e86a-a8078022f31b",
+        "template": "<mat-radio-button  %value%  %style% %class% %required%  %bCustomProps% %id% %name% %(change)% %labelPosition% %checked%>%label%</mat-radio-button>",
+        "designerTemplate": "<div class=\"md-radio ad-position-relative ad-height\"><input type=\"Radio\" value=\"Radio Field\" readonly class=\"validate\" checked><label></label></div>",
+        "paletteTemplate": "Radio Button",
+        "templateUrl": "https://material.angular.io/components/radio/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "value",
+                "_value": "SLA",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "required",
+                "_value": "required",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "label",
+                "_value": "SLA",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "id",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "name",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "7": false,
+                "_key": "checked",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "8": false,
+                "_key": "(change)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "9": false,
+                "_key": "labelPosition",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "10": false,
+                "_key": "(click)",
+                "_value": "swCha('SLA')",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 5
+    },
+    "37a36801-bbb9-780a-af0c-a8209585b16a": {
+        "name": "FlexLayoutRow",
+        "guid": "37a36801-bbb9-780a-af0c-a8209585b16a",
+        "template": "<div fxLayout=\"row\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"row drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Row",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "position: relative;     top: -40px;     left: 35%; width:50%;",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutWrap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutAlign",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "1710969d-abfe-bc12-c4e5-e1d5df90ed8f": {
+        "name": "HTML",
+        "guid": "1710969d-abfe-bc12-c4e5-e1d5df90ed8f",
+        "template": "%html%",
+        "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
+        "paletteTemplate": "HTML",
+        "templateUrl": "",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "html",
+                "_value": "<span>Group by:</span>",
                 "_type": "a",
                 "_attrDef": "p"
             }
