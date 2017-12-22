@@ -1,39 +1,43 @@
 <div id="angularRoot">
-  <mat-sidenav-container id="632f1117-4553-6032-47de-4c2ad027dfa9" fullscreen="">
-    <div class="rightnav" fxFlex="" fxLayout="row" fxLayoutAlign="start">
-
-      <div class="searchContainer" fxLayout="row" fxLayoutAlign="start" fxLayoutWrap="">
-        <div fxLayout="row" fxFlex="100">
-          <input type="text" class="searchInput search">
+  <mat-sidenav-container id="632f1117-4553-6032-47de-4c2ad027dfa9" fullscreen="" fxFlex="100">
+    <mat-toolbar id="efe96f0c-0f63-954c-6b01-15c8907a46c3" fxFlex="100">
+      <div fxLayout="column" fxFlex="50" fxLayoutWrap="wrap" fxShow="true" fxHide="false" id="913ac8b0-9269-2ab8-6043-2a25e94740a5" fxFlexOffset="25">
+        <div fxLayout="row" fxFlex="80" fxShow="true" fxHide="false" id="aee0783d-fef1-4710-5795-3ce393b0f387" [ngClass]="{&apos;searchBar&apos;:searchTrigger}">
+          <input type="text" class="search">
           <button mat-icon-button="" class="searchdrop" (click)="searchTrigger=!searchTrigger">
             <mat-icon aria-label="Example icon-button with a heart icon">
               <i class="material-icons">keyboard_arrow_down</i>
             </mat-icon>
           </button>
-          <button type="submit " class="searchSubmit">
-            <i class="material-icons ">search</i>
+
+
+
+          <button mat-button="" class="searchSubmit" id="351b40b1-994e-8617-ae02-4f7c7d9fb186">
+            <i class="material-icons">search</i>
           </button>
         </div>
-        <div fxLayout="row" fxFlex="100" *ngIf="searchTrigger">
-          <mat-card>
-            <bh-searchcard></bh-searchcard>
+        <div fxLayout="row" fxFlex="80" fxShow="true" fxHide="false" id="1c7e24c2-fbd6-8884-5d4e-33ab429047d8" *ngIf="searchTrigger">
+          <mat-card id="02633b1d-39cd-bec2-7a1c-d7839cc94b7c" style="z-index:10000">
+            <mat-card-content id="cff8d8e8-e7e1-b1d7-0023-d84eef65c250">
+              <bh-searchcard></bh-searchcard>
+            </mat-card-content>
           </mat-card>
         </div>
       </div>
-      <div class="refresh-button">
-        <button mat-icon-button="" (click)="refresh()"><span matTooltip="Refresh"><i class="material-icons">refresh</i></span></button>
+      <div fxLayout="column" fxFlex="20" fxLayoutAlign="end end" fxShow="true" fxHide="false" id="be641071-ef1d-d101-3ced-cd1d02cae15b">
+        <div fxLayout="row" fxLayoutGap="1em" fxShow="true" fxHide="false" id="3b15982e-ddac-0bda-dbd2-55ad485b8a52">
+          <mat-icon class="refresh-button" id="e45c8051-7fef-0984-ef16-a55d64addf9f" (click)="refresh()"><span matTooltip="Refresh"><i class="material-icons">refresh</i></span></mat-icon>
+          <mat-icon class="logout-button" id="bab52ed3-a88c-2dc0-5c3d-f1a891b805cf"><span matTooltip="Logout"><i class="material-icons">input</i></span></mat-icon>
+        </div>
       </div>
 
-      <div class="logout-button">
-        <button [routerLink]="[&apos;/login&apos;]" mat-icon-button=""><span matTooltip="Logout"><i class="material-icons">input</i></span></button>
-      </div>
-    </div>
-    <mat-tab-group class="home-tabgroup" id="f3ab969a-fe55-dfd9-2df8-fa065a04ccac">
-      <mat-tab label="Inbox" id="67ff98d8-6507-dc69-7399-ee9c92ce3b78">
+    </mat-toolbar>
+    <mat-tab-group class="home-tabgroup" id="f3ab969a-fe55-dfd9-2df8-fa065a04ccac" fxFlex="100">
+      <mat-tab label="Inbox" id="67ff98d8-6507-dc69-7399-ee9c92ce3b78" fxFlex="30" fxFlex.lt-sm="15">
         <bh-homeinbox [role]="role"></bh-homeinbox>
       </mat-tab>
-      <mat-tab label="Dashboard" id="2d4cbcf9-1db7-a302-2750-4052b3056a24"></mat-tab>
-      <mat-tab label="Reports" id="7b56f78c-7a40-1d10-0522-dc6977960aad"></mat-tab>
+      <mat-tab label="Dashboard" id="2d4cbcf9-1db7-a302-2750-4052b3056a24" fxFlex="30" fxFlex.lt-sm="15"></mat-tab>
+      <mat-tab label="Reports" id="7b56f78c-7a40-1d10-0522-dc6977960aad" fxFlex="30" fxFlex.lt-sm="15"></mat-tab>
     </mat-tab-group>
   </mat-sidenav-container>
 </div>

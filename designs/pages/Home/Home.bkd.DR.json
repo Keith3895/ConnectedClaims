@@ -8,21 +8,30 @@
         "templateUrl": "https://material.angular.io/components/sidenav/overview",
         "htmlAttributes": [
             {
+                "0": false,
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
+                "1": false,
                 "_key": "class",
                 "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
+                "2": false,
                 "_key": "fullscreen",
                 "_value": "fullscreen",
                 "_type": "a",
+                "_attrDef": "c"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "100",
+                "_type": "kv",
                 "_attrDef": "c"
             }
         ],
@@ -49,6 +58,15 @@
                 "_value": "home-tabgroup",
                 "_type": "kv",
                 "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "3": false,
+                "_key": "fxFlex",
+                "_value": "100",
+                "_type": "kv",
+                "_attrDef": "c"
+
             }
         ],
         "type": 6
@@ -62,12 +80,14 @@
         "templateUrl": "https://material.angular.io/components/tabs/overview",
         "htmlAttributes": [
             {
+                "0": false,
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
+                "1": false,
                 "_key": "class",
                 "_value": "",
                 "_type": "kv",
@@ -79,6 +99,20 @@
                 "_value": "Inbox",
                 "_type": "kv",
                 "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "fxFlex",
+                "_value": "30",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "4": false,
+                "_key": "fxFlex.lt-sm",
+                "_value": "15",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 6
@@ -92,12 +126,14 @@
         "templateUrl": "https://material.angular.io/components/tabs/overview",
         "htmlAttributes": [
             {
+                "0": false,
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
+                "1": false,
                 "_key": "class",
                 "_value": "",
                 "_type": "kv",
@@ -109,6 +145,21 @@
                 "_value": "Dashboard",
                 "_type": "kv",
                 "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "fxFlex",
+                "_value": "30",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "4": false,
+                "5": false,
+                "_key": "fxFlex.lt-sm",
+                "_value": "15",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 6
@@ -129,6 +180,7 @@
                 "_attrDef": "p"
             },
             {
+                "1": false,
                 "_key": "class",
                 "_value": "",
                 "_type": "kv",
@@ -140,6 +192,21 @@
                 "_value": "Reports",
                 "_type": "kv",
                 "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "fxFlex",
+                "_value": "30",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "4": false,
+                "5": false,
+                "_key": "fxFlex.lt-sm",
+                "_value": "15",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 6
@@ -195,11 +262,579 @@
             },
             {
                 "_key": "html",
-                "_value": "<div class=\"rightnav\" fxFlex  fxLayout=\"row\" fxLayoutAlign=\"start\">\n\n       <div class=\"searchContainer\" fxLayout=\"row\" fxLayoutAlign=\"start\" fxLayoutWrap>\n        <div fxLayout=\"row\" fxFlex=\"100\">\n          <input type=\"text\" class=\"searchInput search\">\n          <button mat-icon-button=\"\" class=\"searchdrop\" (click)=\"searchTrigger=!searchTrigger\">\n            <mat-icon aria-label=\"Example icon-button with a heart icon\">\n              <i class=\"material-icons\">keyboard_arrow_down</i>\n            </mat-icon>\n          </button>\n          <button type=\"submit \" class=\"searchSubmit\">\n            <i class=\"material-icons \">search</i>\n          </button>\n        </div>\n        <div fxLayout=\"row\" fxFlex=\"100\" *ngIf=\"searchTrigger\">\n          <mat-card >\n            <bh-searchcard></bh-searchcard>\n          </mat-card>\n        </div>\n      </div>\n      <div  class=\"refresh-button\">\n      <button mat-icon-button=\"\" (click)=\"refresh()\"><span matTooltip=\"Refresh\"><i class=\"material-icons\">refresh</i></span></button>\n    </div>\n  \t\t\n      <div  class=\"logout-button\">\n      <button [routerLink]=\"['/login']\"\n              mat-icon-button=\"\"><span matTooltip=\"Logout\"><i class=\"material-icons\">input</i></span></button>\n    </div>\n    </div>",
+                "_value": "<input type=\"text\" class=\"search\">\n        <button  mat-icon-button=\"\" class=\"searchdrop\" (click)=\"searchTrigger=!searchTrigger\">\n            <mat-icon aria-label=\"Example icon-button with a heart icon\">\n              <i class=\"material-icons\">keyboard_arrow_down</i>\n            </mat-icon>\n          </button>\t\n          \n       \n\n  ",
                 "_type": "a",
                 "_attrDef": "p"
             }
         ],
         "type": 7
+    },
+    "efe96f0c-0f63-954c-6b01-15c8907a46c3": {
+        "name": "NG-Toolbar",
+        "guid": "efe96f0c-0f63-954c-6b01-15c8907a46c3",
+        "template": "<mat-toolbar %bCustomProps% %color% %style% %class%>%content%</mat-toolbar>",
+        "designerTemplate": "<div class=\"ad-toolbar-border ad-toolbars drop row\"></div>",
+        "paletteTemplate": "Toolbar",
+        "templateUrl": "https://material.angular.io/components/toolbar/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "color",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "content",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "100",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 6
+    },
+    "913ac8b0-9269-2ab8-6043-2a25e94740a5": {
+        "name": "FlexLayoutCol",
+        "guid": "913ac8b0-9269-2ab8-6043-2a25e94740a5",
+        "template": "<div fxLayout=\"column\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"column drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Column",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fxFlex",
+                "_value": "50",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "fxLayoutWrap",
+                "_value": "wrap",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "fxLayoutAlign",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "7": false,
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "8": false,
+                "_key": "fxFlexOffset",
+                "_value": "25",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 1
+    },
+    "be641071-ef1d-d101-3ced-cd1d02cae15b": {
+        "name": "FlexLayoutCol",
+        "guid": "be641071-ef1d-d101-3ced-cd1d02cae15b",
+        "template": "<div fxLayout=\"column\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"column drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Column",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fxFlex",
+                "_value": "20",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "fxLayoutWrap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "fxLayoutAlign",
+                "_value": "end end",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "7": false,
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "3b15982e-ddac-0bda-dbd2-55ad485b8a52": {
+        "name": "FlexLayoutRow",
+        "guid": "3b15982e-ddac-0bda-dbd2-55ad485b8a52",
+        "template": "<div fxLayout=\"row\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"row drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Row",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutWrap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "fxLayoutGap",
+                "_value": "1em",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "fxLayoutAlign",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "e45c8051-7fef-0984-ef16-a55d64addf9f": {
+        "name": "NG-icon",
+        "guid": "e45c8051-7fef-0984-ef16-a55d64addf9f",
+        "template": "<mat-icon %style% %class% %bCustomProps%>%IconName%</mat-icon>",
+        "designerTemplate": "<div class=\"ad-icon\"><i class=\"material-icons\" style=\"transform:rotate(180deg)\">priority_high</i></div>",
+        "paletteTemplate": "Icon",
+        "templateUrl": "https://material.angular.io/components/icon/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "refresh-button",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "IconName",
+                "_value": "<span matTooltip=\"Refresh\"><i class=\"material-icons\">refresh</i></span>",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "(click)",
+                "_value": "refresh()",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 5
+    },
+    "bab52ed3-a88c-2dc0-5c3d-f1a891b805cf": {
+        "name": "NG-icon",
+        "guid": "bab52ed3-a88c-2dc0-5c3d-f1a891b805cf",
+        "template": "<mat-icon %style% %class% %bCustomProps%>%IconName%</mat-icon>",
+        "designerTemplate": "<div class=\"ad-icon\"><i class=\"material-icons\" style=\"transform:rotate(180deg)\">priority_high</i></div>",
+        "paletteTemplate": "Icon",
+        "templateUrl": "https://material.angular.io/components/icon/overview",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "logout-button",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "IconName",
+                "_value": "<span matTooltip=\"Logout\"><i class=\"material-icons\">input</i></span>",
+                "_type": "a",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 5
+    },
+    "1c7e24c2-fbd6-8884-5d4e-33ab429047d8": {
+        "name": "FlexLayoutRow",
+        "guid": "1c7e24c2-fbd6-8884-5d4e-33ab429047d8",
+        "template": "<div fxLayout=\"row\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"row drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Row",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fxFlex",
+                "_value": "80",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutWrap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "fxLayoutAlign",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "8": false,
+                "_key": "*ngIf",
+                "_value": "searchTrigger",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 1
+    },
+    "02633b1d-39cd-bec2-7a1c-d7839cc94b7c": {
+        "name": "NG-card",
+        "guid": "02633b1d-39cd-bec2-7a1c-d7839cc94b7c",
+        "template": "<mat-card %bCustomProps% %style% %class%></mat-card>",
+        "designerTemplate": "<div class=\"ad-cards ad-charts-border drop ad-card ad-card-shadow bkeeper-container-label\"><i style=\"font-size: 18px; position:absolute; top:0%; left:75px;\" class=\"material-icons validate icons-events\">credit_card</div>",
+        "paletteTemplate": "Card",
+        "templateUrl": "https://material.angular.io/components/card/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "z-index:10000",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "cff8d8e8-e7e1-b1d7-0023-d84eef65c250": {
+        "name": "NG-CardContent",
+        "guid": "cff8d8e8-e7e1-b1d7-0023-d84eef65c250",
+        "template": "<mat-card-content %style% %class% %bCustomProps%>%content%</mat-card-content>",
+        "designerTemplate": "<div class=\"ad-card-content ad-charts-border drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Card Content",
+        "templateUrl": "https://material.angular.io/components/card/overview",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "content",
+                "_value": "<bh-searchcard></bh-searchcard>",
+                "_type": "a",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "aee0783d-fef1-4710-5795-3ce393b0f387": {
+        "name": "FlexLayoutRow",
+        "guid": "aee0783d-fef1-4710-5795-3ce393b0f387",
+        "template": "<div fxLayout=\"row\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"row drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Row",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fxFlex",
+                "_value": "80",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "fxLayoutWrap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "fxLayoutAlign",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "7": false,
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "8": false,
+                "_key": "[ngClass]",
+                "_value": "{'searchBar':searchTrigger}",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 1
+    },
+    "351b40b1-994e-8617-ae02-4f7c7d9fb186": {
+        "name": "NG-button",
+        "guid": "351b40b1-994e-8617-ae02-4f7c7d9fb186",
+        "template": "<button mat-button %style% %class% %bCustomProps% %color% %(click)%>%buttonname%</button>",
+        "designerTemplate": "<div class=\"ad-buttons\"></div>",
+        "paletteTemplate": "Button",
+        "templateUrl": "https://material.angular.io/components/button/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "searchSubmit",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "buttonname",
+                "_value": "<i class=\"material-icons\">search</i>",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "color",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "(click)",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 5
     }
 }
