@@ -26,7 +26,7 @@ export class myteamtaskComponent implements OnInit {
   	this.swCha('SLA');
   }
   ngOnInit() {
-	this.groupbySwitch="SLA";
+	//this.groupbySwitch="SLA";
     let assign = this.data.filter(el => {
 
       return el.case.agentName;
