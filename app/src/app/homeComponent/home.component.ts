@@ -25,5 +25,10 @@ export class homeComponent implements OnInit {
         this.role = this.rs.getUserRole();
         console.log('current role', this.role);
     }
+  
+  refresh()
+  {
+    window.location.reload();
+  }
 
 }
