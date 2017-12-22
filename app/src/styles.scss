@@ -112,42 +112,18 @@ bh-casescard {
 }
 
 
-.search{   
-  padding: 5px;
-    padding-right: 30px;
-  	
-}
-.rightnav{
-    
-
-    position: absolute;
-    top: 8px;
-    right: 18px;
-    z-index: 9999;
-    width: 805px;
-
-
-    height: 35px;
-
-
-
-    //left: 566px;
-    
-}
-.logout-button{
-    margin-top:3px;
-}
-.searchContainer {
-    display: flex;
-      float:left;
-      width: 498px;
-}
-
-.searchInput {
-    flex: 1;
+.search{
+ height : 30px;
+  width:500px;
 }
 .searchdrop{
-	margin-left:-41px !important;
+margin-left:-41px !important;
+}
+.searchBar{
+  margin-top:250px;
+}
+.searchdrop.mat-icon-button{
+  height : 30px;
 }
 .searchSubmit{
 	background:#4387fd;
@@ -203,7 +179,3 @@ width: 35%;
 	line-height:20px;
 }
 
-.refresh-button{
-  margin-left: 224px;
-  margin-top:3px;
-}
