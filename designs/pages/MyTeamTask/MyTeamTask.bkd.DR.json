@@ -21,7 +21,7 @@
             },
             {
                 "_key": "html",
-                "_value": "\n    <div style=\"    position: relative;\n    top: -40px;\n    left: 35%; width:50%;\">\n      <span>Sort by:</span>\n      <mat-radio-group [(ngModel)]=\"groupbySwitch\">\n        <mat-radio-button value=\"SLA\"  (click)=\"swCha('SLA')\">SLA</mat-radio-button>\n        <mat-radio-button value=\"name\" (click)=\"swCha('name')\">Agent Name</mat-radio-button>\n      </mat-radio-group>\n    </div>\n    <bh-groupname [caseArr]=\"dataSourceAsig\" [groupbySwitch]=\"groupbySwitch\" [fxShow]=\"groupbySwitch\"></bh-groupname>\n  ",
+                "_value": "\n    <div style=\"    position: relative;\n    top: -40px;\n    left: 35%; width:50%;\">\n      <span>Group by:</span>\n      <mat-radio-group [(ngModel)]=\"groupbySwitch\">\n        <mat-radio-button value=\"SLA\"  (click)=\"swCha('SLA')\">SLA</mat-radio-button>\n        <mat-radio-button value=\"name\" (click)=\"swCha('name')\">Agent Name</mat-radio-button>\n      </mat-radio-group>\n    </div>\n    <bh-groupname [caseArr]=\"dataSourceAsig\" [groupbySwitch]=\"groupbySwitch\" [fxShow]=\"groupbySwitch\"></bh-groupname>\n  ",
                 "_type": "a",
                 "_attrDef": "p"
             }
