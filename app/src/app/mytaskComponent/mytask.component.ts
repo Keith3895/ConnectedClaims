@@ -33,6 +33,7 @@ export class mytaskComponent implements OnInit {
 		
     }
   asigned(val){
+    val.mode="edit";
       this.pubsub.$pub('asignedClick',val);
     }
   displayService(val){

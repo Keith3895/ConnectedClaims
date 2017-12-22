@@ -45,6 +45,7 @@ export class myteamtasktabComponent implements OnInit, OnChanges {
   }
 
   asigned(val) {
+    
     this.pubsub.$pub('asignedClick', val);
   }
   displayService(val) {
