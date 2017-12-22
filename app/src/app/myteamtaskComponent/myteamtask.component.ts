@@ -20,8 +20,7 @@ import { PubSubService } from './../service/pubSub.service';
 export class myteamtaskComponent implements OnInit {
   displayedColumnsAs = ['select', 'agentName', 'assignedUser', 'policyNumber', 'caseId', 'services', 'status'];
   dataSourceAsig;
-  groupbySwitch = false;
-  	check = true;
+  
   @Input('data') data;
   constructor(private pubsub: PubSubService) { }
   ngOnInit() {
