@@ -28,7 +28,8 @@ export class groupnameComponent implements OnInit {
     }
 
     ngOnInit() {
-      console.log(this.switchValue);
+      console.log(this.caseArr);
+      this.filter("priority");
         this.pubsub.$sub('filterBy').subscribe(fl=>{
             this.fl = fl;
           	console.log("subscribe in group");
@@ -41,7 +42,12 @@ export class groupnameComponent implements OnInit {
                 filterBy = "priority";
             }
             
-            this.agent = this.caseArr.reduce((acc, val, c) => {
+            this.filter(filterBy);
+        });
+       
+    }
+  	filter(filterBy){
+    	this.agent = this.caseArr.reduce((acc, val, c) => {
                 if (c == 1) {
                     let temp = acc;
                     acc = {};
@@ -55,8 +61,6 @@ export class groupnameComponent implements OnInit {
             //console.log(this.agent);
             this.keys = Object.keys(this.agent);
             //console.log(this.agent);
-        });
-       
     }
 
 }

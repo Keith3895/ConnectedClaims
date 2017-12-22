@@ -49,13 +49,6 @@
                 "_value": "home-tabgroup",
                 "_type": "kv",
                 "_attrDef": "p"
-            },
-            {
-                "2": false,
-                "_key": "(click)",
-                "_value": "searchTrigger=false",
-                "_type": "kv",
-                "_attrDef": "c"
             }
         ],
         "type": 6

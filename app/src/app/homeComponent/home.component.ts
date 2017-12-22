@@ -1,5 +1,5 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit,HostListener } from '@angular/core'
 import { roleService } from 'app/services/Role/role.service';
 /**
 * Model import Example :
@@ -19,7 +19,9 @@ import { roleService } from 'app/services/Role/role.service';
 export class homeComponent implements OnInit {
     role = '';
   	searchTrigger=false;
-  	
+  	@HostListener('click') onClick() {
+      console.log(this.searchTrigger); 
+  }
     constructor(private rs: roleService) {}
     ngOnInit() {
         this.role = this.rs.getUserRole();
