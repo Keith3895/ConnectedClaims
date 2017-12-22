@@ -23,8 +23,9 @@ export class myteamtasktabComponent implements OnInit, OnChanges {
   @Input('fl') fl;
   constructor(private pubsub: PubSubService) { }
   ngOnInit() {
-
-
+	this.displayedColumnsAs = ['select', 'agentName', 'assignedUser', 'policyNumber', 'caseId', 'services', 'status'];
+	this.dataSourceAsig = new MatTableDataSource(this.data);
+    console.log(this.data);
     // });
 
   }

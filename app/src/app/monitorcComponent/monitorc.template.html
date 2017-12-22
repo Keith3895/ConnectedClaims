@@ -13,7 +13,7 @@
             <i fxFlexAlign="center end" class=" material-icons" style="    float: right;" (click)="toggleDrop= (toggleDrop==&apos;add_circle&apos;)?&apos;remove_circle&apos;:&apos;add_circle&apos;">{{toggleDrop}}</i>
           </p>
           <div class="dropdownCust" [ngClass]="{&apos;activeDrop&apos;:toggleDrop==&apos;remove_circle&apos;}">
-            <ul>
+            <ul [ngStyle.lt-lg]="{&apos;-webkit-padding-start&apos;: &apos;4px&apos;}">
 
               <li style="border-right:4px solid green;">
                 <span class="button-nav" (click)="show(&apos;myTeam&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;myTeam&apos;}">My Team Tasks</span>

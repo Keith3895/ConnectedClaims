@@ -1,12 +1,13 @@
 <div id="angularRoot">
-  <div style="    position: relative;
-    top: -40px;
-    left: 35%; width:50%;">
-    <span>Group by:</span>
-    <mat-radio-group [(ngModel)]="groupbySwitch">
-      <mat-radio-button value="SLA" (click)="swCha(&apos;SLA&apos;)">SLA</mat-radio-button>
-      <mat-radio-button value="name" (click)="swCha(&apos;name&apos;)">Agent Name</mat-radio-button>
+  <div fxLayout="row" style="position: relative;     top: -40px;     left: 35%; width:50%;" fxShow="true" fxHide="false" id="37a36801-bbb9-780a-af0c-a8209585b16a"><span>Group by:</span>
+    <mat-radio-group id="22713fc8-4da7-2ede-cc5d-649f33357583">
+      <mat-radio-button value="SLA" required id="72fce66e-376b-1b57-e86a-a8078022f31b" (click)="swCha(&apos;SLA&apos;)" checked="true">SLA</mat-radio-button>
+      <mat-radio-button value="Name" required id="d74a4b26-8643-1703-b081-78e6d1bdc7b4" (click)="swCha(&apos;name&apos;)">Agent Name</mat-radio-button>
     </mat-radio-group>
   </div>
-  <bh-groupname [caseArr]="dataSourceAsig" [groupbySwitch]="groupbySwitch" [fxShow]="groupbySwitch"></bh-groupname>
+  <div style="    ">
+
+
+  </div>
+  <bh-groupname [caseArr]="dataSourceAsig"></bh-groupname>
 </div>

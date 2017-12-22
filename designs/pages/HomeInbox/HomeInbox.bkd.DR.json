@@ -143,6 +143,19 @@
                 "_value": "{contentShown:!displayedContent}",
                 "_type": "kv",
                 "_attrDef": "c"
+            },
+            {
+                "9": false,
+                "_key": "fxFlex.lt-lg",
+                "_value": "5",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "_key": "[ngStyle]",
+                "_value": "{'-webkit-padding-start': '4px'}",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 1
@@ -177,6 +190,7 @@
                 "_attrDef": "p"
             },
             {
+                "3": false,
                 "_key": "fxLayoutWrap",
                 "_value": "",
                 "_type": "kv",
@@ -185,7 +199,7 @@
             {
                 "4": false,
                 "_key": "fxLayoutGap",
-                "_value": "1",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -204,10 +218,18 @@
                 "_attrDef": "p"
             },
             {
+                "7": false,
                 "_key": "fxHide",
                 "_value": "false",
                 "_type": "kv",
                 "_attrDef": "p"
+            },
+            {
+                "8": false,
+                "_key": "fxFlex.lt-lg",
+                "_value": "20",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 1
@@ -279,6 +301,13 @@
                 "8": false,
                 "_key": "*ngIf",
                 "_value": "display=='active'",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "9": false,
+                "_key": "[fxHide.lt-lg]",
+                "_value": "displayedContent",
                 "_type": "kv",
                 "_attrDef": "c"
             }
@@ -411,6 +440,13 @@
                 "8": false,
                 "_key": "*ngIf",
                 "_value": "displayedContent",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "9": false,
+                "_key": "fxFlex.lt-lg",
+                "_value": "75",
                 "_type": "kv",
                 "_attrDef": "c"
             }
@@ -569,6 +605,13 @@
                 "8": false,
                 "_key": "*ngIf",
                 "_value": "display=='unassigned'",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "9": false,
+                "_key": "[fxHide.lt-lg]",
+                "_value": "displayedContent",
                 "_type": "kv",
                 "_attrDef": "c"
             }
@@ -747,6 +790,13 @@
                 "8": false,
                 "_key": "*ngIf",
                 "_value": "display=='myTeam'",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "9": false,
+                "_key": "[fxHide.lt-lg]",
+                "_value": "displayedContent",
                 "_type": "kv",
                 "_attrDef": "c"
             }
@@ -978,6 +1028,13 @@
                 "_value": "display=='monitor'",
                 "_type": "kv",
                 "_attrDef": "c"
+            },
+            {
+                "9": false,
+                "_key": "[fxHide.lt-lg]",
+                "_value": "displayedContent",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 1
@@ -1064,6 +1121,7 @@
                 "_attrDef": "p"
             },
             {
+                "6": false,
                 "_key": "fxShow",
                 "_value": "true",
                 "_type": "kv",
@@ -1079,6 +1137,12 @@
                 "8": false,
                 "_key": "*ngIf",
                 "_value": "display=='mytask'",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "_key": "[fxHide.lt-lg]",
+                "_value": "displayedContent",
                 "_type": "kv",
                 "_attrDef": "c"
             }
@@ -1367,6 +1431,12 @@
                 "_value": "display=='closed'",
                 "_type": "kv",
                 "_attrDef": "c"
+            },
+            {
+                "_key": "[fxHide.lt-lg]",
+                "_value": "displayedContent",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 1
@@ -1565,6 +1635,66 @@
                 "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
+            }
+        ],
+        "type": 5
+    },
+    "a020a301-fd07-3a5d-5bc0-b97dba668314": {
+        "name": "NG-icon",
+        "guid": "a020a301-fd07-3a5d-5bc0-b97dba668314",
+        "template": "<mat-icon %style% %class% %bCustomProps%>%IconName%</mat-icon>",
+        "designerTemplate": "<div class=\"ad-icon\"><i class=\"material-icons\" style=\"transform:rotate(180deg)\">priority_high</i></div>",
+        "paletteTemplate": "Icon",
+        "templateUrl": "https://material.angular.io/components/icon/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "font-size:40px;",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "IconName",
+                "_value": "keyboard_arrow_left",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "[fxHide]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "4": false,
+                "_key": "(click)",
+                "_value": "displayedContent=false",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "5": false,
+                "_key": "fxHide.lt-lg",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "6": false,
+                "_key": "[fxHide.lt-lg]",
+                "_value": "!displayedContent",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 5
