@@ -129,6 +129,7 @@
         "templateUrl": "https://material.angular.io/components/tabs/overview",
         "htmlAttributes": [
             {
+                "0": false,
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -201,7 +202,9 @@
             },
             {
                 "_key": "html",
-                "_value": "<div class=\"rightnav\" fxFlex  fxLayout=\"row\" fxLayoutAlign=\"start\">\n\n       <div class=\"searchContainer\" fxLayout=\"row\" fxLayoutAlign=\"start\" fxLayoutWrap>\n        <div fxLayout=\"row\" fxFlex=\"100\">\n          <input type=\"text\" class=\"searchInput search\">\n          <button mat-icon-button=\"\" class=\"searchdrop\" (click)=\"searchTrigger=!searchTrigger\">\n            <mat-icon aria-label=\"Example icon-button with a heart icon\">\n              <i class=\"material-icons\">keyboard_arrow_down</i>\n            </mat-icon>\n          </button>\n          <button type=\"submit \" class=\"searchSubmit\">\n            <i class=\"material-icons \">search</i>\n          </button>\n        </div>\n        <div fxLayout=\"row\" fxFlex=\"100\" *ngIf=\"searchTrigger\">\n          <mat-card  >\n            <bh-searchcard></bh-searchcard>\n          </mat-card>\n        </div>\n      </div>\n       \n  \t\t\n      <div  class=\"logout-button\">\n      <button [routerLink]=\"['/login']\"\n      mat-button>Logout</button>\n    </div>\n    </div>",
+
+                "_value": "<div class=\"rightnav\" fxFlex  fxLayout=\"row\" fxLayoutAlign=\"start\">\n\n       <div class=\"searchContainer\" fxLayout=\"row\" fxLayoutAlign=\"start\" fxLayoutWrap>\n        <div fxLayout=\"row\" fxFlex=\"100\">\n          <input type=\"text\" class=\"searchInput search\">\n          <button mat-icon-button=\"\" class=\"searchdrop\" (click)=\"searchTrigger=!searchTrigger\">\n            <mat-icon aria-label=\"Example icon-button with a heart icon\">\n              <i class=\"material-icons\">keyboard_arrow_down</i>\n            </mat-icon>\n          </button>\n          <button type=\"submit \" class=\"searchSubmit\">\n            <i class=\"material-icons \">search</i>\n          </button>\n        </div>\n        <div fxLayout=\"row\" fxFlex=\"100\" *ngIf=\"searchTrigger\">\n          <mat-card >\n            <bh-searchcard></bh-searchcard>\n          </mat-card>\n        </div>\n      </div>\n       \n  \t\t\n      <div  class=\"logout-button\">\n      <button [routerLink]=\"['/login']\"\n              mat-icon-button=\"\"><span matTooltip=\"Logout\"><i class=\"material-icons\">input</i></span></button>\n    </div>\n    </div>",
+
                 "_type": "a",
                 "_attrDef": "p"
             }

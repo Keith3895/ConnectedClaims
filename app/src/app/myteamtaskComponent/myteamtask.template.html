@@ -4,9 +4,9 @@
     left: 36%; ">
     <span>Sort by:</span>
     <mat-radio-group [(ngModel)]="groupbySwitch">
-      <mat-radio-button value="SLA" [checked]="true" (click)="swCha(&apos;SLA&apos;)">SLA</mat-radio-button>
+      <mat-radio-button value="SLA" (click)="swCha(&apos;SLA&apos;)" [checked]="true">SLA</mat-radio-button>
       <mat-radio-button value="name" (click)="swCha(&apos;name&apos;)">Agent Name</mat-radio-button>
     </mat-radio-group>
   </div>
-  <bh-groupname [caseArr]="dataSourceAsig" [groupbySwitch]="groupbySwitch" [fxShow]="groupbySwitch"></bh-groupname>
+  <bh-groupname [caseArr]="dataSourceAsig" [groupbySwitch]="groupbySwitch" *ngIf="groupbySwitch"></bh-groupname>
 </div>
