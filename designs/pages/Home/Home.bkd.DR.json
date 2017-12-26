@@ -325,7 +325,7 @@
             {
                 "0": false,
                 "_key": "style",
-                "_value": "align-self: baseline;padding-top:20px; padding-right:200px;",
+                "_value": "align-self: baseline;padding-top:20px; padding-right:150px;",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -339,7 +339,7 @@
             {
                 "2": false,
                 "_key": "fxFlex",
-                "_value": "80",
+                "_value": "55",
                 "_type": "kv",
                 "_attrDef": "p"
             },
