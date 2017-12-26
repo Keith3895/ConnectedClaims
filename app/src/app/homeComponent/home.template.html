@@ -1,8 +1,8 @@
 <div id="angularRoot">
   <mat-sidenav-container id="632f1117-4553-6032-47de-4c2ad027dfa9" fullscreen="" fxFlex="100">
     <mat-toolbar id="efe96f0c-0f63-954c-6b01-15c8907a46c3" fxFlex="100">
-      <div fxLayout="column" fxFlex="50" fxLayoutWrap="wrap" fxShow="true" fxHide="false" id="913ac8b0-9269-2ab8-6043-2a25e94740a5" fxFlexOffset="25">
-        <div fxLayout="row" fxFlex="80" fxShow="true" fxHide="false" id="aee0783d-fef1-4710-5795-3ce393b0f387" [ngClass]="">
+      <div fxLayout="column" style="align-self: baseline;padding-top:20px; padding-right:200px;" fxFlex="80" fxLayoutWrap="wrap" fxShow="true" fxHide="false" id="913ac8b0-9269-2ab8-6043-2a25e94740a5" fxFlexOffset="25">
+        <div fxLayout="row" fxFlex="100" fxShow="true" fxHide="false" id="6a8012c1-b20e-fba7-2766-4ccc86f1dd24">
           <input type="text" class="search">
 
 
@@ -10,22 +10,20 @@
           <button mat-button="" class="searchSubmit" id="351b40b1-994e-8617-ae02-4f7c7d9fb186">
             <i class="material-icons">search</i>
           </button>
-          <button mat-button="" class="searchdrop" id="2de1dd57-223e-1d0d-b23a-9bf6c9574859" (click)="searchTrigger=!searchTrigger" [matMenuTriggerFor]="menu">
-            <i class="material-icons">keyboard_arrow_down</i>
+          <button mat-button="" class="searchdrop" id="f803a220-93e6-4531-5285-2974f46defb2" (click)="searchTrigger=!searchTrigger">
+            <mat-icon>keyboard_arrow_down</mat-icon>
           </button>
-          <mat-menu id="c5ec1320-f3df-d3cf-7723-17871b5168b3" #menu="matMenu">
-            <mat-card id="02633b1d-39cd-bec2-7a1c-d7839cc94b7c" style="z-index:10000">
-              <mat-card-content id="cff8d8e8-e7e1-b1d7-0023-d84eef65c250">
-                <bh-searchcard></bh-searchcard>
-              </mat-card-content>
-            </mat-card>
-          </mat-menu>
+        </div>
+        <div fxLayout="row" fxShow="true" fxHide="false" id="2d917d3c-7032-91bd-0225-273d203427b1" [fxHide]="!searchTrigger">
+          <mat-card id="7a19e88b-cf96-35b2-03ed-589b15a6fa4d" style="z-index:99999">
+            <bh-searchcard></bh-searchcard>
+          </mat-card>
         </div>
       </div>
       <div fxLayout="column" fxFlex="20" fxLayoutAlign="end end" fxShow="true" fxHide="false" id="be641071-ef1d-d101-3ced-cd1d02cae15b">
         <div fxLayout="row" fxLayoutGap="1em" fxShow="true" fxHide="false" id="3b15982e-ddac-0bda-dbd2-55ad485b8a52">
           <mat-icon class="refresh-button" id="e45c8051-7fef-0984-ef16-a55d64addf9f" (click)="refresh()"><span matTooltip="Refresh"><i class="material-icons">refresh</i></span></mat-icon>
-          <mat-icon class="logout-button" id="bab52ed3-a88c-2dc0-5c3d-f1a891b805cf"><span matTooltip="Logout"><i class="material-icons">input</i></span></mat-icon>
+          <mat-icon class="logout-button" id="bab52ed3-a88c-2dc0-5c3d-f1a891b805cf" routerLink="/login"><span matTooltip="Logout"><i class="material-icons">input</i></span></mat-icon>
         </div>
       </div>
     </mat-toolbar>
