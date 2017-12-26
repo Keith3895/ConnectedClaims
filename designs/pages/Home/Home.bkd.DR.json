@@ -261,7 +261,7 @@
             },
             {
                 "_key": "html",
-                "_value": "<input type=\"text\" class=\"search\">\n        <button  mat-icon-button=\"\" class=\"searchdrop\" (click)=\"searchTrigger=!searchTrigger\">\n            <mat-icon aria-label=\"Example icon-button with a heart icon\">\n              <i class=\"material-icons\">keyboard_arrow_down</i>\n            </mat-icon>\n          </button>\t\n          \n       \n\n  ",
+                "_value": "<input type=\"text\" class=\"search\">\n        \n       \n\n  ",
                 "_type": "a",
                 "_attrDef": "p"
             }
@@ -595,78 +595,6 @@
         ],
         "type": 5
     },
-    "1c7e24c2-fbd6-8884-5d4e-33ab429047d8": {
-        "name": "FlexLayoutRow",
-        "guid": "1c7e24c2-fbd6-8884-5d4e-33ab429047d8",
-        "template": "<div fxLayout=\"row\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
-        "designerTemplate": "<div class=\"row drop bkeeper-container-label\"></div>",
-        "paletteTemplate": "Flex Layout Row",
-        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
-        "htmlAttributes": [
-            {
-                "0": false,
-                "_key": "style",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "1": false,
-                "_key": "class",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "2": false,
-                "_key": "fxFlex",
-                "_value": "80",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "fxLayoutWrap",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "4": false,
-                "_key": "fxLayoutGap",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "5": false,
-                "_key": "fxLayoutAlign",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "6": false,
-                "_key": "fxShow",
-                "_value": "true",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "fxHide",
-                "_value": "false",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "8": false,
-                "_key": "*ngIf",
-                "_value": "searchTrigger",
-                "_type": "kv",
-                "_attrDef": "c"
-            }
-        ],
-        "type": 1
-    },
     "02633b1d-39cd-bec2-7a1c-d7839cc94b7c": {
         "name": "NG-card",
         "guid": "02633b1d-39cd-bec2-7a1c-d7839cc94b7c",
@@ -701,6 +629,7 @@
         "templateUrl": "https://material.angular.io/components/card/overview",
         "htmlAttributes": [
             {
+                "0": false,
                 "_key": "style",
                 "_value": "",
                 "_type": "kv",
@@ -790,7 +719,7 @@
             {
                 "8": false,
                 "_key": "[ngClass]",
-                "_value": "{'searchBar':searchTrigger}",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "c"
             },
@@ -863,5 +792,104 @@
             }
         ],
         "type": 5
+    },
+    "c5ec1320-f3df-d3cf-7723-17871b5168b3": {
+        "name": "NG-Menu",
+        "guid": "c5ec1320-f3df-d3cf-7723-17871b5168b3",
+        "template": "<mat-menu %bCustomProps% %style% %class% %xPosition% %yPosition% %templateRef% %items% #menu=\"matMenu\"></mat-menu>",
+        "designerTemplate": "<div class=\"drop ad-list-border ad-menu ad-list\"></div>",
+        "paletteTemplate": "Menu",
+        "templateUrl": "https://material.angular.io/components/menu/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "xPosition",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "yPosition",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "templateRef",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "items",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 6
+    },
+    "2de1dd57-223e-1d0d-b23a-9bf6c9574859": {
+        "name": "NG-MenuButton",
+        "guid": "2de1dd57-223e-1d0d-b23a-9bf6c9574859",
+        "template": "<button mat-button %style% %class% %bCustomProps% %color% [matMenuTriggerFor]=\"menu\">%MenuName%</button>",
+        "designerTemplate": "<div class=\"ad-menu-button\"></div>",
+        "paletteTemplate": "Menu Button",
+        "templateUrl": "https://material.angular.io/components/menu/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "searchdrop",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "MenuName",
+                "_value": "<i class=\"material-icons\">keyboard_arrow_down</i>",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "color",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "(click)",
+                "_value": "searchTrigger=!searchTrigger",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 6
     }
 }

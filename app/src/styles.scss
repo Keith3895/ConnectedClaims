@@ -117,7 +117,8 @@ bh-casescard {
   width:500px;
 }
 .searchdrop{
-margin-left:-41px !important;
+    margin-left: -176px !important;
+    z-index: 9999 !important;
 }
 .searchBar{
   margin-top:250px;
