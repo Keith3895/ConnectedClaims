@@ -2,6 +2,7 @@
 import { Component, OnInit, Input } from '@angular/core'
 import { MatTableDataSource } from '@angular/material';
 import { PubSubService } from './../service/pubSub.service';
+import { roleService } from 'app/services/Role/role.service';
 /**
 * Model import Example :
 * import { HERO } from '../models/hero.model';
@@ -21,10 +22,14 @@ import { PubSubService } from './../service/pubSub.service';
 export class monitortableComponent implements OnInit {
     displayedColumnsAs = ['select', 'agentName', 'assignedUser', 'policyNumber', 'caseId', 'services','status'];
     dataSourceAsig;
+  	role='';
     @Input('data') data;
     AllChecked = false;
-    constructor(private pubsub: PubSubService) { }
+    constructor(private pubsub: PubSubService,private rs: roleService) { }
     ngOnInit() {
+      this.role= this.rs.getUserRole();
+      if(this.role!='admin')
+        this.displayedColumnsAs = ['select', 'assignedUser', 'policyNumber', 'caseId', 'services','status'];
         console.log(this.data);
         let assign = this.data.filter(el => {
             // if()

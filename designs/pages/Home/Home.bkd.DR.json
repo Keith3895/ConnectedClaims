@@ -584,6 +584,13 @@
                 "_value": "<span matTooltip=\"Logout\"><i class=\"material-icons\">input</i></span>",
                 "_type": "a",
                 "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "routerLink",
+                "_value": "/login",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 5
