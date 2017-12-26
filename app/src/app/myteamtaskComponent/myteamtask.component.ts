@@ -46,9 +46,5 @@ export class myteamtaskComponent implements OnInit {
   displayService(val) {
     this.pubsub.$pub('serviceCall', val);
   }
-  checkevent(event) {
-
-    this.pubsub.$pub('teamEvent', event.checked)
-
-  }
+  
 }
