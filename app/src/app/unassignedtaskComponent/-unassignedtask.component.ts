@@ -38,10 +38,5 @@ export class unassignedtaskComponent implements OnInit {
         this.pubsub.$pub('unasignedClick',val);
     }
   
-  	checkevent(event){
-      console.log(event);
-      this.pubsub.$pub('checkevent',event.checked)
-      
-    }
 
 }

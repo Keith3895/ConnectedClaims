@@ -21,7 +21,7 @@
             },
             {
                 "_key": "html",
-                "_value": "<mat-accordion>\n    \n    <mat-expansion-panel *ngFor=\"let key of keys\">\n      <mat-expansion-panel-header>\n        <mat-panel-title fxFlex=\"60%\">\n          {{key}}\n        </mat-panel-title>\n        <mat-panel-description>\n\n        </mat-panel-description>\n        \n      </mat-expansion-panel-header>\n      <bh-myteamtasktab [data]=\"agent[key]\" ></bh-myteamtasktab>\n    </mat-expansion-panel>\n    \n  </mat-accordion>",
+                "_value": "<mat-accordion>\n    \n    <mat-expansion-panel *ngFor=\"let key of keys\">\n      <mat-expansion-panel-header>\n        <mat-panel-title fxFlex=\"60%\">\n          {{key}}\n        </mat-panel-title>\n        <mat-panel-description>\n\n        </mat-panel-description>\n        \n      </mat-expansion-panel-header>\n      <bh-myteamtasktab [data]=\"agent[key]\" [fl]=\"fl\"></bh-myteamtasktab>\n    </mat-expansion-panel>\n    \n  </mat-accordion>",
                 "_type": "a",
                 "_attrDef": "p"
             }

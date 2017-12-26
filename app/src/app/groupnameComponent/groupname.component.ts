@@ -19,7 +19,6 @@ import { PubSubService } from './../service/pubSub.service';
 
 export class groupnameComponent implements OnInit {
     @Input('caseArr') caseArr;
-    @Input('groupbySwitch') switchValue;
     fl;
     agent;
     keys;
