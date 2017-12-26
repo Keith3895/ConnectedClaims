@@ -1,6 +1,7 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
-import { Component, OnInit,HostListener } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { roleService } from 'app/services/Role/role.service';
+import { PubSubService } from './../service/pubSub.service';
 /**
 * Model import Example :
 * import { HERO } from '../models/hero.model';
@@ -19,13 +20,14 @@ import { roleService } from 'app/services/Role/role.service';
 export class homeComponent implements OnInit {
     role = '';
   	searchTrigger=false;
-  	@HostListener('click') onClick() {
-      console.log(this.searchTrigger); 
-  }
-    constructor(private rs: roleService) {}
+  	
+    constructor(private rs: roleService,private pubsub:PubSubService) {}
     ngOnInit() {
         this.role = this.rs.getUserRole();
         console.log('current role', this.role);
+      this.pubsub.$sub('clickEvent').subscribe(el=>{
+      	this.searchTrigger=false;
+      });
     }
   
   refresh()

@@ -3,12 +3,12 @@
     <div fxLayout="column" fxShow="true" fxHide="false" id="22938797-6c6b-e498-3459-a581ff9aed09" fxFill="">
       <div fxLayout="row" fxShow="true" fxHide="false" id="4866906c-71be-19a9-c2ec-a623918c5e48">
         <div fxLayout="column" fxFlex="100%" fxShow="true" fxHide="false" id="bc0c0599-82f4-9270-5048-eafeb979ed3c">
-          <p class="button-nav" (click)="show(&apos;createTask&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;createTask&apos;}">
+          <p class="button-nav" *ngIf="roleS==&apos;admin&apos;" (click)="show(&apos;createTask&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;createTask&apos;}">
 
             <span>Create Task</span>
 
           </p>
-          <p class="button-nav" [ngClass]="{&apos;active&apos;:currentTab==&apos;active&apos;||currentTab==&apos;myTeam&apos;||currentTab==&apos;mytask&apos;}">
+          <p class="button-nav" *ngIf="roleS==&apos;admin&apos;" [ngClass]="{&apos;active&apos;:currentTab==&apos;active&apos;||currentTab==&apos;myTeam&apos;||currentTab==&apos;mytask&apos;}">
             <span (click)="show(&apos;active&apos;)">Open Task</span>
             <i fxFlexAlign="center end" class=" material-icons" style="    float: right;" (click)="toggleDrop= (toggleDrop==&apos;add_circle&apos;)?&apos;remove_circle&apos;:&apos;add_circle&apos;">{{toggleDrop}}</i>
           </p>
@@ -23,8 +23,10 @@
               </li>
             </ul>
           </div>
-
-          <p class="button-nav" (click)="show(&apos;unassigned&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;unassigned&apos;}">
+          <p class="button-nav" *ngIf="roleS==&apos;agent&apos;" (click)="show(&apos;mytask&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;mytask&apos;}">
+            <span>My Task</span>
+          </p>
+          <p class="button-nav" *ngIf="roleS==&apos;admin&apos;" (click)="show(&apos;unassigned&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;unassigned&apos;}">
             <span>Unassigned Task</span>
           </p>
           <p class="button-nav" (click)="show(&apos;monitor&apos;)" [ngClass]="{&apos;active&apos;:currentTab==&apos;monitor&apos;}">

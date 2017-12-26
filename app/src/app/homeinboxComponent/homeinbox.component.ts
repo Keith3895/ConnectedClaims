@@ -1,7 +1,7 @@
 import { caseserviceService } from './../services/CaseService/caseservice.service';
 import { SystemService } from './../service/system.service';
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input ,HostListener } from '@angular/core';
 import { PubSubService } from './../service/pubSub.service';
 /**
 * Model import Example :
@@ -22,6 +22,9 @@ export class homeinboxComponent implements OnInit {
   @Input('role') role; // currently two roles
   userRoleE;
   adminRoleE;
+  @HostListener('click') onClick() {
+      this.pubsub.$pub('clickEvent',false);
+  }
   casesArr = [];
   infoViewDisplay; // information to be displayed on the Info View Section
   infoViewDisplayData; // information to be sent to the InfoDisplay Component
