@@ -325,7 +325,7 @@
             {
                 "0": false,
                 "_key": "style",
-                "_value": "align-self: baseline;padding-top:20px; padding-right:200px;",
+                "_value": "align-self: baseline;padding-top:20px; padding-right:150px;",
                 "_type": "kv",
                 "_attrDef": "p"
             },
