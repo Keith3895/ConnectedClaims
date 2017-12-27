@@ -14,9 +14,11 @@
             <mat-icon>keyboard_arrow_down</mat-icon>
           </button>
         </div>
-        <div fxLayout="row" fxShow="true" fxHide="false" id="2d917d3c-7032-91bd-0225-273d203427b1" [fxHide]="!searchTrigger">
-          <mat-card id="7a19e88b-cf96-35b2-03ed-589b15a6fa4d" style="z-index:99999">
-            <bh-searchcard></bh-searchcard>
+        <div fxLayout="row" fxFlex="100" fxLayoutWrap="wrap" fxShow="true" fxHide="false" id="2d917d3c-7032-91bd-0225-273d203427b1" [fxHide]="!searchTrigger" fxFlex.sm="80">
+          <mat-card id="7a19e88b-cf96-35b2-03ed-589b15a6fa4d" fxFlex.sm="100" fxLayoutWrap="wrap" fxFlex.lg="92" style="z-index:99999">
+            <mat-card-content id="d6a8b95f-0b6b-588e-d589-faa790a3b8d9" fxLayoutWrap="wrap">
+              <bh-searchcard></bh-searchcard>
+            </mat-card-content>
           </mat-card>
         </div>
       </div>
