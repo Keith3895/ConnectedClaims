@@ -451,6 +451,12 @@
                 "_value": "false",
                 "_type": "kv",
                 "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex.md",
+                "_value": "20",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 1
@@ -480,7 +486,7 @@
             {
                 "2": false,
                 "_key": "fxFlex",
-                "_value": "",
+                "_value": "100",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -642,35 +648,6 @@
         ],
         "type": 5
     },
-    "25ad2c6a-1483-efa7-77ad-b5efd8d5e723": {
-        "name": "HTML",
-        "guid": "25ad2c6a-1483-efa7-77ad-b5efd8d5e723",
-        "template": "%html%",
-        "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
-        "paletteTemplate": "HTML",
-        "templateUrl": "",
-        "htmlAttributes": [
-            {
-                "_key": "style",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "class",
-                "_value": "",
-                "_type": "kv",
-                "_attrDef": "p"
-            },
-            {
-                "_key": "html",
-                "_value": "<bh-searchcard></bh-searchcard>",
-                "_type": "a",
-                "_attrDef": "p"
-            }
-        ],
-        "type": 7
-    },
     "6a8012c1-b20e-fba7-2766-4ccc86f1dd24": {
         "name": "FlexLayoutRow",
         "guid": "6a8012c1-b20e-fba7-2766-4ccc86f1dd24",
@@ -761,14 +738,14 @@
             {
                 "2": false,
                 "_key": "fxFlex",
-                "_value": "",
+                "_value": "100",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "3": false,
                 "_key": "fxLayoutWrap",
-                "_value": "",
+                "_value": "wrap",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -804,6 +781,13 @@
                 "8": false,
                 "_key": "[fxHide]",
                 "_value": "!searchTrigger",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "9": false,
+                "_key": "fxFlex.sm",
+                "_value": "80",
                 "_type": "kv",
                 "_attrDef": "c"
             }
@@ -871,12 +855,99 @@
                 "_attrDef": "p"
             },
             {
+                "1": false,
                 "_key": "class",
                 "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fxFlex.sm",
+                "_value": "100",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "_key": "fxLayoutWrap",
+                "_value": "wrap",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "4": false,
+                "_key": "fxFlex.lg",
+                "_value": "92",
+                "_type": "kv",
+                "_attrDef": "c"
             }
         ],
         "type": 1
+    },
+    "d6a8b95f-0b6b-588e-d589-faa790a3b8d9": {
+        "name": "NG-CardContent",
+        "guid": "d6a8b95f-0b6b-588e-d589-faa790a3b8d9",
+        "template": "<mat-card-content %style% %class% %bCustomProps%>%content%</mat-card-content>",
+        "designerTemplate": "<div class=\"ad-card-content ad-charts-border drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Card Content",
+        "templateUrl": "https://material.angular.io/components/card/overview",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "content",
+                "_value": "",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutWrap",
+                "_value": "wrap",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 1
+    },
+    "ff67b571-5d2c-d824-7f5a-2f1b1f7421e5": {
+        "name": "HTML",
+        "guid": "ff67b571-5d2c-d824-7f5a-2f1b1f7421e5",
+        "template": "%html%",
+        "designerTemplate": "<div class=\"ad-lists bkeeper-container-label bkeeper-general-css\" b-props=\"html-editor\"><i style=\"font-size: 37px;line-height: 2;padding: 1px;\" class=\"material-icons\">code</i></div>",
+        "paletteTemplate": "HTML",
+        "templateUrl": "",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "html",
+                "_value": "<bh-searchcard></bh-searchcard>",
+                "_type": "a",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 7
     }
 }

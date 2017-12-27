@@ -366,7 +366,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-email",
-     "file": "/home/administrator/bhive-ad/node_modules/node-red-node-email/61-email.js"
+     "file": "/home/administrator/node_modules/node-red-node-email/61-email.js"
     }
    }
   },
@@ -383,7 +383,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-feedparser",
-     "file": "/home/administrator/bhive-ad/node_modules/node-red-node-feedparser/32-feedparse.js"
+     "file": "/home/administrator/node_modules/node-red-node-feedparser/32-feedparse.js"
     }
    }
   },
@@ -400,7 +400,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-rbe",
-     "file": "/home/administrator/bhive-ad/node_modules/node-red-node-rbe/rbe.js"
+     "file": "/home/administrator/node_modules/node-red-node-rbe/rbe.js"
     }
    }
   },
@@ -419,7 +419,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-twitter",
-     "file": "/home/administrator/bhive-ad/node_modules/node-red-node-twitter/27-twitter.js"
+     "file": "/home/administrator/node_modules/node-red-node-twitter/27-twitter.js"
     }
    }
   }

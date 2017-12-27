@@ -25,9 +25,6 @@ export class myteamtasktabComponent implements OnInit, OnChanges {
   ngOnInit() {
 	this.displayedColumnsAs = ['select', 'agentName', 'assignedUser', 'policyNumber', 'caseId', 'services', 'status'];
 	this.dataSourceAsig = new MatTableDataSource(this.data);
-    console.log(this.data);
-    // });
-
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -52,9 +49,4 @@ export class myteamtasktabComponent implements OnInit, OnChanges {
   displayService(val) {
     this.pubsub.$pub('serviceCall', val);
   }
-  checkevent(event) {
-    this.pubsub.$pub('teamEvent', event.checked)
-
-  }
-
 }
